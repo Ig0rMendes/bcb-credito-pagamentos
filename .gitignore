@@ -1,0 +1,10 @@
+__pycache__/
+.pytest_cache/
+.venv/
+.ipynb_checkpoints/
+
+# Dados grandes do Pix: ficam fora do GitHub (limite de 100 MB por arquivo).
+# Quem clonar o repositório gera tudo de novo com: python src/coletar_dados.py
+data/raw/pix/
+data/processed/pix_detalhado.csv
+data/processed/pix_detalhado.parquet

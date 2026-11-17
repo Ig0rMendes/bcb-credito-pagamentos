@@ -1,0 +1,708 @@
+data,valor,codigo_sgs,serie,unidade
+2015-01-01,12.25,432,selic_meta,% a.a.
+2015-02-01,12.25,432,selic_meta,% a.a.
+2015-03-01,12.75,432,selic_meta,% a.a.
+2015-04-01,13.25,432,selic_meta,% a.a.
+2015-05-01,13.25,432,selic_meta,% a.a.
+2015-06-01,13.75,432,selic_meta,% a.a.
+2015-07-01,14.25,432,selic_meta,% a.a.
+2015-08-01,14.25,432,selic_meta,% a.a.
+2015-09-01,14.25,432,selic_meta,% a.a.
+2015-10-01,14.25,432,selic_meta,% a.a.
+2015-11-01,14.25,432,selic_meta,% a.a.
+2015-12-01,14.25,432,selic_meta,% a.a.
+2016-01-01,14.25,432,selic_meta,% a.a.
+2016-02-01,14.25,432,selic_meta,% a.a.
+2016-03-01,14.25,432,selic_meta,% a.a.
+2016-04-01,14.25,432,selic_meta,% a.a.
+2016-05-01,14.25,432,selic_meta,% a.a.
+2016-06-01,14.25,432,selic_meta,% a.a.
+2016-07-01,14.25,432,selic_meta,% a.a.
+2016-08-01,14.25,432,selic_meta,% a.a.
+2016-09-01,14.25,432,selic_meta,% a.a.
+2016-10-01,14.0,432,selic_meta,% a.a.
+2016-11-01,14.0,432,selic_meta,% a.a.
+2016-12-01,13.75,432,selic_meta,% a.a.
+2017-01-01,13.0,432,selic_meta,% a.a.
+2017-02-01,12.25,432,selic_meta,% a.a.
+2017-03-01,12.25,432,selic_meta,% a.a.
+2017-04-01,11.25,432,selic_meta,% a.a.
+2017-05-01,11.25,432,selic_meta,% a.a.
+2017-06-01,10.25,432,selic_meta,% a.a.
+2017-07-01,9.25,432,selic_meta,% a.a.
+2017-08-01,9.25,432,selic_meta,% a.a.
+2017-09-01,8.25,432,selic_meta,% a.a.
+2017-10-01,7.5,432,selic_meta,% a.a.
+2017-11-01,7.5,432,selic_meta,% a.a.
+2017-12-01,7.0,432,selic_meta,% a.a.
+2018-01-01,7.0,432,selic_meta,% a.a.
+2018-02-01,6.75,432,selic_meta,% a.a.
+2018-03-01,6.5,432,selic_meta,% a.a.
+2018-04-01,6.5,432,selic_meta,% a.a.
+2018-05-01,6.5,432,selic_meta,% a.a.
+2018-06-01,6.5,432,selic_meta,% a.a.
+2018-07-01,6.5,432,selic_meta,% a.a.
+2018-08-01,6.5,432,selic_meta,% a.a.
+2018-09-01,6.5,432,selic_meta,% a.a.
+2018-10-01,6.5,432,selic_meta,% a.a.
+2018-11-01,6.5,432,selic_meta,% a.a.
+2018-12-01,6.5,432,selic_meta,% a.a.
+2019-01-01,6.5,432,selic_meta,% a.a.
+2019-02-01,6.5,432,selic_meta,% a.a.
+2019-03-01,6.5,432,selic_meta,% a.a.
+2019-04-01,6.5,432,selic_meta,% a.a.
+2019-05-01,6.5,432,selic_meta,% a.a.
+2019-06-01,6.5,432,selic_meta,% a.a.
+2019-07-01,6.5,432,selic_meta,% a.a.
+2019-08-01,6.0,432,selic_meta,% a.a.
+2019-09-01,5.5,432,selic_meta,% a.a.
+2019-10-01,5.0,432,selic_meta,% a.a.
+2019-11-01,5.0,432,selic_meta,% a.a.
+2019-12-01,4.5,432,selic_meta,% a.a.
+2020-01-01,4.5,432,selic_meta,% a.a.
+2020-02-01,4.25,432,selic_meta,% a.a.
+2020-03-01,3.75,432,selic_meta,% a.a.
+2020-04-01,3.75,432,selic_meta,% a.a.
+2020-05-01,3.0,432,selic_meta,% a.a.
+2020-06-01,2.25,432,selic_meta,% a.a.
+2020-07-01,2.25,432,selic_meta,% a.a.
+2020-08-01,2.0,432,selic_meta,% a.a.
+2020-09-01,2.0,432,selic_meta,% a.a.
+2020-10-01,2.0,432,selic_meta,% a.a.
+2020-11-01,2.0,432,selic_meta,% a.a.
+2020-12-01,2.0,432,selic_meta,% a.a.
+2021-01-01,2.0,432,selic_meta,% a.a.
+2021-02-01,2.0,432,selic_meta,% a.a.
+2021-03-01,2.75,432,selic_meta,% a.a.
+2021-04-01,2.75,432,selic_meta,% a.a.
+2021-05-01,3.5,432,selic_meta,% a.a.
+2021-06-01,4.25,432,selic_meta,% a.a.
+2021-07-01,4.25,432,selic_meta,% a.a.
+2021-08-01,5.25,432,selic_meta,% a.a.
+2021-09-01,6.25,432,selic_meta,% a.a.
+2021-10-01,7.75,432,selic_meta,% a.a.
+2021-11-01,7.75,432,selic_meta,% a.a.
+2021-12-01,9.25,432,selic_meta,% a.a.
+2022-01-01,9.25,432,selic_meta,% a.a.
+2022-02-01,10.75,432,selic_meta,% a.a.
+2022-03-01,11.75,432,selic_meta,% a.a.
+2022-04-01,11.75,432,selic_meta,% a.a.
+2022-05-01,12.75,432,selic_meta,% a.a.
+2022-06-01,13.25,432,selic_meta,% a.a.
+2022-07-01,13.25,432,selic_meta,% a.a.
+2022-08-01,13.75,432,selic_meta,% a.a.
+2022-09-01,13.75,432,selic_meta,% a.a.
+2022-10-01,13.75,432,selic_meta,% a.a.
+2022-11-01,13.75,432,selic_meta,% a.a.
+2022-12-01,13.75,432,selic_meta,% a.a.
+2023-01-01,13.75,432,selic_meta,% a.a.
+2023-02-01,13.75,432,selic_meta,% a.a.
+2023-03-01,13.75,432,selic_meta,% a.a.
+2023-04-01,13.75,432,selic_meta,% a.a.
+2023-05-01,13.75,432,selic_meta,% a.a.
+2023-06-01,13.75,432,selic_meta,% a.a.
+2023-07-01,13.75,432,selic_meta,% a.a.
+2023-08-01,13.25,432,selic_meta,% a.a.
+2023-09-01,12.75,432,selic_meta,% a.a.
+2023-10-01,12.75,432,selic_meta,% a.a.
+2023-11-01,12.25,432,selic_meta,% a.a.
+2023-12-01,11.75,432,selic_meta,% a.a.
+2024-01-01,11.75,432,selic_meta,% a.a.
+2024-02-01,11.25,432,selic_meta,% a.a.
+2024-03-01,10.75,432,selic_meta,% a.a.
+2024-04-01,10.75,432,selic_meta,% a.a.
+2024-05-01,10.5,432,selic_meta,% a.a.
+2024-06-01,10.5,432,selic_meta,% a.a.
+2024-07-01,10.5,432,selic_meta,% a.a.
+2024-08-01,10.5,432,selic_meta,% a.a.
+2024-09-01,10.75,432,selic_meta,% a.a.
+2024-10-01,10.75,432,selic_meta,% a.a.
+2024-11-01,11.25,432,selic_meta,% a.a.
+2024-12-01,12.25,432,selic_meta,% a.a.
+2025-01-01,13.25,432,selic_meta,% a.a.
+2025-02-01,13.25,432,selic_meta,% a.a.
+2025-03-01,14.25,432,selic_meta,% a.a.
+2025-04-01,14.25,432,selic_meta,% a.a.
+2025-05-01,14.75,432,selic_meta,% a.a.
+2025-06-01,15.0,432,selic_meta,% a.a.
+2025-07-01,15.0,432,selic_meta,% a.a.
+2025-08-01,15.0,432,selic_meta,% a.a.
+2025-09-01,15.0,432,selic_meta,% a.a.
+2025-10-01,15.0,432,selic_meta,% a.a.
+2025-11-01,15.0,432,selic_meta,% a.a.
+2025-12-01,15.0,432,selic_meta,% a.a.
+2026-01-01,15.0,432,selic_meta,% a.a.
+2026-02-01,15.0,432,selic_meta,% a.a.
+2026-03-01,14.75,432,selic_meta,% a.a.
+2026-04-01,14.5,432,selic_meta,% a.a.
+2026-05-01,14.5,432,selic_meta,% a.a.
+2026-06-01,14.25,432,selic_meta,% a.a.
+2026-07-01,14.25,432,selic_meta,% a.a.
+2026-08-01,14.0,432,selic_meta,% a.a.
+2026-09-01,13.75,432,selic_meta,% a.a.
+2026-10-01,13.75,432,selic_meta,% a.a.
+2015-01-01,1.24,433,ipca_mensal,% a.m.
+2015-02-01,1.22,433,ipca_mensal,% a.m.
+2015-03-01,1.32,433,ipca_mensal,% a.m.
+2015-04-01,0.71,433,ipca_mensal,% a.m.
+2015-05-01,0.74,433,ipca_mensal,% a.m.
+2015-06-01,0.79,433,ipca_mensal,% a.m.
+2015-07-01,0.62,433,ipca_mensal,% a.m.
+2015-08-01,0.22,433,ipca_mensal,% a.m.
+2015-09-01,0.54,433,ipca_mensal,% a.m.
+2015-10-01,0.82,433,ipca_mensal,% a.m.
+2015-11-01,1.01,433,ipca_mensal,% a.m.
+2015-12-01,0.96,433,ipca_mensal,% a.m.
+2016-01-01,1.27,433,ipca_mensal,% a.m.
+2016-02-01,0.9,433,ipca_mensal,% a.m.
+2016-03-01,0.43,433,ipca_mensal,% a.m.
+2016-04-01,0.61,433,ipca_mensal,% a.m.
+2016-05-01,0.78,433,ipca_mensal,% a.m.
+2016-06-01,0.35,433,ipca_mensal,% a.m.
+2016-07-01,0.52,433,ipca_mensal,% a.m.
+2016-08-01,0.44,433,ipca_mensal,% a.m.
+2016-09-01,0.08,433,ipca_mensal,% a.m.
+2016-10-01,0.26,433,ipca_mensal,% a.m.
+2016-11-01,0.18,433,ipca_mensal,% a.m.
+2016-12-01,0.3,433,ipca_mensal,% a.m.
+2017-01-01,0.38,433,ipca_mensal,% a.m.
+2017-02-01,0.33,433,ipca_mensal,% a.m.
+2017-03-01,0.25,433,ipca_mensal,% a.m.
+2017-04-01,0.14,433,ipca_mensal,% a.m.
+2017-05-01,0.31,433,ipca_mensal,% a.m.
+2017-06-01,-0.23,433,ipca_mensal,% a.m.
+2017-07-01,0.24,433,ipca_mensal,% a.m.
+2017-08-01,0.19,433,ipca_mensal,% a.m.
+2017-09-01,0.16,433,ipca_mensal,% a.m.
+2017-10-01,0.42,433,ipca_mensal,% a.m.
+2017-11-01,0.28,433,ipca_mensal,% a.m.
+2017-12-01,0.44,433,ipca_mensal,% a.m.
+2018-01-01,0.29,433,ipca_mensal,% a.m.
+2018-02-01,0.32,433,ipca_mensal,% a.m.
+2018-03-01,0.09,433,ipca_mensal,% a.m.
+2018-04-01,0.22,433,ipca_mensal,% a.m.
+2018-05-01,0.4,433,ipca_mensal,% a.m.
+2018-06-01,1.26,433,ipca_mensal,% a.m.
+2018-07-01,0.33,433,ipca_mensal,% a.m.
+2018-08-01,-0.09,433,ipca_mensal,% a.m.
+2018-09-01,0.48,433,ipca_mensal,% a.m.
+2018-10-01,0.45,433,ipca_mensal,% a.m.
+2018-11-01,-0.21,433,ipca_mensal,% a.m.
+2018-12-01,0.15,433,ipca_mensal,% a.m.
+2019-01-01,0.32,433,ipca_mensal,% a.m.
+2019-02-01,0.43,433,ipca_mensal,% a.m.
+2019-03-01,0.75,433,ipca_mensal,% a.m.
+2019-04-01,0.57,433,ipca_mensal,% a.m.
+2019-05-01,0.13,433,ipca_mensal,% a.m.
+2019-06-01,0.01,433,ipca_mensal,% a.m.
+2019-07-01,0.19,433,ipca_mensal,% a.m.
+2019-08-01,0.11,433,ipca_mensal,% a.m.
+2019-09-01,-0.04,433,ipca_mensal,% a.m.
+2019-10-01,0.1,433,ipca_mensal,% a.m.
+2019-11-01,0.51,433,ipca_mensal,% a.m.
+2019-12-01,1.15,433,ipca_mensal,% a.m.
+2020-01-01,0.21,433,ipca_mensal,% a.m.
+2020-02-01,0.25,433,ipca_mensal,% a.m.
+2020-03-01,0.07,433,ipca_mensal,% a.m.
+2020-04-01,-0.31,433,ipca_mensal,% a.m.
+2020-05-01,-0.38,433,ipca_mensal,% a.m.
+2020-06-01,0.26,433,ipca_mensal,% a.m.
+2020-07-01,0.36,433,ipca_mensal,% a.m.
+2020-08-01,0.24,433,ipca_mensal,% a.m.
+2020-09-01,0.64,433,ipca_mensal,% a.m.
+2020-10-01,0.86,433,ipca_mensal,% a.m.
+2020-11-01,0.89,433,ipca_mensal,% a.m.
+2020-12-01,1.35,433,ipca_mensal,% a.m.
+2021-01-01,0.25,433,ipca_mensal,% a.m.
+2021-02-01,0.86,433,ipca_mensal,% a.m.
+2021-03-01,0.93,433,ipca_mensal,% a.m.
+2021-04-01,0.31,433,ipca_mensal,% a.m.
+2021-05-01,0.83,433,ipca_mensal,% a.m.
+2021-06-01,0.53,433,ipca_mensal,% a.m.
+2021-07-01,0.96,433,ipca_mensal,% a.m.
+2021-08-01,0.87,433,ipca_mensal,% a.m.
+2021-09-01,1.16,433,ipca_mensal,% a.m.
+2021-10-01,1.25,433,ipca_mensal,% a.m.
+2021-11-01,0.95,433,ipca_mensal,% a.m.
+2021-12-01,0.73,433,ipca_mensal,% a.m.
+2022-01-01,0.54,433,ipca_mensal,% a.m.
+2022-02-01,1.01,433,ipca_mensal,% a.m.
+2022-03-01,1.62,433,ipca_mensal,% a.m.
+2022-04-01,1.06,433,ipca_mensal,% a.m.
+2022-05-01,0.47,433,ipca_mensal,% a.m.
+2022-06-01,0.67,433,ipca_mensal,% a.m.
+2022-07-01,-0.68,433,ipca_mensal,% a.m.
+2022-08-01,-0.36,433,ipca_mensal,% a.m.
+2022-09-01,-0.29,433,ipca_mensal,% a.m.
+2022-10-01,0.59,433,ipca_mensal,% a.m.
+2022-11-01,0.41,433,ipca_mensal,% a.m.
+2022-12-01,0.62,433,ipca_mensal,% a.m.
+2023-01-01,0.53,433,ipca_mensal,% a.m.
+2023-02-01,0.84,433,ipca_mensal,% a.m.
+2023-03-01,0.71,433,ipca_mensal,% a.m.
+2023-04-01,0.61,433,ipca_mensal,% a.m.
+2023-05-01,0.23,433,ipca_mensal,% a.m.
+2023-06-01,-0.08,433,ipca_mensal,% a.m.
+2023-07-01,0.12,433,ipca_mensal,% a.m.
+2023-08-01,0.23,433,ipca_mensal,% a.m.
+2023-09-01,0.26,433,ipca_mensal,% a.m.
+2023-10-01,0.24,433,ipca_mensal,% a.m.
+2023-11-01,0.28,433,ipca_mensal,% a.m.
+2023-12-01,0.56,433,ipca_mensal,% a.m.
+2024-01-01,0.42,433,ipca_mensal,% a.m.
+2024-02-01,0.83,433,ipca_mensal,% a.m.
+2024-03-01,0.16,433,ipca_mensal,% a.m.
+2024-04-01,0.38,433,ipca_mensal,% a.m.
+2024-05-01,0.46,433,ipca_mensal,% a.m.
+2024-06-01,0.21,433,ipca_mensal,% a.m.
+2024-07-01,0.38,433,ipca_mensal,% a.m.
+2024-08-01,-0.02,433,ipca_mensal,% a.m.
+2024-09-01,0.44,433,ipca_mensal,% a.m.
+2024-10-01,0.56,433,ipca_mensal,% a.m.
+2024-11-01,0.39,433,ipca_mensal,% a.m.
+2024-12-01,0.52,433,ipca_mensal,% a.m.
+2025-01-01,0.16,433,ipca_mensal,% a.m.
+2025-02-01,1.31,433,ipca_mensal,% a.m.
+2025-03-01,0.56,433,ipca_mensal,% a.m.
+2025-04-01,0.43,433,ipca_mensal,% a.m.
+2025-05-01,0.26,433,ipca_mensal,% a.m.
+2025-06-01,0.24,433,ipca_mensal,% a.m.
+2025-07-01,0.26,433,ipca_mensal,% a.m.
+2025-08-01,-0.11,433,ipca_mensal,% a.m.
+2025-09-01,0.48,433,ipca_mensal,% a.m.
+2025-10-01,0.09,433,ipca_mensal,% a.m.
+2025-11-01,0.18,433,ipca_mensal,% a.m.
+2025-12-01,0.33,433,ipca_mensal,% a.m.
+2026-01-01,0.33,433,ipca_mensal,% a.m.
+2026-02-01,0.7,433,ipca_mensal,% a.m.
+2026-03-01,0.88,433,ipca_mensal,% a.m.
+2026-04-01,0.67,433,ipca_mensal,% a.m.
+2026-05-01,0.58,433,ipca_mensal,% a.m.
+2026-06-01,0.16,433,ipca_mensal,% a.m.
+2026-07-01,0.07,433,ipca_mensal,% a.m.
+2026-08-01,-0.32,433,ipca_mensal,% a.m.
+2026-09-01,0.82,433,ipca_mensal,% a.m.
+2026-10-01,0.14,433,ipca_mensal,% a.m.
+2015-01-01,2.02,21083,inadimplencia_pj,%
+2015-02-01,2.03,21083,inadimplencia_pj,%
+2015-03-01,2.1,21083,inadimplencia_pj,%
+2015-04-01,2.28,21083,inadimplencia_pj,%
+2015-05-01,2.31,21083,inadimplencia_pj,%
+2015-06-01,2.3,21083,inadimplencia_pj,%
+2015-07-01,2.41,21083,inadimplencia_pj,%
+2015-08-01,2.48,21083,inadimplencia_pj,%
+2015-09-01,2.43,21083,inadimplencia_pj,%
+2015-10-01,2.53,21083,inadimplencia_pj,%
+2015-11-01,2.68,21083,inadimplencia_pj,%
+2015-12-01,2.66,21083,inadimplencia_pj,%
+2016-01-01,2.77,21083,inadimplencia_pj,%
+2016-02-01,2.83,21083,inadimplencia_pj,%
+2016-03-01,2.9,21083,inadimplencia_pj,%
+2016-04-01,3.1,21083,inadimplencia_pj,%
+2016-05-01,3.24,21083,inadimplencia_pj,%
+2016-06-01,3.06,21083,inadimplencia_pj,%
+2016-07-01,3.09,21083,inadimplencia_pj,%
+2016-08-01,3.23,21083,inadimplencia_pj,%
+2016-09-01,3.25,21083,inadimplencia_pj,%
+2016-10-01,3.58,21083,inadimplencia_pj,%
+2016-11-01,3.56,21083,inadimplencia_pj,%
+2016-12-01,3.5,21083,inadimplencia_pj,%
+2017-01-01,3.53,21083,inadimplencia_pj,%
+2017-02-01,3.57,21083,inadimplencia_pj,%
+2017-03-01,3.76,21083,inadimplencia_pj,%
+2017-04-01,3.89,21083,inadimplencia_pj,%
+2017-05-01,4.06,21083,inadimplencia_pj,%
+2017-06-01,3.68,21083,inadimplencia_pj,%
+2017-07-01,3.47,21083,inadimplencia_pj,%
+2017-08-01,3.52,21083,inadimplencia_pj,%
+2017-09-01,3.36,21083,inadimplencia_pj,%
+2017-10-01,3.42,21083,inadimplencia_pj,%
+2017-11-01,3.34,21083,inadimplencia_pj,%
+2017-12-01,2.97,21083,inadimplencia_pj,%
+2018-01-01,3.13,21083,inadimplencia_pj,%
+2018-02-01,3.17,21083,inadimplencia_pj,%
+2018-03-01,2.94,21083,inadimplencia_pj,%
+2018-04-01,3.03,21083,inadimplencia_pj,%
+2018-05-01,3.04,21083,inadimplencia_pj,%
+2018-06-01,2.61,21083,inadimplencia_pj,%
+2018-07-01,2.51,21083,inadimplencia_pj,%
+2018-08-01,2.56,21083,inadimplencia_pj,%
+2018-09-01,2.66,21083,inadimplencia_pj,%
+2018-10-01,2.72,21083,inadimplencia_pj,%
+2018-11-01,2.61,21083,inadimplencia_pj,%
+2018-12-01,2.47,21083,inadimplencia_pj,%
+2019-01-01,2.53,21083,inadimplencia_pj,%
+2019-02-01,2.46,21083,inadimplencia_pj,%
+2019-03-01,2.55,21083,inadimplencia_pj,%
+2019-04-01,2.63,21083,inadimplencia_pj,%
+2019-05-01,2.63,21083,inadimplencia_pj,%
+2019-06-01,2.45,21083,inadimplencia_pj,%
+2019-07-01,2.57,21083,inadimplencia_pj,%
+2019-08-01,2.51,21083,inadimplencia_pj,%
+2019-09-01,2.45,21083,inadimplencia_pj,%
+2019-10-01,2.41,21083,inadimplencia_pj,%
+2019-11-01,2.33,21083,inadimplencia_pj,%
+2019-12-01,2.21,21083,inadimplencia_pj,%
+2020-01-01,2.26,21083,inadimplencia_pj,%
+2020-02-01,2.23,21083,inadimplencia_pj,%
+2020-03-01,2.22,21083,inadimplencia_pj,%
+2020-04-01,2.35,21083,inadimplencia_pj,%
+2020-05-01,2.36,21083,inadimplencia_pj,%
+2020-06-01,2.02,21083,inadimplencia_pj,%
+2020-07-01,1.92,21083,inadimplencia_pj,%
+2020-08-01,1.87,21083,inadimplencia_pj,%
+2020-09-01,1.58,21083,inadimplencia_pj,%
+2020-10-01,1.51,21083,inadimplencia_pj,%
+2020-11-01,1.33,21083,inadimplencia_pj,%
+2020-12-01,1.24,21083,inadimplencia_pj,%
+2021-01-01,1.25,21083,inadimplencia_pj,%
+2021-02-01,1.4,21083,inadimplencia_pj,%
+2021-03-01,1.25,21083,inadimplencia_pj,%
+2021-04-01,1.33,21083,inadimplencia_pj,%
+2021-05-01,1.57,21083,inadimplencia_pj,%
+2021-06-01,1.54,21083,inadimplencia_pj,%
+2021-07-01,1.58,21083,inadimplencia_pj,%
+2021-08-01,1.56,21083,inadimplencia_pj,%
+2021-09-01,1.43,21083,inadimplencia_pj,%
+2021-10-01,1.43,21083,inadimplencia_pj,%
+2021-11-01,1.46,21083,inadimplencia_pj,%
+2021-12-01,1.4,21083,inadimplencia_pj,%
+2022-01-01,1.46,21083,inadimplencia_pj,%
+2022-02-01,1.44,21083,inadimplencia_pj,%
+2022-03-01,1.55,21083,inadimplencia_pj,%
+2022-04-01,1.57,21083,inadimplencia_pj,%
+2022-05-01,1.57,21083,inadimplencia_pj,%
+2022-06-01,1.52,21083,inadimplencia_pj,%
+2022-07-01,1.6,21083,inadimplencia_pj,%
+2022-08-01,1.62,21083,inadimplencia_pj,%
+2022-09-01,1.65,21083,inadimplencia_pj,%
+2022-10-01,1.77,21083,inadimplencia_pj,%
+2022-11-01,1.81,21083,inadimplencia_pj,%
+2022-12-01,1.8,21083,inadimplencia_pj,%
+2023-01-01,1.94,21083,inadimplencia_pj,%
+2023-02-01,2.17,21083,inadimplencia_pj,%
+2023-03-01,2.2,21083,inadimplencia_pj,%
+2023-04-01,2.45,21083,inadimplencia_pj,%
+2023-05-01,2.58,21083,inadimplencia_pj,%
+2023-06-01,2.63,21083,inadimplencia_pj,%
+2023-07-01,2.73,21083,inadimplencia_pj,%
+2023-08-01,2.82,21083,inadimplencia_pj,%
+2023-09-01,2.82,21083,inadimplencia_pj,%
+2023-10-01,2.92,21083,inadimplencia_pj,%
+2023-11-01,2.99,21083,inadimplencia_pj,%
+2023-12-01,2.59,21083,inadimplencia_pj,%
+2024-01-01,2.77,21083,inadimplencia_pj,%
+2024-02-01,2.76,21083,inadimplencia_pj,%
+2024-03-01,2.71,21083,inadimplencia_pj,%
+2024-04-01,2.76,21083,inadimplencia_pj,%
+2024-05-01,2.8,21083,inadimplencia_pj,%
+2024-06-01,2.64,21083,inadimplencia_pj,%
+2024-07-01,2.52,21083,inadimplencia_pj,%
+2024-08-01,2.55,21083,inadimplencia_pj,%
+2024-09-01,2.56,21083,inadimplencia_pj,%
+2024-10-01,2.52,21083,inadimplencia_pj,%
+2024-11-01,2.5,21083,inadimplencia_pj,%
+2024-12-01,2.21,21083,inadimplencia_pj,%
+2025-01-01,2.43,21083,inadimplencia_pj,%
+2025-02-01,2.52,21083,inadimplencia_pj,%
+2025-03-01,2.49,21083,inadimplencia_pj,%
+2025-04-01,2.72,21083,inadimplencia_pj,%
+2025-05-01,2.67,21083,inadimplencia_pj,%
+2025-06-01,2.67,21083,inadimplencia_pj,%
+2025-07-01,2.79,21083,inadimplencia_pj,%
+2025-08-01,2.85,21083,inadimplencia_pj,%
+2025-09-01,2.77,21083,inadimplencia_pj,%
+2025-10-01,2.82,21083,inadimplencia_pj,%
+2025-11-01,2.75,21083,inadimplencia_pj,%
+2025-12-01,2.7,21083,inadimplencia_pj,%
+2026-01-01,2.87,21083,inadimplencia_pj,%
+2026-02-01,3.07,21083,inadimplencia_pj,%
+2026-03-01,3.06,21083,inadimplencia_pj,%
+2026-04-01,3.15,21083,inadimplencia_pj,%
+2026-05-01,3.25,21083,inadimplencia_pj,%
+2026-06-01,3.18,21083,inadimplencia_pj,%
+2026-07-01,3.32,21083,inadimplencia_pj,%
+2026-08-01,3.36,21083,inadimplencia_pj,%
+2026-09-01,3.28,21083,inadimplencia_pj,%
+2015-01-01,3.78,21084,inadimplencia_pf,%
+2015-02-01,3.85,21084,inadimplencia_pf,%
+2015-03-01,3.71,21084,inadimplencia_pf,%
+2015-04-01,3.79,21084,inadimplencia_pf,%
+2015-05-01,3.89,21084,inadimplencia_pf,%
+2015-06-01,3.7,21084,inadimplencia_pf,%
+2015-07-01,3.81,21084,inadimplencia_pf,%
+2015-08-01,3.92,21084,inadimplencia_pf,%
+2015-09-01,3.99,21084,inadimplencia_pf,%
+2015-10-01,4.12,21084,inadimplencia_pf,%
+2015-11-01,4.24,21084,inadimplencia_pf,%
+2015-12-01,4.27,21084,inadimplencia_pf,%
+2016-01-01,4.34,21084,inadimplencia_pf,%
+2016-02-01,4.35,21084,inadimplencia_pf,%
+2016-03-01,4.3,21084,inadimplencia_pf,%
+2016-04-01,4.35,21084,inadimplencia_pf,%
+2016-05-01,4.37,21084,inadimplencia_pf,%
+2016-06-01,4.1,21084,inadimplencia_pf,%
+2016-07-01,4.15,21084,inadimplencia_pf,%
+2016-08-01,4.17,21084,inadimplencia_pf,%
+2016-09-01,4.23,21084,inadimplencia_pf,%
+2016-10-01,4.23,21084,inadimplencia_pf,%
+2016-11-01,4.15,21084,inadimplencia_pf,%
+2016-12-01,4.0,21084,inadimplencia_pf,%
+2017-01-01,4.04,21084,inadimplencia_pf,%
+2017-02-01,4.06,21084,inadimplencia_pf,%
+2017-03-01,4.06,21084,inadimplencia_pf,%
+2017-04-01,4.09,21084,inadimplencia_pf,%
+2017-05-01,4.16,21084,inadimplencia_pf,%
+2017-06-01,3.91,21084,inadimplencia_pf,%
+2017-07-01,4.01,21084,inadimplencia_pf,%
+2017-08-01,3.99,21084,inadimplencia_pf,%
+2017-09-01,3.93,21084,inadimplencia_pf,%
+2017-10-01,3.93,21084,inadimplencia_pf,%
+2017-11-01,3.83,21084,inadimplencia_pf,%
+2017-12-01,3.58,21084,inadimplencia_pf,%
+2018-01-01,3.78,21084,inadimplencia_pf,%
+2018-02-01,3.76,21084,inadimplencia_pf,%
+2018-03-01,3.7,21084,inadimplencia_pf,%
+2018-04-01,3.68,21084,inadimplencia_pf,%
+2018-05-01,3.64,21084,inadimplencia_pf,%
+2018-06-01,3.52,21084,inadimplencia_pf,%
+2018-07-01,3.56,21084,inadimplencia_pf,%
+2018-08-01,3.55,21084,inadimplencia_pf,%
+2018-09-01,3.47,21084,inadimplencia_pf,%
+2018-10-01,3.43,21084,inadimplencia_pf,%
+2018-11-01,3.35,21084,inadimplencia_pf,%
+2018-12-01,3.3,21084,inadimplencia_pf,%
+2019-01-01,3.39,21084,inadimplencia_pf,%
+2019-02-01,3.35,21084,inadimplencia_pf,%
+2019-03-01,3.41,21084,inadimplencia_pf,%
+2019-04-01,3.41,21084,inadimplencia_pf,%
+2019-05-01,3.46,21084,inadimplencia_pf,%
+2019-06-01,3.4,21084,inadimplencia_pf,%
+2019-07-01,3.49,21084,inadimplencia_pf,%
+2019-08-01,3.53,21084,inadimplencia_pf,%
+2019-09-01,3.6,21084,inadimplencia_pf,%
+2019-10-01,3.58,21084,inadimplencia_pf,%
+2019-11-01,3.59,21084,inadimplencia_pf,%
+2019-12-01,3.56,21084,inadimplencia_pf,%
+2020-01-01,3.63,21084,inadimplencia_pf,%
+2020-02-01,3.72,21084,inadimplencia_pf,%
+2020-03-01,4.0,21084,inadimplencia_pf,%
+2020-04-01,4.13,21084,inadimplencia_pf,%
+2020-05-01,4.04,21084,inadimplencia_pf,%
+2020-06-01,3.67,21084,inadimplencia_pf,%
+2020-07-01,3.52,21084,inadimplencia_pf,%
+2020-08-01,3.35,21084,inadimplencia_pf,%
+2020-09-01,3.19,21084,inadimplencia_pf,%
+2020-10-01,3.11,21084,inadimplencia_pf,%
+2020-11-01,3.02,21084,inadimplencia_pf,%
+2020-12-01,2.89,21084,inadimplencia_pf,%
+2021-01-01,2.93,21084,inadimplencia_pf,%
+2021-02-01,2.97,21084,inadimplencia_pf,%
+2021-03-01,2.92,21084,inadimplencia_pf,%
+2021-04-01,2.95,21084,inadimplencia_pf,%
+2021-05-01,3.01,21084,inadimplencia_pf,%
+2021-06-01,2.91,21084,inadimplencia_pf,%
+2021-07-01,2.94,21084,inadimplencia_pf,%
+2021-08-01,2.96,21084,inadimplencia_pf,%
+2021-09-01,3.01,21084,inadimplencia_pf,%
+2021-10-01,2.99,21084,inadimplencia_pf,%
+2021-11-01,3.01,21084,inadimplencia_pf,%
+2021-12-01,3.05,21084,inadimplencia_pf,%
+2022-01-01,3.26,21084,inadimplencia_pf,%
+2022-02-01,3.38,21084,inadimplencia_pf,%
+2022-03-01,3.45,21084,inadimplencia_pf,%
+2022-04-01,3.54,21084,inadimplencia_pf,%
+2022-05-01,3.65,21084,inadimplencia_pf,%
+2022-06-01,3.57,21084,inadimplencia_pf,%
+2022-07-01,3.71,21084,inadimplencia_pf,%
+2022-08-01,3.78,21084,inadimplencia_pf,%
+2022-09-01,3.8,21084,inadimplencia_pf,%
+2022-10-01,3.89,21084,inadimplencia_pf,%
+2022-11-01,3.92,21084,inadimplencia_pf,%
+2022-12-01,3.94,21084,inadimplencia_pf,%
+2023-01-01,4.11,21084,inadimplencia_pf,%
+2023-02-01,4.16,21084,inadimplencia_pf,%
+2023-03-01,4.11,21084,inadimplencia_pf,%
+2023-04-01,4.26,21084,inadimplencia_pf,%
+2023-05-01,4.35,21084,inadimplencia_pf,%
+2023-06-01,4.25,21084,inadimplencia_pf,%
+2023-07-01,4.22,21084,inadimplencia_pf,%
+2023-08-01,4.12,21084,inadimplencia_pf,%
+2023-09-01,4.0,21084,inadimplencia_pf,%
+2023-10-01,3.97,21084,inadimplencia_pf,%
+2023-11-01,3.88,21084,inadimplencia_pf,%
+2023-12-01,3.75,21084,inadimplencia_pf,%
+2024-01-01,3.76,21084,inadimplencia_pf,%
+2024-02-01,3.76,21084,inadimplencia_pf,%
+2024-03-01,3.71,21084,inadimplencia_pf,%
+2024-04-01,3.75,21084,inadimplencia_pf,%
+2024-05-01,3.82,21084,inadimplencia_pf,%
+2024-06-01,3.71,21084,inadimplencia_pf,%
+2024-07-01,3.78,21084,inadimplencia_pf,%
+2024-08-01,3.82,21084,inadimplencia_pf,%
+2024-09-01,3.83,21084,inadimplencia_pf,%
+2024-10-01,3.79,21084,inadimplencia_pf,%
+2024-11-01,3.75,21084,inadimplencia_pf,%
+2024-12-01,3.63,21084,inadimplencia_pf,%
+2025-01-01,3.89,21084,inadimplencia_pf,%
+2025-02-01,3.96,21084,inadimplencia_pf,%
+2025-03-01,4.03,21084,inadimplencia_pf,%
+2025-04-01,4.25,21084,inadimplencia_pf,%
+2025-05-01,4.36,21084,inadimplencia_pf,%
+2025-06-01,4.41,21084,inadimplencia_pf,%
+2025-07-01,4.66,21084,inadimplencia_pf,%
+2025-08-01,4.92,21084,inadimplencia_pf,%
+2025-09-01,4.89,21084,inadimplencia_pf,%
+2025-10-01,4.99,21084,inadimplencia_pf,%
+2025-11-01,5.12,21084,inadimplencia_pf,%
+2025-12-01,5.12,21084,inadimplencia_pf,%
+2026-01-01,5.38,21084,inadimplencia_pf,%
+2026-02-01,5.56,21084,inadimplencia_pf,%
+2026-03-01,5.39,21084,inadimplencia_pf,%
+2026-04-01,5.51,21084,inadimplencia_pf,%
+2026-05-01,5.63,21084,inadimplencia_pf,%
+2026-06-01,5.43,21084,inadimplencia_pf,%
+2026-07-01,5.8,21084,inadimplencia_pf,%
+2026-08-01,6.04,21084,inadimplencia_pf,%
+2026-09-01,5.99,21084,inadimplencia_pf,%
+2015-01-01,127719.0,20632,concessoes_pj,R$ milhões
+2015-02-01,115217.0,20632,concessoes_pj,R$ milhões
+2015-03-01,154519.0,20632,concessoes_pj,R$ milhões
+2015-04-01,140443.0,20632,concessoes_pj,R$ milhões
+2015-05-01,139817.0,20632,concessoes_pj,R$ milhões
+2015-06-01,155896.0,20632,concessoes_pj,R$ milhões
+2015-07-01,137764.0,20632,concessoes_pj,R$ milhões
+2015-08-01,128975.0,20632,concessoes_pj,R$ milhões
+2015-09-01,146593.0,20632,concessoes_pj,R$ milhões
+2015-10-01,136153.0,20632,concessoes_pj,R$ milhões
+2015-11-01,136433.0,20632,concessoes_pj,R$ milhões
+2015-12-01,172212.0,20632,concessoes_pj,R$ milhões
+2016-01-01,107081.0,20632,concessoes_pj,R$ milhões
+2016-02-01,108934.0,20632,concessoes_pj,R$ milhões
+2016-03-01,133160.0,20632,concessoes_pj,R$ milhões
+2016-04-01,119113.0,20632,concessoes_pj,R$ milhões
+2016-05-01,124874.0,20632,concessoes_pj,R$ milhões
+2016-06-01,134161.0,20632,concessoes_pj,R$ milhões
+2016-07-01,109861.0,20632,concessoes_pj,R$ milhões
+2016-08-01,115518.0,20632,concessoes_pj,R$ milhões
+2016-09-01,124094.0,20632,concessoes_pj,R$ milhões
+2016-10-01,113023.0,20632,concessoes_pj,R$ milhões
+2016-11-01,119955.0,20632,concessoes_pj,R$ milhões
+2016-12-01,145311.0,20632,concessoes_pj,R$ milhões
+2017-01-01,103440.0,20632,concessoes_pj,R$ milhões
+2017-02-01,93635.0,20632,concessoes_pj,R$ milhões
+2017-03-01,130267.0,20632,concessoes_pj,R$ milhões
+2017-04-01,104508.0,20632,concessoes_pj,R$ milhões
+2017-05-01,116513.0,20632,concessoes_pj,R$ milhões
+2017-06-01,134972.0,20632,concessoes_pj,R$ milhões
+2017-07-01,103583.0,20632,concessoes_pj,R$ milhões
+2017-08-01,119336.0,20632,concessoes_pj,R$ milhões
+2017-09-01,116353.0,20632,concessoes_pj,R$ milhões
+2017-10-01,117690.0,20632,concessoes_pj,R$ milhões
+2017-11-01,121997.0,20632,concessoes_pj,R$ milhões
+2017-12-01,156386.0,20632,concessoes_pj,R$ milhões
+2018-01-01,110027.0,20632,concessoes_pj,R$ milhões
+2018-02-01,114345.0,20632,concessoes_pj,R$ milhões
+2018-03-01,135980.0,20632,concessoes_pj,R$ milhões
+2018-04-01,132596.0,20632,concessoes_pj,R$ milhões
+2018-05-01,131160.0,20632,concessoes_pj,R$ milhões
+2018-06-01,142463.0,20632,concessoes_pj,R$ milhões
+2018-07-01,126993.0,20632,concessoes_pj,R$ milhões
+2018-08-01,143241.0,20632,concessoes_pj,R$ milhões
+2018-09-01,130191.0,20632,concessoes_pj,R$ milhões
+2018-10-01,136620.0,20632,concessoes_pj,R$ milhões
+2018-11-01,134463.0,20632,concessoes_pj,R$ milhões
+2018-12-01,170266.0,20632,concessoes_pj,R$ milhões
+2019-01-01,123927.0,20632,concessoes_pj,R$ milhões
+2019-02-01,128877.0,20632,concessoes_pj,R$ milhões
+2019-03-01,141651.0,20632,concessoes_pj,R$ milhões
+2019-04-01,135292.0,20632,concessoes_pj,R$ milhões
+2019-05-01,151259.0,20632,concessoes_pj,R$ milhões
+2019-06-01,151511.0,20632,concessoes_pj,R$ milhões
+2019-07-01,143206.0,20632,concessoes_pj,R$ milhões
+2019-08-01,149955.0,20632,concessoes_pj,R$ milhões
+2019-09-01,158531.0,20632,concessoes_pj,R$ milhões
+2019-10-01,156063.0,20632,concessoes_pj,R$ milhões
+2019-11-01,158607.0,20632,concessoes_pj,R$ milhões
+2019-12-01,197795.0,20632,concessoes_pj,R$ milhões
+2020-01-01,136720.0,20632,concessoes_pj,R$ milhões
+2020-02-01,139105.0,20632,concessoes_pj,R$ milhões
+2020-03-01,222571.0,20632,concessoes_pj,R$ milhões
+2020-04-01,155083.0,20632,concessoes_pj,R$ milhões
+2020-05-01,140475.0,20632,concessoes_pj,R$ milhões
+2020-06-01,155954.0,20632,concessoes_pj,R$ milhões
+2020-07-01,167514.0,20632,concessoes_pj,R$ milhões
+2020-08-01,162733.0,20632,concessoes_pj,R$ milhões
+2020-09-01,178663.0,20632,concessoes_pj,R$ milhões
+2020-10-01,154617.0,20632,concessoes_pj,R$ milhões
+2020-11-01,170908.0,20632,concessoes_pj,R$ milhões
+2020-12-01,189332.0,20632,concessoes_pj,R$ milhões
+2021-01-01,121829.0,20632,concessoes_pj,R$ milhões
+2021-02-01,138130.0,20632,concessoes_pj,R$ milhões
+2021-03-01,203291.0,20632,concessoes_pj,R$ milhões
+2021-04-01,174292.0,20632,concessoes_pj,R$ milhões
+2021-05-01,178912.0,20632,concessoes_pj,R$ milhões
+2021-06-01,200054.0,20632,concessoes_pj,R$ milhões
+2021-07-01,188014.0,20632,concessoes_pj,R$ milhões
+2021-08-01,189127.0,20632,concessoes_pj,R$ milhões
+2021-09-01,208992.0,20632,concessoes_pj,R$ milhões
+2021-10-01,193742.0,20632,concessoes_pj,R$ milhões
+2021-11-01,205002.0,20632,concessoes_pj,R$ milhões
+2021-12-01,245662.0,20632,concessoes_pj,R$ milhões
+2022-01-01,185292.0,20632,concessoes_pj,R$ milhões
+2022-02-01,192368.0,20632,concessoes_pj,R$ milhões
+2022-03-01,257795.0,20632,concessoes_pj,R$ milhões
+2022-04-01,211435.0,20632,concessoes_pj,R$ milhões
+2022-05-01,233711.0,20632,concessoes_pj,R$ milhões
+2022-06-01,237261.0,20632,concessoes_pj,R$ milhões
+2022-07-01,217421.0,20632,concessoes_pj,R$ milhões
+2022-08-01,244542.0,20632,concessoes_pj,R$ milhões
+2022-09-01,245787.0,20632,concessoes_pj,R$ milhões
+2022-10-01,218632.0,20632,concessoes_pj,R$ milhões
+2022-11-01,224925.0,20632,concessoes_pj,R$ milhões
+2022-12-01,268687.0,20632,concessoes_pj,R$ milhões
+2023-01-01,202203.0,20632,concessoes_pj,R$ milhões
+2023-02-01,185439.0,20632,concessoes_pj,R$ milhões
+2023-03-01,247408.0,20632,concessoes_pj,R$ milhões
+2023-04-01,189555.0,20632,concessoes_pj,R$ milhões
+2023-05-01,224848.0,20632,concessoes_pj,R$ milhões
+2023-06-01,243489.0,20632,concessoes_pj,R$ milhões
+2023-07-01,207839.0,20632,concessoes_pj,R$ milhões
+2023-08-01,234528.0,20632,concessoes_pj,R$ milhões
+2023-09-01,246787.0,20632,concessoes_pj,R$ milhões
+2023-10-01,229029.0,20632,concessoes_pj,R$ milhões
+2023-11-01,235702.0,20632,concessoes_pj,R$ milhões
+2023-12-01,286894.0,20632,concessoes_pj,R$ milhões
+2024-01-01,219926.0,20632,concessoes_pj,R$ milhões
+2024-02-01,214350.0,20632,concessoes_pj,R$ milhões
+2024-03-01,264161.0,20632,concessoes_pj,R$ milhões
+2024-04-01,247448.0,20632,concessoes_pj,R$ milhões
+2024-05-01,245576.0,20632,concessoes_pj,R$ milhões
+2024-06-01,280315.0,20632,concessoes_pj,R$ milhões
+2024-07-01,268876.0,20632,concessoes_pj,R$ milhões
+2024-08-01,279944.0,20632,concessoes_pj,R$ milhões
+2024-09-01,291116.0,20632,concessoes_pj,R$ milhões
+2024-10-01,290629.0,20632,concessoes_pj,R$ milhões
+2024-11-01,277465.0,20632,concessoes_pj,R$ milhões
+2024-12-01,340808.0,20632,concessoes_pj,R$ milhões
+2025-01-01,254132.0,20632,concessoes_pj,R$ milhões
+2025-02-01,262741.0,20632,concessoes_pj,R$ milhões
+2025-03-01,283032.0,20632,concessoes_pj,R$ milhões
+2025-04-01,295572.0,20632,concessoes_pj,R$ milhões
+2025-05-01,300034.0,20632,concessoes_pj,R$ milhões
+2025-06-01,291040.0,20632,concessoes_pj,R$ milhões
+2025-07-01,284467.0,20632,concessoes_pj,R$ milhões
+2025-08-01,276003.0,20632,concessoes_pj,R$ milhões
+2025-09-01,321483.0,20632,concessoes_pj,R$ milhões
+2025-10-01,298284.0,20632,concessoes_pj,R$ milhões
+2025-11-01,274299.0,20632,concessoes_pj,R$ milhões
+2025-12-01,396721.0,20632,concessoes_pj,R$ milhões
+2026-01-01,285024.0,20632,concessoes_pj,R$ milhões
+2026-02-01,272549.0,20632,concessoes_pj,R$ milhões
+2026-03-01,344943.0,20632,concessoes_pj,R$ milhões
+2026-04-01,314249.0,20632,concessoes_pj,R$ milhões
+2026-05-01,324375.0,20632,concessoes_pj,R$ milhões
+2026-06-01,362748.0,20632,concessoes_pj,R$ milhões
+2026-07-01,329475.0,20632,concessoes_pj,R$ milhões
+2026-08-01,337783.0,20632,concessoes_pj,R$ milhões
+2026-09-01,353698.0,20632,concessoes_pj,R$ milhões
