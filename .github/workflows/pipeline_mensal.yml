@@ -1,0 +1,122 @@
+# Pipeline mensal: BCB -> testes -> Databricks
+#
+#   1. testa as transformações (sem internet)
+#   2. coleta os dados nas APIs do BCB e gera o gabarito
+#   3. testa o SQL com os dados novos (DuckDB, local)
+#   4. envia os 3 arquivos para o volume do Databricks
+#   5. dispara o Job do Databricks (bronze -> checagens -> silver -> gold -> checagens)
+#      e só marca sucesso se o Job terminar com SUCCESS
+#
+# Roda sozinho todo dia 28 (dados de crédito e Pix do mês anterior já publicados)
+# ou manualmente: aba Actions -> "Pipeline mensal" -> Run workflow.
+#
+# Secrets necessários (Settings -> Secrets and variables -> Actions):
+#   DATABRICKS_HOST   endereço do workspace (https://dbc-....cloud.databricks.com)
+#   DATABRICKS_TOKEN  token com escopos "files" e "jobs" apenas (privilégio mínimo)
+
+name: Pipeline mensal (BCB -> Databricks)
+
+on:
+  schedule:
+    - cron: "23 13 28 * *"   # dia 28, 13:23 UTC = 10:23 em Brasília
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:                 # nunca duas execuções ao mesmo tempo
+  group: pipeline-bcb
+  cancel-in-progress: false
+
+env:
+  DATABRICKS_JOB_ID: "522082565358792"
+  VOLUME: dbfs:/Volumes/workspace/bcb/landing
+
+jobs:
+  pipeline:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Instalar dependências
+        run: pip install -r requirements.txt
+
+      - name: 1. Testar as transformações
+        run: pytest tests/test_transformacoes.py -v
+
+      - name: 2. Coletar dados do BCB
+        run: python src/coletar_dados.py
+
+      - name: 3. Testar o SQL com os dados novos (DuckDB)
+        run: pytest -v
+
+      - name: Resumo da coleta
+        run: |
+          python - <<'PY' >> "$GITHUB_STEP_SUMMARY"
+          import pandas as pd
+          sgs = pd.read_csv("data/processed/series_sgs_longo.csv", parse_dates=["data"])
+          pix = pd.read_csv("data/processed/pix_por_natureza.csv", dtype={"ano_mes": str})
+          gab = pd.read_csv("data/processed/gabarito.csv")
+          print("## Coleta")
+          print(f"- SGS: {len(sgs)} linhas, {sgs['serie'].nunique()} séries, até {sgs['data'].max():%m/%Y}")
+          print(f"- Pix: {pix['ano_mes'].nunique()} meses, de {pix['ano_mes'].min()} a {pix['ano_mes'].max()}")
+          print(f"- Gabarito: {len(gab)} checagens")
+          PY
+
+      - uses: databricks/setup-cli@main
+
+      - name: 4. Enviar arquivos para o volume do Databricks
+        env:
+          DATABRICKS_HOST: ${{ secrets.DATABRICKS_HOST }}
+          DATABRICKS_TOKEN: ${{ secrets.DATABRICKS_TOKEN }}
+        run: |
+          for arquivo in series_sgs_longo.csv pix_detalhado.parquet gabarito.csv; do
+            databricks fs cp --overwrite "data/processed/$arquivo" "$VOLUME/$arquivo"
+            echo "enviado: $arquivo"
+          done
+
+      - name: 5. Rodar o Job do Databricks e conferir o resultado
+        env:
+          DATABRICKS_HOST: ${{ secrets.DATABRICKS_HOST }}
+          DATABRICKS_TOKEN: ${{ secrets.DATABRICKS_TOKEN }}
+        run: |
+          set +e
+          databricks jobs run-now "$DATABRICKS_JOB_ID" --timeout 30m -o json > execucao_job.json
+          codigo=$?
+          set -e
+          # "Terminar" não é "dar certo": confere explicitamente se o resultado foi SUCCESS
+          python - <<'PY'
+          import json, os, sys
+          texto = open("execucao_job.json").read().strip()
+          if not texto:
+              sys.exit("O Databricks não devolveu informações da execução.")
+          run = json.loads(texto)
+          resultado = run.get("state", {}).get("result_state") \
+              or run.get("status", {}).get("termination_details", {}).get("code")
+          url = run.get("run_page_url", "")
+          with open(os.environ["GITHUB_STEP_SUMMARY"], "a") as resumo:
+              resumo.write(f"## Job do Databricks\n- Resultado: **{resultado}**\n- Execução: {url}\n")
+          print("Resultado do Job:", resultado, url)
+          if resultado != "SUCCESS":
+              sys.exit(f"O Job terminou com {resultado}. Veja os detalhes em: {url}")
+          PY
+          exit $codigo
+
+      - name: Guardar arquivos da execução (auditoria, 90 dias)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: execucao-${{ github.run_number }}
+          retention-days: 90
+          if-no-files-found: ignore
+          path: |
+            data/processed/gabarito.csv
+            data/processed/series_sgs_longo.csv
+            data/processed/pix_por_natureza.csv
+            execucao_job.json

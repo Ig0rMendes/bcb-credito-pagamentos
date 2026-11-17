@@ -1,5 +1,8 @@
 # Crédito e pagamentos das empresas no Brasil
 
+[![Testes](https://github.com/Ig0rMendes/bcb-credito-pagamentos/actions/workflows/testes.yml/badge.svg)](https://github.com/Ig0rMendes/bcb-credito-pagamentos/actions/workflows/testes.yml)
+[![Pipeline mensal](https://github.com/Ig0rMendes/bcb-credito-pagamentos/actions/workflows/pipeline_mensal.yml/badge.svg)](https://github.com/Ig0rMendes/bcb-credito-pagamentos/actions/workflows/pipeline_mensal.yml)
+
 > **Pergunta de negócio:** como os juros afetam a inadimplência das empresas, e como o Pix está mudando a forma como elas pagam?
 
 Projeto em construção, em 3 etapas:
@@ -86,6 +89,29 @@ data/processed/             # CSV/Parquet limpos, prontos para o Databricks
 - **Formas de iniciação do Pix:** só os códigos com descrição nos manuais do BCB foram traduzidos; `APDN` e `APES` ficam marcados como "descrição a confirmar".
 - **Gabarito automático:** as checagens (`sql/03` e `sql/06`) não têm números escritos à mão. A cada coleta, `src/gabarito.py` recalcula com pandas, por outro caminho, os valores que as tabelas devem ter e grava `gabarito.csv`, que vira a tabela `bronze_gabarito`. O SQL mede as tabelas e compara. Datas também não são fixas: o "mês de referência" é o último com inadimplência publicada.
 - **Tolerâncias:** contagens precisam bater exatamente; decimais têm tolerância pequena, porque motores diferentes arredondam a última casa de formas diferentes. A soma do Pix usa tolerância proporcional (1 parte em 1 trilhão do total), porque somar centenas de milhares de decimais em ordens diferentes muda os últimos centavos.
-- **Testes das checagens:** o `pytest` confere que as checagens passam, que todo item do gabarito é conferido pelo SQL e que elas **falham** quando os dados estão incompletos (teste negativo).
+- **Trava nas checagens:** se qualquer checagem falhar, `sql/03` e `sql/06` param com erro (`raise_error`) e dizem qual falhou. No pipeline automático, isso impede que silver e gold sejam reconstruídas em cima de dados com problema. O resultado completo fica nas views `vw_checagens_bronze` e `vw_checagens_silver_gold`.
+- **Testes das checagens:** o `pytest` confere que as checagens passam, que todo item do gabarito é conferido pelo SQL e que elas **param com erro** quando os dados estão incompletos (teste negativo).
 - **Cuidado na leitura:** correlação não prova causa. Juros e inadimplência respondem ao ciclo econômico como um todo.
+
+## Automação
+
+O pipeline roda sozinho todo dia 28 (ou num clique, na aba **Actions**):
+
+```
+GitHub Actions (pipeline_mensal.yml)
+  1. testa as transformações
+  2. coleta os dados nas APIs do BCB e gera o gabarito
+  3. testa o SQL com os dados novos (DuckDB)
+  4. envia os arquivos para o volume do Databricks (Databricks CLI)
+  5. dispara o Job do Databricks  ──►  carregar_bronze → checar_bronze → silver → gold → checar_silver_gold
+     e só marca sucesso se o Job terminar com SUCCESS
+```
+
+- **Por que a coleta roda no GitHub, e não no Databricks:** a versão gratuita do Databricks só acessa um conjunto restrito de sites. Um workflow de teste (`teste_conexao_bcb.yml`) confirmou antes que as APIs do BCB respondem aos servidores do GitHub, incluindo o download completo do Pix.
+- **O Job lê o SQL direto do GitHub** (branch `main`): o que roda na nuvem é sempre a versão versionada, sem copiar e colar.
+- **Disjuntor:** se uma checagem falhar, o Job para antes de reconstruir silver e gold, e o workflow do GitHub fica vermelho com o link da execução.
+- **"Terminar" não é "dar certo":** o workflow confere explicitamente se o Job terminou com `SUCCESS`, porque a CLI pode encerrar sem erro mesmo quando o Job falhou.
+- **Segurança:** o token do Databricks fica nos *secrets* do GitHub (nunca no código), tem validade de 90 dias e só os escopos `files` e `jobs` (privilégio mínimo). Renovar antes de vencer: Settings → Developer → Access tokens no Databricks, e atualizar o secret `DATABRICKS_TOKEN` no GitHub.
+- **Auditoria:** cada execução guarda gabarito, séries e o resultado do Job como artefato por 90 dias.
+- **Testes a cada push** (`testes.yml`): sem os dados, os testes do SQL são pulados e os demais rodam.
 

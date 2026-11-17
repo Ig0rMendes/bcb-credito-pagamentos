@@ -7,7 +7,7 @@ aparece no `pytest`, e não só depois de subir para o Databricks.
 O que é testado:
   - as checagens 03 e 06 passam contra o gabarito que o Python calcula (src/gabarito.py);
   - todo nome de checagem existe dos dois lados (SQL e gabarito);
-  - as checagens FALHAM quando os dados estão errados (teste negativo).
+  - quando os dados estão errados, as checagens PARAM com erro (a trava do Job automático).
 
 Precisa dos dados gerados por `python src/coletar_dados.py`. Sem eles, os testes são pulados.
 """
@@ -41,6 +41,7 @@ def traduzir(sql: str) -> str:
     sql = sql.replace("workspace.bcb.", "")
     sql = sql.replace("explode(sequence(0, 24))", "unnest(generate_series(0, 24))")
     sql = re.sub(r"\nCOMMENT '[^']*'\n", "\n", sql)  # DuckDB não aceita COMMENT no CREATE TABLE
+    sql = sql.replace("raise_error(", "error(")  # nome da função que interrompe a consulta com erro
     return sql
 
 
@@ -97,11 +98,18 @@ def test_todo_item_do_gabarito_e_conferido_pelo_sql(banco):
     assert nomes_gabarito == nomes_sql
 
 
-def test_checagens_acusam_dados_incompletos():
+def test_checagens_param_com_erro_quando_os_dados_estao_incompletos():
     # Simula um upload que perdeu 10 linhas do Pix: o gabarito (feito antes) não bate mais.
+    # No Job automático, o erro impede que as etapas seguintes rodem com dados ruins.
     con = montar_banco(remover_linhas_pix=10)
-    falhas = {linha[0] for linha in rodar(con, "03_checagens_bronze.sql") + rodar(con, "06_checagens_silver_gold.sql")
-              if not linha[-1]}
+    with pytest.raises(duckdb.Error, match="Checagem falhou"):
+        rodar(con, "03_checagens_bronze.sql")
+    with pytest.raises(duckdb.Error, match="Checagem falhou"):
+        rodar(con, "06_checagens_silver_gold.sql")
+    # A view continua disponível para investigar o que falhou
+    falhas = {linha[0] for linha in con.execute(
+        "SELECT checagem FROM vw_checagens_bronze WHERE NOT ok UNION ALL "
+        "SELECT checagem FROM vw_checagens_silver_gold WHERE NOT ok").fetchall()}
     con.close()
     assert "bronze_pix: linhas" in falhas
     assert "silver_pix: linhas" in falhas
