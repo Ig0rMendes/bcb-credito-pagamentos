@@ -9,6 +9,7 @@ import pytest
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "src"))
 from coletar_dados import (  # noqa: E402
+    buscar_json,
     diaria_para_mensal,
     meses_faltando,
     periodos_de_ate_10_anos,
@@ -95,3 +96,37 @@ def test_encontra_mes_faltando_no_meio_da_serie():
     assert meses_faltando(datas) == ["2024-03"]
     completas = pd.Series(pd.to_datetime(["2024-01-01", "2024-02-01", "2024-02-01"]))  # repetidas: Pix tem várias linhas por mês
     assert meses_faltando(completas) == []
+
+
+class RespostaFalsa:
+    """Imita uma resposta HTTP, sem acessar a internet."""
+
+    def __init__(self, texto: str, status: int = 200, tipo: str = "text/html"):
+        self.text, self.content, self.status_code = texto, texto.encode(), status
+        self.headers = {"Content-Type": tipo}
+
+    def raise_for_status(self):
+        pass
+
+    def json(self):
+        import json
+        return json.loads(self.text)
+
+
+def test_erro_mostra_o_que_a_api_devolveu_quando_nao_e_json(monkeypatch):
+    # Caso real da 1ª execução no GitHub Actions: HTTP 200, mas uma página HTML no lugar do JSON.
+    monkeypatch.setattr("coletar_dados.requests.get", lambda *a, **k: RespostaFalsa("<html>Acesso negado</html>"))
+    with pytest.raises(RuntimeError, match="não é JSON.*HTTP 200.*text/html.*Acesso negado"):
+        buscar_json("https://exemplo", {}, tentativas=1)
+
+
+def test_requisicao_se_identifica_com_user_agent_do_projeto(monkeypatch):
+    enviados = {}
+
+    def get_falso(url, params=None, timeout=None, headers=None):
+        enviados.update(headers or {})
+        return RespostaFalsa("[]", tipo="application/json")
+
+    monkeypatch.setattr("coletar_dados.requests.get", get_falso)
+    assert buscar_json("https://exemplo", {}) == []
+    assert enviados["User-Agent"].startswith("bcb-credito-pagamentos/")

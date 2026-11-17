@@ -59,13 +59,35 @@ PIX_INICIO = (2020, 11)  # o Pix começou a operar em novembro de 2020
 # ---------------------------------------------------------------------------
 
 
+# Identificação honesta do cliente. Sem isso, o requests se apresenta como "python-requests/x.y",
+# e alguns sistemas de proteção contra robôs respondem com uma página HTML em vez do JSON
+# (aconteceu na 1ª execução no GitHub Actions, fora do Brasil).
+CABECALHOS = {
+    "User-Agent": "bcb-credito-pagamentos/1.0 (projeto de portfolio; +https://github.com/Ig0rMendes/bcb-credito-pagamentos)",
+    "Accept": "application/json",
+}
+
+
+def ler_json(resposta: requests.Response) -> list | dict:
+    """Converte a resposta em JSON. Se não for JSON, o erro mostra O QUE veio (status, tipo e começo do texto)."""
+    try:
+        return resposta.json()
+    except ValueError as erro:
+        inicio = resposta.text[:300].replace("\n", " ")
+        raise ValueError(
+            f"a resposta não é JSON (HTTP {resposta.status_code}, "
+            f"Content-Type: {resposta.headers.get('Content-Type', '?')}, {len(resposta.content)} bytes). "
+            f"Início da resposta: {inicio!r}"
+        ) from erro
+
+
 def buscar_json(url: str, params: dict, tentativas: int = 3, timeout: int = 60) -> list | dict:
     """Faz a requisição GET e devolve o JSON. Tenta de novo se a API falhar (ela às vezes oscila)."""
     for tentativa in range(1, tentativas + 1):
         try:
-            resposta = requests.get(url, params=params, timeout=timeout)
+            resposta = requests.get(url, params=params, timeout=timeout, headers=CABECALHOS)
             resposta.raise_for_status()
-            return resposta.json()
+            return ler_json(resposta)
         except (requests.RequestException, ValueError) as erro:
             if tentativa == tentativas:
                 raise RuntimeError(f"Falha ao acessar {url} com {params}: {erro}") from erro
