@@ -9,7 +9,7 @@ Duas fontes:
 
 Saídas:
 - data/raw/       -> o JSON exatamente como a API devolveu (para auditoria e reprocessamento)
-- data/processed/ -> tabelas limpas em CSV, prontas para o Databricks e o Power BI
+- data/processed/ -> tabelas limpas (CSV/Parquet) e o gabarito.csv das checagens do Databricks
 
 Como rodar (na pasta do projeto):
     pip install -r requirements.txt
@@ -25,6 +25,8 @@ from pathlib import Path
 
 import pandas as pd
 import requests
+
+from gabarito import gerar_gabarito
 
 # ---------------------------------------------------------------------------
 # Configuração
@@ -229,6 +231,11 @@ def main() -> None:
         # É este que vai para o Databricks (o CSV de ~80 MB falhava no upload pelo navegador).
         pix.assign(data=pix["data"].dt.date).to_parquet(PASTA_PROCESSED / "pix_detalhado.parquet", index=False)
         resumir_pix(pix).to_csv(PASTA_PROCESSED / "pix_por_natureza.csv", index=False)
+
+        # Valores esperados das checagens do Databricks, recalculados a cada coleta
+        gabarito = gerar_gabarito(sgs, pix)
+        gabarito.to_csv(PASTA_PROCESSED / "gabarito.csv", index=False)
+        print(f"  Gabarito: {len(gabarito)} checagens em gabarito.csv")
 
     print(f"\nPronto! Arquivos em: {PASTA_PROCESSED}")
 

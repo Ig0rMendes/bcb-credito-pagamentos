@@ -7,7 +7,7 @@ Projeto em construção, em 3 etapas:
 | Etapa | O que faz | Status |
 |---|---|---|
 | 1. Coleta via API | Python busca séries do Banco Central (APIs REST e OData, JSON), valida e salva tabelas limpas | ✅ concluída |
-| 2. Nuvem | Databricks (Unity Catalog, Delta): arquivos no volume → camada bronze ✅ → silver e gold com SQL | 🔄 em andamento |
+| 2. Nuvem | Databricks (Unity Catalog, Delta): volume → bronze → silver → gold, tudo em SQL e conferido | ✅ concluída |
 | 3. Painel | Power BI com análise de defasagem juros → inadimplência e recomendações | ⏳ |
 
 ## Fontes de dados (públicas)
@@ -31,17 +31,23 @@ python src/coletar_dados.py   # coleta (precisa de internet)
 pytest                         # testes das transformações (não precisam de internet)
 ```
 
-No Databricks: envie `series_sgs_longo.csv` e `pix_detalhado.parquet` para o volume `workspace.bcb.landing` e rode os arquivos de `sql/` em ordem.
+O `pytest` também roda os SQLs de `sql/` localmente com DuckDB (um banco que funciona dentro do Python) e confere os resultados, antes de levá-los ao Databricks.
+
+No Databricks: envie `series_sgs_longo.csv`, `pix_detalhado.parquet` e `gabarito.csv` para o volume `workspace.bcb.landing` e rode os arquivos de `sql/` em ordem.
 
 ## Estrutura
 
 ```
 src/coletar_dados.py        # coleta, validação e transformação
-tests/                      # testes automatizados (pytest)
+src/gabarito.py             # valores esperados das checagens do Databricks, recalculados a cada coleta
+tests/                      # testes automatizados (pytest), incluindo o SQL rodado localmente com DuckDB
 sql/                        # SQL do Databricks, na ordem de execução
   01_estrutura.sql          #   schema e volume no Unity Catalog
   02_bronze.sql             #   arquivos do volume -> tabelas bronze (com colunas de auditoria)
   03_checagens_bronze.sql   #   confere as tabelas contra os números do Python
+  04_silver.sql             #   indicadores mensais (pivot, IPCA 12m, juro real) e Pix com nomes claros
+  05_gold.sql               #   defasagem juros -> inadimplência, correlação por defasagem, Pix por natureza e forma
+  06_checagens_silver_gold.sql  # confere silver e gold contra cálculos independentes
 data/raw/                   # JSON original da API (auditoria)
 data/processed/             # CSV/Parquet limpos, prontos para o Databricks
 ```
@@ -57,3 +63,29 @@ data/processed/             # CSV/Parquet limpos, prontos para o Databricks
 - **Pix em Parquet para a nuvem:** o `pix_detalhado.csv` tem ~80 MB e o upload pelo navegador falhava. O script também grava `pix_detalhado.parquet` (~12 MB, formato colunar e comprimido, com os tipos das colunas). É ele que vai para o Databricks.
 - **Arquivos grandes fora do Git:** o JSON do Pix (~200 MB) e os arquivos `pix_detalhado.*` estão no `.gitignore` e são gerados de novo pelo script.
 - **JSON original preservado** em `data/raw/` para que qualquer número possa ser auditado.
+
+## Camadas no Databricks (arquitetura medalhão)
+
+| Camada | Tabela | Para que serve |
+|---|---|---|
+| Bronze | `bronze_sgs`, `bronze_pix` | Arquivos como vieram, com tipos fixados e colunas de auditoria |
+| Silver | `silver_indicadores_mensais` | Um mês por linha: Selic, IPCA, IPCA 12m, juro real, inadimplência PJ/PF, concessões PJ |
+| Silver | `silver_pix` | Pix com nomes claros, tipo de pagador/recebedor e marcação de mês parcial |
+| Gold | `gold_defasagem_juros_inadimplencia` | Selic e juro real de 3 a 12 meses antes, ao lado da inadimplência atual |
+| Gold | `gold_correlacao_defasagem` | Correlação juros × inadimplência PJ para defasagens de 0 a 24 meses |
+| Gold | `gold_pix_natureza_mensal` | Valor, quantidade, ticket médio e participação por natureza, mês a mês |
+| Gold | `gold_pix_empresas_forma_iniciacao` | Como empresas pagam e recebem (chave, QR Code, Pix Automático...) |
+
+### Decisões da silver e da gold
+
+- **Empresa vem da natureza, não de `PAG_PFPJ`:** nos dados do BCB, `PAG_PFPJ = 'PJ'` inclui o governo. Por isso o tipo de pagador e recebedor é lido da natureza (P = pessoa, B = empresa, G = governo).
+- **IPCA em 12 meses composto:** inflação acumulada é produto, não soma. Em SQL: `exp(soma dos logaritmos) - 1`.
+- **Juro real ex post (aproximação):** `(1 + Selic) / (1 + IPCA 12m) - 1`, comparando a meta Selic do mês com a inflação dos 12 meses anteriores.
+- **Correlação em duas bases:** em nível e em variação de 12 meses. Séries com tendência longa ficam correlacionadas "de graça" no nível; a variação remove essa tendência. Se as duas apontam defasagens próximas, o resultado é mais confiável.
+- **Mesma amostra para todas as defasagens:** todas as correlações usam os mesmos 94 meses (dez/2018 a set/2026), para serem comparáveis entre si.
+- **Formas de iniciação do Pix:** só os códigos com descrição nos manuais do BCB foram traduzidos; `APDN` e `APES` ficam marcados como "descrição a confirmar".
+- **Gabarito automático:** as checagens (`sql/03` e `sql/06`) não têm números escritos à mão. A cada coleta, `src/gabarito.py` recalcula com pandas, por outro caminho, os valores que as tabelas devem ter e grava `gabarito.csv`, que vira a tabela `bronze_gabarito`. O SQL mede as tabelas e compara. Datas também não são fixas: o "mês de referência" é o último com inadimplência publicada.
+- **Tolerâncias:** contagens precisam bater exatamente; decimais têm tolerância pequena, porque motores diferentes arredondam a última casa de formas diferentes. A soma do Pix usa tolerância proporcional (1 parte em 1 trilhão do total), porque somar centenas de milhares de decimais em ordens diferentes muda os últimos centavos.
+- **Testes das checagens:** o `pytest` confere que as checagens passam, que todo item do gabarito é conferido pelo SQL e que elas **falham** quando os dados estão incompletos (teste negativo).
+- **Cuidado na leitura:** correlação não prova causa. Juros e inadimplência respondem ao ciclo econômico como um todo.
+
