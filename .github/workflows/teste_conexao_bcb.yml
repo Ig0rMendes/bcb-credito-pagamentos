@@ -1,0 +1,37 @@
+# Teste de conexão: os computadores do GitHub (fora do Brasil) conseguem acessar as APIs do BCB?
+# Não usa senhas, não mexe no Databricks e não altera nada no repositório.
+# Para rodar: aba Actions do repositório -> "Teste de conexão com o BCB" -> Run workflow.
+
+name: Teste de conexão com o BCB
+
+on:
+  workflow_dispatch:   # só roda quando você clica em "Run workflow"
+
+jobs:
+  testar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: 1. Em que país está este computador do GitHub?
+        run: curl -sS -m 20 https://ipinfo.io/country || echo "não foi possível descobrir"
+
+      - name: 2. API do SGS (últimos 3 valores da meta Selic)
+        run: |
+          curl -sS -f -m 60 --retry 2 -o sgs.json \
+            -w "HTTP %{http_code} em %{time_total}s\n" \
+            "https://api.bcb.gov.br/dados/serie/bcdata.sgs.432/dados/ultimos/3?formato=json"
+          cat sgs.json; echo
+
+      - name: 3. API do Pix (amostra de 3 linhas)
+        run: |
+          curl -sS -f -m 60 --retry 2 -o pix_amostra.json \
+            -w "HTTP %{http_code} em %{time_total}s\n" \
+            "https://olinda.bcb.gov.br/olinda/servico/Pix_DadosAbertos/versao/v1/odata/EstatisticasTransacoesPix(Database=@Database)?@Database=%27202609%27&%24top=3&%24format=json"
+          head -c 600 pix_amostra.json; echo
+
+      - name: 4. API do Pix completa (o download real, ~200 MB)
+        run: |
+          curl -sS -f -m 900 --retry 2 -o pix_completo.json \
+            -w "HTTP %{http_code} | %{size_download} bytes | %{time_total}s\n" \
+            "https://olinda.bcb.gov.br/olinda/servico/Pix_DadosAbertos/versao/v1/odata/EstatisticasTransacoesPix(Database=@Database)?@Database=%27202011%27&%24format=json"
+          python3 -c "import json; d=json.load(open('pix_completo.json'))['value']; print(len(d), 'linhas; meses de', min(r['AnoMes'] for r in d), 'a', max(r['AnoMes'] for r in d))"
