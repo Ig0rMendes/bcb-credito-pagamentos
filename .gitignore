@@ -8,3 +8,6 @@ __pycache__/
 data/raw/pix/
 data/processed/pix_detalhado.csv
 data/processed/pix_detalhado.parquet
+
+# Power BI: a versão 1 (ingênua) guarda 768 mil linhas; só serve para a medição de performance
+powerbi/v1_*.pbix

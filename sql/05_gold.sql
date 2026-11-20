@@ -19,6 +19,12 @@
 CREATE OR REPLACE TABLE workspace.bcb.gold_defasagem_juros_inadimplencia
 COMMENT 'Selic e juro real com defasagens de 3 a 12 meses, ao lado da inadimplência atual'
 AS
+WITH base AS (
+  SELECT
+    *,
+    juro_real_ex_post - LAG(juro_real_ex_post, 12) OVER (ORDER BY data) AS juro_real_var_12m
+  FROM workspace.bcb.silver_indicadores_mensais
+)
 SELECT
   data,
   selic_meta,
@@ -29,11 +35,16 @@ SELECT
   juro_real_ex_post,
   LAG(juro_real_ex_post, 6)  OVER w AS juro_real_6m_antes,
   LAG(juro_real_ex_post, 12) OVER w AS juro_real_12m_antes,
+  -- Para a regressão do painel: variação de 12 meses do juro real, 6 meses antes (defasagem de pico)
+  LAG(juro_real_var_12m, 6) OVER w AS juro_real_var_12m_6m_antes,
   inadimplencia_pj,
   inadimplencia_pj - LAG(inadimplencia_pj, 12) OVER w AS inadimplencia_pj_var_12m,  -- em pontos percentuais
+  -- Mesma amostra comum da correlação (24 meses de defasagem + 12 da variação + 11 do IPCA 12m),
+  -- para o painel e o relatório estatístico usarem exatamente os mesmos meses
+  mes_seq >= MIN(mes_seq) OVER () + 24 + 12 + 11 AND inadimplencia_pj IS NOT NULL AS na_amostra_comum,
   inadimplencia_pf,
   concessoes_pj
-FROM workspace.bcb.silver_indicadores_mensais
+FROM base
 WINDOW w AS (ORDER BY data);
 
 
