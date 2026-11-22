@@ -6,6 +6,10 @@
 #   4. envia os 3 arquivos para o volume do Databricks
 #   5. dispara o Job do Databricks (bronze -> checagens -> silver -> gold -> checagens)
 #      e só marca sucesso se o Job terminar com SUCCESS
+#   6. coleta as séries de controle (IBC-Br, desemprego, Focus) e refaz a análise estatística.
+#      Não bloqueia o pipeline: se a API de controles falhar, os dados do Databricks já foram
+#      atualizados e o passo aparece em amarelo. O relatório novo vai para o resumo da execução
+#      e para os arquivos de auditoria (o workflow só lê o repositório; não faz commit).
 #
 # Roda sozinho todo dia 28 (dados de crédito e Pix do mês anterior já publicados)
 # ou manualmente: aba Actions -> "Pipeline mensal" -> Run workflow.
@@ -108,6 +112,17 @@ jobs:
           PY
           exit $codigo
 
+      - name: 6. Atualizar a análise estatística (controles + relatório)
+        continue-on-error: true
+        run: |
+          python src/coletar_controles.py
+          python src/analise_estatistica.py
+          {
+            echo "## Análise estatística"
+            echo
+            sed -n '/^## Resumo honesto/,/^## 1\./p' docs/analise_estatistica.md | sed '$d'
+          } >> "$GITHUB_STEP_SUMMARY"
+
       - name: Guardar arquivos da execução (auditoria, 90 dias)
         if: always()
         uses: actions/upload-artifact@v4
@@ -119,4 +134,8 @@ jobs:
             data/processed/gabarito.csv
             data/processed/series_sgs_longo.csv
             data/processed/pix_por_natureza.csv
+            data/processed/controles_mensais.csv
+            data/processed/regressao_defasagem.csv
+            data/processed/validacao_fora_da_amostra.csv
+            docs/analise_estatistica.md
             execucao_job.json
