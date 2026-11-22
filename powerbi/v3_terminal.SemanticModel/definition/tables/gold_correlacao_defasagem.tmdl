@@ -1,0 +1,66 @@
+table gold_correlacao_defasagem
+	lineageTag: 1e2d69b0-34e5-4f50-a277-df7c4429995c
+
+	column defasagem_meses
+		dataType: int64
+		formatString: 0
+		lineageTag: a1909d3f-d2c6-486f-862d-7e5d9bde6f8c
+		summarizeBy: sum
+		sourceColumn: defasagem_meses
+
+		annotation SummarizationSetBy = Automatic
+
+	column indicador_juros
+		dataType: string
+		lineageTag: 7c429600-fe01-4109-aa5d-052bbf19a271
+		summarizeBy: none
+		sourceColumn: indicador_juros
+
+		annotation SummarizationSetBy = Automatic
+
+	column base
+		dataType: string
+		lineageTag: a03e12ff-14f0-4a6e-aab6-7402feef8359
+		summarizeBy: none
+		sourceColumn: base
+
+		annotation SummarizationSetBy = Automatic
+
+	column correlacao
+		dataType: double
+		lineageTag: 4f966437-c3d3-47c5-98a6-65612d9befbd
+		summarizeBy: sum
+		sourceColumn: correlacao
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column meses_usados
+		dataType: int64
+		formatString: 0
+		lineageTag: 20bdb0e7-a362-4ae5-aa51-c48bd7d5e943
+		summarizeBy: sum
+		sourceColumn: meses_usados
+
+		annotation SummarizationSetBy = Automatic
+
+	column Indicador = IF ( gold_correlacao_defasagem[indicador_juros] = "juro_real_ex_post", "Juro real", "Selic" )
+		lineageTag: b5d756cc-2d59-472d-8a6d-7b0159a53a83
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	partition gold_correlacao_defasagem = m
+		mode: import
+		source =
+				let
+				    Source = Databricks.Catalogs("dbc-c0147f19-09c3.cloud.databricks.com", "/sql/1.0/warehouses/808364e3c36c24d7", null),
+				    workspace_Database = Source{[Name="workspace",Kind="Database"]}[Data],
+				    bcb_Schema = workspace_Database{[Name="bcb",Kind="Schema"]}[Data],
+				    gold_correlacao_defasagem_Table = bcb_Schema{[Name="gold_correlacao_defasagem",Kind="Table"]}[Data]
+				in
+				    gold_correlacao_defasagem_Table
+
+	annotation PBI_ResultType = Table
+

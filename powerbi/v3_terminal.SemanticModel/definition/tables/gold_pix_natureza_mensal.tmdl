@@ -1,0 +1,632 @@
+table gold_pix_natureza_mensal
+	lineageTag: 6f2fe3a3-1052-4acc-b23b-3b5f3469af63
+
+	measure '_Valor Pix' = SUM ( gold_pix_natureza_mensal[valor] )
+		lineageTag: 8264663c-ce42-45a1-875d-983673601f4e
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure '_Quantidade Pix' = SUM ( gold_pix_natureza_mensal[quantidade] )
+		formatString: 0
+		lineageTag: 3bf7683c-a487-4a0e-af05-3eadb7d7bfa8
+
+	measure '_Ticket Médio' = DIVIDE ( [_Valor Pix], [_Quantidade Pix] )
+		lineageTag: 4588a4dd-4639-41d9-b039-82f603e84653
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure '_Participação no Valor' =
+			
+			DIVIDE (
+			    [_Valor Pix],
+			    CALCULATE ( [_Valor Pix], REMOVEFILTERS ( dNatureza ) )
+			)
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: 6e10ad39-5b8c-4316-b14a-242219baa9bf
+
+	measure '_Valor Pix Empresas' = SUM ( gold_pix_empresas_forma_iniciacao[valor] )
+		lineageTag: b88dc9ca-ae32-41c7-bd98-c4b7df676a22
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure _Selic = AVERAGE ( gold_defasagem_juros_inadimplencia[selic_meta] )
+		lineageTag: bacd1f9f-ebb8-4881-95db-370946e9301d
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure '_Inadimplência PJ' = AVERAGE ( gold_defasagem_juros_inadimplencia[inadimplencia_pj] )
+		lineageTag: 7059e97e-baeb-4173-b99a-ff94e7b40131
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure '_Inadimplência PJ (último mês)' =
+			
+			VAR ultimo =
+			    CALCULATE (
+			        MAX ( gold_defasagem_juros_inadimplencia[data] ),
+			        FILTER (
+			            ALL ( gold_defasagem_juros_inadimplencia ),
+			            NOT ISBLANK ( gold_defasagem_juros_inadimplencia[inadimplencia_pj] )
+			        )
+			    )
+			RETURN
+			    CALCULATE (
+			        AVERAGE ( gold_defasagem_juros_inadimplencia[inadimplencia_pj] ),
+			        FILTER ( ALL ( gold_defasagem_juros_inadimplencia ), gold_defasagem_juros_inadimplencia[data] = ultimo )
+			    )
+		formatString: 0.00"%"
+		lineageTag: 9f122640-61c5-4300-91da-abaa8adb92fc
+
+		annotation PBI_FormatHint = {"isCustom":true}
+
+	measure '_Selic (último mês)' =
+			
+			VAR ultimo =
+			    CALCULATE (
+			        MAX ( gold_defasagem_juros_inadimplencia[data] ),
+			        FILTER (
+			            ALL ( gold_defasagem_juros_inadimplencia ),
+			            NOT ISBLANK ( gold_defasagem_juros_inadimplencia[selic_meta] )
+			        )
+			    )
+			RETURN
+			    CALCULATE (
+			        AVERAGE ( gold_defasagem_juros_inadimplencia[selic_meta] ),
+			        FILTER ( ALL ( gold_defasagem_juros_inadimplencia ), gold_defasagem_juros_inadimplencia[data] = ultimo )
+			    )
+		formatString: 0.00"%"
+		lineageTag: 398abbc6-6c38-448e-9457-6e68cb2b9d84
+
+		annotation PBI_FormatHint = {"isCustom":true}
+
+	measure '_Mês de referência' =
+			
+			VAR ultimo =
+			    CALCULATE (
+			        MAX ( gold_defasagem_juros_inadimplencia[data] ),
+			        FILTER (
+			            ALL ( gold_defasagem_juros_inadimplencia ),
+			            NOT ISBLANK ( gold_defasagem_juros_inadimplencia[inadimplencia_pj] )
+			        )
+			    )
+			VAR meses = "jan,fev,mar,abr,mai,jun,jul,ago,set,out,nov,dez"
+			RETURN
+			    "Dados de crédito até " & MID ( meses, ( MONTH ( ultimo ) - 1 ) * 4 + 1, 3 ) & "/" & YEAR ( ultimo )
+		lineageTag: 05cdb46b-fc2f-4871-88a6-8e90435567a2
+
+	measure '_Participação B2B (último mês)' =
+			
+			VAR ultimo = CALCULATE ( MAX ( gold_pix_natureza_mensal[data] ), ALL ( gold_pix_natureza_mensal ) )
+			RETURN
+			    CALCULATE ( [_Participação no Valor], dNatureza[natureza] = "B2B", dCalendario[data] = ultimo )
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: 59316572-e499-4463-94af-dc2b1998cbec
+
+	measure '_Participação B2B (5 anos antes)' =
+			
+			VAR ultimo = CALCULATE ( MAX ( gold_pix_natureza_mensal[data] ), ALL ( gold_pix_natureza_mensal ) )
+			RETURN
+			    CALCULATE ( [_Participação no Valor], dNatureza[natureza] = "B2B", dCalendario[data] = EDATE ( ultimo, -60 ) )
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: 135f7c7e-e769-4804-b575-dbf5325d4a84
+
+	measure '_Defasagem de pico (meses)' =
+			
+			VAR t =
+			    FILTER (
+			        ALL ( gold_correlacao_defasagem ),
+			        gold_correlacao_defasagem[indicador_juros] = "juro_real_ex_post"
+			            && gold_correlacao_defasagem[base] = "variacao_12m"
+			    )
+			VAR maior = MAXX ( t, gold_correlacao_defasagem[correlacao] )
+			RETURN
+			    MAXX ( FILTER ( t, gold_correlacao_defasagem[correlacao] = maior ), gold_correlacao_defasagem[defasagem_meses] )
+		formatString: 0
+		lineageTag: 142dc23d-bee4-47e4-9177-a5dc947860c1
+
+	measure '_Efeito do juro real (p.p.)' =
+			
+			VAR amostra =
+			    FILTER (
+			        ALL ( gold_defasagem_juros_inadimplencia ),
+			        gold_defasagem_juros_inadimplencia[na_amostra_comum]
+			    )
+			VAR reg =
+			    LINESTX (
+			        amostra,
+			        gold_defasagem_juros_inadimplencia[inadimplencia_pj_var_12m],
+			        gold_defasagem_juros_inadimplencia[juro_real_var_12m_6m_antes]
+			    )
+			RETURN
+			    MAXX ( reg, [Slope1] )
+		lineageTag: bdc9478f-5c90-44cb-bcc7-80c73d9a10c4
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure '_R² da regressão' =
+			
+			VAR amostra =
+			    FILTER (
+			        ALL ( gold_defasagem_juros_inadimplencia ),
+			        gold_defasagem_juros_inadimplencia[na_amostra_comum]
+			    )
+			VAR reg =
+			    LINESTX (
+			        amostra,
+			        gold_defasagem_juros_inadimplencia[inadimplencia_pj_var_12m],
+			        gold_defasagem_juros_inadimplencia[juro_real_var_12m_6m_antes]
+			    )
+			RETURN
+			    MAXX ( reg, [CoefficientOfDetermination] )
+		lineageTag: 3e473d78-76d9-42f7-9a85-185020c56bf4
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure '_Correlação (variação 12m)' =
+			
+			CALCULATE (
+			    SUM ( gold_correlacao_defasagem[correlacao] ),
+			    gold_correlacao_defasagem[base] = "variacao_12m"
+			)
+		lineageTag: 33174113-e40e-491a-b713-dfc0e2d594d2
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure '_Variação B2B em 5 anos' =
+			
+			VAR pp = ( [_Participação B2B (último mês)] - [_Participação B2B (5 anos antes)] ) * 100
+			RETURN SUBSTITUTE ( FORMAT ( pp, "+0.00;-0.00" ), ".", "," ) & " p.p."
+		lineageTag: 3fb58f50-6bf2-4a0b-914b-e603974dd907
+
+	measure 'KPI Mês inadimplência' =
+			CALCULATE (
+			    MAX ( gold_defasagem_juros_inadimplencia[data] ),
+			    NOT ISBLANK ( gold_defasagem_juros_inadimplencia[inadimplencia_pj] )
+			)
+		formatString: dd/mm/yyyy
+		displayFolder: KPIs – variação
+		lineageTag: 7e99f9fd-95d0-5e3f-9e41-45d622ca07ee
+
+	measure 'KPI Inadimplência' =
+			VAR m = [KPI Mês inadimplência]
+			RETURN
+			    CALCULATE ( AVERAGE ( gold_defasagem_juros_inadimplencia[inadimplencia_pj] ), dCalendario[data] = m )
+		formatString: 0.00"%"
+		displayFolder: KPIs – variação
+		lineageTag: c8d51794-aa78-52a4-96ae-9bbc0414200d
+
+	measure 'KPI Inadimplência (mês anterior)' =
+			VAR m = [KPI Mês inadimplência]
+			RETURN
+			    CALCULATE ( AVERAGE ( gold_defasagem_juros_inadimplencia[inadimplencia_pj] ), dCalendario[data] = EDATE ( m, -1 ) )
+		formatString: 0.00"%"
+		displayFolder: KPIs – variação
+		lineageTag: 74401a8c-4ab9-5eb0-badb-c3f1caf3aed7
+
+	measure 'KPI Inadimplência Δ (p.p.)' =
+			VAR a = [KPI Inadimplência]
+			VAR b = [KPI Inadimplência (mês anterior)]
+			RETURN
+			    IF ( ISBLANK ( a ) || ISBLANK ( b ), BLANK (), a - b )
+		formatString: 0.00
+		displayFolder: KPIs – variação
+		lineageTag: 4acf746d-f95e-501b-802d-e6c45624b9b1
+
+	measure 'KPI Inadimplência Δ texto' =
+			VAR d = [KPI Inadimplência Δ (p.p.)]
+			VAR p = EDATE ( [KPI Mês inadimplência], -1 )
+			VAR meses = "jan,fev,mar,abr,mai,jun,jul,ago,set,out,nov,dez"
+			VAR rotulo = MID ( meses, ( MONTH ( p ) - 1 ) * 4 + 1, 3 ) & "/" & RIGHT ( FORMAT ( YEAR ( p ), "0" ), 2 )
+			RETURN
+			    SWITCH (
+			        TRUE (),
+			        ISBLANK ( d ), BLANK (),
+			        ABS ( d ) < 0.005, UNICHAR ( 9679 ) & " estável vs " & rotulo,
+			        IF ( d > 0, UNICHAR ( 9650 ), UNICHAR ( 9660 ) ) & " " & SUBSTITUTE ( FORMAT ( ABS ( d ), "0.00" ), ".", "," ) & " p.p. vs " & rotulo
+			    )
+		displayFolder: KPIs – variação
+		lineageTag: ad137a1d-c43d-54da-a9bc-65a2ce02728e
+
+	measure 'KPI Inadimplência Δ cor' =
+			VAR d = [KPI Inadimplência Δ (p.p.)]
+			RETURN
+			    SWITCH ( TRUE (), ISBLANK ( d ) || ABS ( d ) < 0.005, "#7F8DA6", d > 0, "#F85149", "#5DCAA5" )
+		displayFolder: KPIs – variação
+		lineageTag: 86d58bd5-0a83-546f-be44-933c5a66da50
+
+	measure 'KPI Mês Selic' =
+			CALCULATE (
+			    MAX ( gold_defasagem_juros_inadimplencia[data] ),
+			    NOT ISBLANK ( gold_defasagem_juros_inadimplencia[selic_meta] )
+			)
+		formatString: dd/mm/yyyy
+		displayFolder: KPIs – variação
+		lineageTag: f679ebb6-c6e0-53d5-81ef-aaafd6d6eaee
+
+	measure 'KPI Selic' =
+			VAR m = [KPI Mês Selic]
+			RETURN
+			    CALCULATE ( AVERAGE ( gold_defasagem_juros_inadimplencia[selic_meta] ), dCalendario[data] = m )
+		formatString: 0.00"%"
+		displayFolder: KPIs – variação
+		lineageTag: cac572b7-b382-5a83-94e6-08b1e41420e7
+
+	measure 'KPI Selic (mês anterior)' =
+			VAR m = [KPI Mês Selic]
+			RETURN
+			    CALCULATE ( AVERAGE ( gold_defasagem_juros_inadimplencia[selic_meta] ), dCalendario[data] = EDATE ( m, -1 ) )
+		formatString: 0.00"%"
+		displayFolder: KPIs – variação
+		lineageTag: 0f701f29-5aa3-5532-81b1-4c59401e608a
+
+	measure 'KPI Selic Δ (p.p.)' =
+			VAR a = [KPI Selic]
+			VAR b = [KPI Selic (mês anterior)]
+			RETURN
+			    IF ( ISBLANK ( a ) || ISBLANK ( b ), BLANK (), a - b )
+		formatString: 0.00
+		displayFolder: KPIs – variação
+		lineageTag: 45aa58bc-4d47-506e-ba2c-a8fb5381dd15
+
+	measure 'KPI Selic Δ texto' =
+			VAR d = [KPI Selic Δ (p.p.)]
+			VAR p = EDATE ( [KPI Mês Selic], -1 )
+			VAR meses = "jan,fev,mar,abr,mai,jun,jul,ago,set,out,nov,dez"
+			VAR rotulo = MID ( meses, ( MONTH ( p ) - 1 ) * 4 + 1, 3 ) & "/" & RIGHT ( FORMAT ( YEAR ( p ), "0" ), 2 )
+			RETURN
+			    SWITCH (
+			        TRUE (),
+			        ISBLANK ( d ), BLANK (),
+			        ABS ( d ) < 0.005, UNICHAR ( 9679 ) & " mantida vs " & rotulo,
+			        IF ( d > 0, UNICHAR ( 9650 ), UNICHAR ( 9660 ) ) & " " & SUBSTITUTE ( FORMAT ( ABS ( d ), "0.00" ), ".", "," ) & " p.p. vs " & rotulo
+			    )
+		displayFolder: KPIs – variação
+		lineageTag: d4c9d3e8-c010-547b-8892-d73197aaf0e0
+
+	measure 'KPI Selic Δ cor' =
+			VAR d = [KPI Selic Δ (p.p.)]
+			RETURN
+			    IF ( ISBLANK ( d ) || ABS ( d ) < 0.005, "#7F8DA6", "#F6A609" )
+		displayFolder: KPIs – variação
+		lineageTag: 9da43723-d369-5125-88dd-d175151d3d7e
+
+	measure 'KPI Mês Pix' = CALCULATE ( MAX ( gold_pix_natureza_mensal[data] ), REMOVEFILTERS ( dNatureza ) )
+		formatString: dd/mm/yyyy
+		displayFolder: KPIs – variação
+		lineageTag: 0871b493-ef53-581e-a0c2-0a48108d0005
+
+	measure 'KPI Fatia B2B' =
+			VAR m = [KPI Mês Pix]
+			RETURN
+			    CALCULATE ( [_Participação no Valor], dNatureza[natureza] = "B2B", dCalendario[data] = m )
+		formatString: 0.00%;-0.00%;0.00%
+		displayFolder: KPIs – variação
+		lineageTag: 1ecedece-e09d-596a-9b5b-b16266bab62b
+
+	measure 'KPI Fatia B2B (mês anterior)' =
+			VAR m = [KPI Mês Pix]
+			RETURN
+			    CALCULATE ( [_Participação no Valor], dNatureza[natureza] = "B2B", dCalendario[data] = EDATE ( m, -1 ) )
+		formatString: 0.00%;-0.00%;0.00%
+		displayFolder: KPIs – variação
+		lineageTag: 9a334c06-3487-5502-b56b-ef7035e6a0b9
+
+	measure 'KPI Fatia B2B Δ (p.p.)' =
+			VAR a = [KPI Fatia B2B]
+			VAR b = [KPI Fatia B2B (mês anterior)]
+			RETURN
+			    IF ( ISBLANK ( a ) || ISBLANK ( b ), BLANK (), ( a - b ) * 100 )
+		formatString: 0.00
+		displayFolder: KPIs – variação
+		lineageTag: 9d579cf0-03c3-500d-97b3-b1e4313c4205
+
+	measure 'KPI Fatia B2B Δ texto' =
+			VAR d = [KPI Fatia B2B Δ (p.p.)]
+			VAR p = EDATE ( [KPI Mês Pix], -1 )
+			VAR meses = "jan,fev,mar,abr,mai,jun,jul,ago,set,out,nov,dez"
+			VAR rotulo = MID ( meses, ( MONTH ( p ) - 1 ) * 4 + 1, 3 ) & "/" & RIGHT ( FORMAT ( YEAR ( p ), "0" ), 2 )
+			RETURN
+			    SWITCH (
+			        TRUE (),
+			        ISBLANK ( d ), BLANK (),
+			        ABS ( d ) < 0.005, UNICHAR ( 9679 ) & " estável vs " & rotulo,
+			        IF ( d > 0, UNICHAR ( 9650 ), UNICHAR ( 9660 ) ) & " " & SUBSTITUTE ( FORMAT ( ABS ( d ), "0.00" ), ".", "," ) & " p.p. vs " & rotulo
+			    )
+		displayFolder: KPIs – variação
+		lineageTag: e8ee84c9-9572-5c41-89cb-c2e534ae74d5
+
+	measure 'KPI Fatia B2B Δ cor' =
+			VAR d = [KPI Fatia B2B Δ (p.p.)]
+			RETURN
+			    -- fatia de mercado: subir ou cair não é bom nem ruim, então a cor só indica que mudou
+			    IF ( ISBLANK ( d ) || ABS ( d ) < 0.005, "#7F8DA6", "#4C82FF" )
+		displayFolder: KPIs – variação
+		lineageTag: 17a8bcaa-6121-5ad0-8717-ed1dc2e65084
+
+	measure 'KPI Fatia B2B (5 anos antes)' =
+			VAR m = [KPI Mês Pix]
+			RETURN
+			    CALCULATE ( [_Participação no Valor], dNatureza[natureza] = "B2B", dCalendario[data] = EDATE ( m, -60 ) )
+		formatString: 0.00%;-0.00%;0.00%
+		displayFolder: KPIs – variação
+		lineageTag: 187a2efa-96c2-58fd-aca3-59ef81266385
+
+	measure 'KPI Fatia B2B variação 5 anos' =
+			VAR a = [KPI Fatia B2B]
+			VAR b = [KPI Fatia B2B (5 anos antes)]
+			RETURN
+			    IF (
+			        ISBLANK ( a ) || ISBLANK ( b ),
+			        BLANK (),
+			        SUBSTITUTE ( FORMAT ( ( a - b ) * 100, "+0.00;-0.00" ), ".", "," ) & " p.p."
+			    )
+		displayFolder: KPIs – variação
+		lineageTag: 60af9cc3-ff31-5505-b174-a5866e165844
+
+	measure 'KPI Fatia B2B 5 anos texto' =
+			VAR a = [KPI Fatia B2B]
+			VAR b = [KPI Fatia B2B (5 anos antes)]
+			VAR p = EDATE ( [KPI Mês Pix], -60 )
+			VAR meses = "jan,fev,mar,abr,mai,jun,jul,ago,set,out,nov,dez"
+			RETURN
+			    IF (
+			        ISBLANK ( a ) || ISBLANK ( b ),
+			        BLANK (),
+			        SUBSTITUTE ( FORMAT ( b * 100, "0.00" ), ".", "," ) & "% " & UNICHAR ( 8594 ) & " " & SUBSTITUTE ( FORMAT ( a * 100, "0.00" ), ".", "," ) & "% desde " & MID ( meses, ( MONTH ( p ) - 1 ) * 4 + 1, 3 ) & "/" & RIGHT ( FORMAT ( YEAR ( p ), "0" ), 2 )
+			    )
+		displayFolder: KPIs – variação
+		lineageTag: ac74868d-c83a-50b5-8fdd-4ea88a2269ea
+
+	measure 'KPI Fatia B2B 5 anos cor' =
+			VAR a = [KPI Fatia B2B]
+			VAR b = [KPI Fatia B2B (5 anos antes)]
+			RETURN
+			    IF ( ISBLANK ( a ) || ISBLANK ( b ), "#7F8DA6", "#4C82FF" )
+		displayFolder: KPIs – variação
+		lineageTag: c7b61fed-d36b-510c-8f3d-34360c7275ef
+
+	measure 'KPI Ticket médio' = [KPI Ticket do mês]
+		formatString: #,0.00
+		displayFolder: KPIs – variação
+		lineageTag: 30b08da8-f3af-57b5-b9bb-4ba2e93bb1fc
+
+	measure 'KPI Ticket do mês' =
+			VAR m = [KPI Mês Pix]
+			RETURN
+			    CALCULATE ( [_Ticket Médio], dCalendario[data] = m )
+		formatString: #,0.00
+		displayFolder: KPIs – variação
+		lineageTag: d69a2832-08f7-5452-9db2-af6138a4f9b3
+
+	measure 'KPI Ticket do mês (mês anterior)' =
+			VAR m = [KPI Mês Pix]
+			RETURN
+			    CALCULATE ( [_Ticket Médio], dCalendario[data] = EDATE ( m, -1 ) )
+		formatString: #,0.00
+		displayFolder: KPIs – variação
+		lineageTag: 8fbd4d28-31fe-575f-a64c-0cb043ed039f
+
+	measure 'KPI Ticket Δ (%)' =
+			VAR a = [KPI Ticket do mês]
+			VAR b = [KPI Ticket do mês (mês anterior)]
+			RETURN
+			    IF ( ISBLANK ( a ) || ISBLANK ( b ) || b = 0, BLANK (), ( a / b - 1 ) * 100 )
+		formatString: 0.00
+		displayFolder: KPIs – variação
+		lineageTag: 153a9582-51cf-5003-8b7e-4c548c831b78
+
+	measure 'KPI Ticket Δ texto' =
+			VAR d = [KPI Ticket Δ (%)]
+			VAR m = [KPI Mês Pix]
+			VAR p = EDATE ( m, -1 )
+			VAR meses = "jan,fev,mar,abr,mai,jun,jul,ago,set,out,nov,dez"
+			VAR rotulo = MID ( meses, ( MONTH ( m ) - 1 ) * 4 + 1, 3 ) & "/" & RIGHT ( FORMAT ( YEAR ( m ), "0" ), 2 ) & " vs " & MID ( meses, ( MONTH ( p ) - 1 ) * 4 + 1, 3 ) & "/" & RIGHT ( FORMAT ( YEAR ( p ), "0" ), 2 )
+			RETURN
+			    SWITCH (
+			        TRUE (),
+			        ISBLANK ( d ), BLANK (),
+			        ABS ( d ) < 0.005, UNICHAR ( 9679 ) & " estável " & rotulo,
+			        IF ( d > 0, UNICHAR ( 9650 ), UNICHAR ( 9660 ) ) & " " & SUBSTITUTE ( FORMAT ( ABS ( d ), "0.00" ), ".", "," ) & "% " & rotulo
+			    )
+		displayFolder: KPIs – variação
+		lineageTag: f74a60f2-36f2-5d13-887b-d84e398a93dd
+
+	measure 'KPI Ticket Δ cor' =
+			VAR d = [KPI Ticket Δ (%)]
+			RETURN
+			    IF ( ISBLANK ( d ) || ABS ( d ) < 0.005, "#7F8DA6", "#4C82FF" )
+		displayFolder: KPIs – variação
+		lineageTag: 8084ab78-74bb-518a-a740-9d8d42e45104
+
+	measure 'KPI Contexto amostra' =
+			VAR n =
+			    COUNTROWS ( FILTER ( ALL ( gold_defasagem_juros_inadimplencia ), gold_defasagem_juros_inadimplencia[na_amostra_comum] ) )
+			RETURN
+			    UNICHAR ( 9679 ) & " amostra fixa de " & n & " meses · não muda com o filtro de período"
+		displayFolder: KPIs – variação
+		lineageTag: 4e53983a-d3d4-53e4-b433-81073a477e03
+
+	measure 'KPI Cor contexto' = "#7F8DA6"
+		displayFolder: KPIs – variação
+		lineageTag: 3b12b1b1-6a12-5c95-9500-f404aa286a1f
+
+	measure '_Fatia da forma de iniciação' =
+			VAR total =
+			    CALCULATE ( SUM ( gold_pix_empresas_forma_iniciacao[valor] ), REMOVEFILTERS ( gold_pix_empresas_forma_iniciacao[forma_grupo] ) )
+			VAR nao_disponivel =
+			    CALCULATE ( SUM ( gold_pix_empresas_forma_iniciacao[valor] ), gold_pix_empresas_forma_iniciacao[forma_grupo] = "Não disponível" )
+			RETURN
+			    -- antes de jul/2021 o BCB não informa a forma; entre ago e set/2021 a chave Pix salta 7 p.p. de uma vez
+			    -- (provável mudança de classificação). O gráfico começa em set/2021 para comparar meses comparáveis.
+			    IF ( MAX ( dCalendario[data] ) < DATE ( 2021, 9, 1 ) || DIVIDE ( nao_disponivel, total ) > 0.5, BLANK (), DIVIDE ( SUM ( gold_pix_empresas_forma_iniciacao[valor] ), total ) )
+		formatString: 0%
+		lineageTag: 8b15cd8c-0115-5ede-99a0-312511e4ac14
+
+	measure '_Rótulo mês Pix' =
+			VAR m = [KPI Mês Pix]
+			VAR meses = "jan,fev,mar,abr,mai,jun,jul,ago,set,out,nov,dez"
+			RETURN
+			    MID ( meses, ( MONTH ( m ) - 1 ) * 4 + 1, 3 ) & "/" & RIGHT ( FORMAT ( YEAR ( m ), "0" ), 2 )
+		lineageTag: d08c7529-820c-4d8f-b610-b9d5bda3a8a3
+
+	measure '_Participação no Valor (último mês)' =
+			VAR m = [KPI Mês Pix]
+			RETURN
+			    CALCULATE ( [_Participação no Valor], dCalendario[data] = m )
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: 17b4b3a7-169a-47d3-9c3e-df60c2c9d771
+
+	measure '_Ticket médio (12 meses)' =
+			VAR m = [KPI Mês Pix]
+			RETURN
+			    CALCULATE ( [_Ticket Médio], dCalendario[data] > EDATE ( m, -12 ), dCalendario[data] <= m )
+		formatString: #,0.00
+		lineageTag: e2d3760d-509c-4f72-864b-e1e40da20261
+
+	measure '_Título fatia último mês' =
+			"Fatia de cada natureza no valor do Pix em " & [_Rótulo mês Pix] & ", último mês do período (B2B = empresa paga empresa; P2P = pessoa paga pessoa)"
+		lineageTag: 94233a1d-5adf-4608-8d07-daa67eb00401
+
+	measure '_Título ticket 12 meses' =
+			"Ticket médio por natureza nos 12 meses até " & [_Rótulo mês Pix] & " (R$ nominais por transação)"
+		lineageTag: 4428eab7-35d4-48eb-b36c-945043d6893a
+
+	measure '_Defasagem de pico (faixa)' =
+			-- o pico sozinho dá falsa precisão: mostra também as defasagens com correlação até 0,05 abaixo dele
+			VAR t =
+			    FILTER (
+			        ALL ( gold_correlacao_defasagem ),
+			        gold_correlacao_defasagem[indicador_juros] = "juro_real_ex_post"
+			            && gold_correlacao_defasagem[base] = "variacao_12m"
+			    )
+			VAR maior = MAXX ( t, gold_correlacao_defasagem[correlacao] )
+			VAR pico = MAXX ( FILTER ( t, gold_correlacao_defasagem[correlacao] = maior ), gold_correlacao_defasagem[defasagem_meses] )
+			VAR perto = FILTER ( t, gold_correlacao_defasagem[correlacao] >= maior - 0.05 )
+			RETURN
+			    pico & " meses (faixa de " & MINX ( perto, gold_correlacao_defasagem[defasagem_meses] ) & " a "
+			        & MAXX ( perto, gold_correlacao_defasagem[defasagem_meses] ) & ")"
+		lineageTag: f682f867-7d89-43b2-8680-4ff087944967
+
+	column ano_mes
+		dataType: string
+		lineageTag: e6ba61e2-ca73-4b2f-8c16-da0366f6c30b
+		summarizeBy: none
+		sourceColumn: ano_mes
+
+		annotation SummarizationSetBy = Automatic
+
+	column data
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: e0441297-7d2e-4034-aaf3-316692ac88b4
+		summarizeBy: none
+		sourceColumn: data
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column mes_parcial
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 85018821-394b-4a89-9ac3-0b3a9f1b869f
+		summarizeBy: none
+		sourceColumn: mes_parcial
+
+		annotation SummarizationSetBy = Automatic
+
+	column natureza
+		dataType: string
+		lineageTag: bd338218-3ea7-432d-bf73-c2d5434661f0
+		summarizeBy: none
+		sourceColumn: natureza
+
+		annotation SummarizationSetBy = Automatic
+
+	column pagador_tipo
+		dataType: string
+		lineageTag: 228e71cc-f46d-4c08-a709-e9d66456ae87
+		summarizeBy: none
+		sourceColumn: pagador_tipo
+
+		annotation SummarizationSetBy = Automatic
+
+	column recebedor_tipo
+		dataType: string
+		lineageTag: 063a6484-2064-4027-9e08-50225b3943e7
+		summarizeBy: none
+		sourceColumn: recebedor_tipo
+
+		annotation SummarizationSetBy = Automatic
+
+	column envolve_empresa
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 053601eb-4b58-4135-b5b5-ea32028f3d19
+		summarizeBy: none
+		sourceColumn: envolve_empresa
+
+		annotation SummarizationSetBy = Automatic
+
+	column valor
+		dataType: double
+		lineageTag: 7c054f2a-c719-4ec6-a61f-932964d24251
+		summarizeBy: sum
+		sourceColumn: valor
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column quantidade
+		dataType: int64
+		formatString: 0
+		lineageTag: d408ae1f-512a-4c8e-bfd6-e59b3b38cc2c
+		summarizeBy: sum
+		sourceColumn: quantidade
+
+		annotation SummarizationSetBy = Automatic
+
+	column ticket_medio
+		dataType: double
+		lineageTag: 6caac989-f2b3-4968-9dd3-5729ea9c2487
+		summarizeBy: sum
+		sourceColumn: ticket_medio
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column participacao_valor
+		dataType: double
+		lineageTag: 41c26fb7-8f8d-4902-a433-c0c19b6c763b
+		summarizeBy: sum
+		sourceColumn: participacao_valor
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column participacao_quantidade
+		dataType: double
+		lineageTag: 3eb2c543-e881-4244-a752-7fad884fef63
+		summarizeBy: sum
+		sourceColumn: participacao_quantidade
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition gold_pix_natureza_mensal = m
+		mode: import
+		source =
+				let
+				    Source = Databricks.Catalogs("dbc-c0147f19-09c3.cloud.databricks.com", "/sql/1.0/warehouses/808364e3c36c24d7", null),
+				    workspace_Database = Source{[Name="workspace",Kind="Database"]}[Data],
+				    bcb_Schema = workspace_Database{[Name="bcb",Kind="Schema"]}[Data],
+				    gold_pix_natureza_mensal_Table = bcb_Schema{[Name="gold_pix_natureza_mensal",Kind="Table"]}[Data]
+				in
+				    gold_pix_natureza_mensal_Table
+
+	annotation PBI_ResultType = Table
+

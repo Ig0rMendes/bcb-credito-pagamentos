@@ -1,0 +1,49 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
+  "name": "7466cf6c5164d3b361d7",
+  "position": {
+    "x": 384,
+    "y": 18,
+    "z": 9,
+    "height": 96,
+    "width": 1500,
+    "tabOrder": 4001
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "Como as empresas pagam: O Pix",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "fontSize": "24pt",
+                      "color": "#FFFFFF"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Quem paga quem no Pix, quanto vale cada pagamento e como ele é iniciado. Dados do Pix de nov/2020 a out/2026.",
+                    "textStyle": {
+                      "fontSize": "12pt",
+                      "color": "#B6C2D6"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

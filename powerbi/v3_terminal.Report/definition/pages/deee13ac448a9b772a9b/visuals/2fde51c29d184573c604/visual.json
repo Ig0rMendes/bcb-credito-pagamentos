@@ -1,0 +1,36 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
+  "name": "2fde51c29d184573c604",
+  "position": {
+    "x": 20,
+    "y": 972,
+    "z": 4005,
+    "height": 90,
+    "width": 310,
+    "tabOrder": 4004
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "Fonte: Banco Central do Brasil (SGS e Pix Dados Abertos). Atualização automática todo mês com Python, Databricks e Power BI.",
+                    "textStyle": {
+                      "color": "#e6e6e6"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

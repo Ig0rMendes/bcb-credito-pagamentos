@@ -1,0 +1,36 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
+  "name": "c8e1e1d0d74d8dc8406a",
+  "position": {
+    "x": 20,
+    "y": 972,
+    "z": 3009,
+    "height": 90,
+    "width": 310,
+    "tabOrder": 3008
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "Códigos: 1ª letra paga, 2ª recebe (P = pessoa, B = empresa, G = governo). Fonte: Banco Central do Brasil. Atualização automática todo mês.",
+                    "textStyle": {
+                      "color": "#e6e6e6"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

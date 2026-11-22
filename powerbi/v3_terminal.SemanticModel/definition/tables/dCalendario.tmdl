@@ -1,0 +1,55 @@
+table dCalendario
+	lineageTag: 0f5f5cf7-c772-41eb-83de-fa5da711f663
+
+	column data
+		formatString: General Date
+		lineageTag: ad607cc5-e628-4cf3-9493-250149a782b0
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [data]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Ano
+		formatString: 0
+		lineageTag: e39dfd98-8cd3-47d3-9bab-08b3e29789d3
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Ano]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Mês
+		formatString: 0
+		lineageTag: c86acd88-68dc-4853-941f-688244d4a511
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Mês]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Mês/Ano
+		lineageTag: 39c0ff33-f91b-4c25-a50e-e9694e31164f
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Mês/Ano]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dCalendario = calculated
+		mode: import
+		source =
+				
+				VAR inicio = MIN ( gold_defasagem_juros_inadimplencia[data] )
+				VAR fim = MAX ( gold_defasagem_juros_inadimplencia[data] )
+				RETURN
+				    SELECTCOLUMNS (
+				        FILTER ( CALENDAR ( inicio, fim ), DAY ( [Date] ) = 1 ),
+				        "data", [Date],
+				        "Ano", YEAR ( [Date] ),
+				        "Mês", MONTH ( [Date] ),
+				        "Mês/Ano", FORMAT ( [Date], "mmm/yy" )
+				    )
+
+	annotation PBI_Id = cd9eeb7010924a12b6a7acc930da3012
+

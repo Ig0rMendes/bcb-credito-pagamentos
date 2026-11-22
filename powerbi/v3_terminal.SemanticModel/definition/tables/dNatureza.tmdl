@@ -1,0 +1,52 @@
+table dNatureza
+	lineageTag: d3d8a192-5d7d-47b4-9aee-4b1766b1505e
+
+	column natureza
+		lineageTag: a489b4bd-51d7-4cc3-9308-b8f0ec05ab8a
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [natureza]
+
+		annotation SummarizationSetBy = Automatic
+
+	column pagador_tipo
+		lineageTag: 1a546a59-8820-46a7-8a5c-e7fece0f7fe5
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [pagador_tipo]
+
+		annotation SummarizationSetBy = Automatic
+
+	column recebedor_tipo
+		lineageTag: 1a20483f-96f4-4447-bf61-f7710e9f9573
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [recebedor_tipo]
+
+		annotation SummarizationSetBy = Automatic
+
+	column envolve_empresa
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 65aaeb93-f6ce-416c-9838-7a0c7f009b9a
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [envolve_empresa]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dNatureza = calculated
+		mode: import
+		source =
+				
+				DISTINCT (
+				    SELECTCOLUMNS (
+				        gold_pix_natureza_mensal,
+				        "natureza", gold_pix_natureza_mensal[natureza],
+				        "pagador_tipo", gold_pix_natureza_mensal[pagador_tipo],
+				        "recebedor_tipo", gold_pix_natureza_mensal[recebedor_tipo],
+				        "envolve_empresa", gold_pix_natureza_mensal[envolve_empresa]
+				    )
+				)
+
+	annotation PBI_Id = 04417b03dfd94e4abfccac4f167bbc4d
+

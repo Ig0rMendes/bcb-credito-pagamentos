@@ -1,0 +1,5637 @@
+cultureInfo en-US
+
+	linguisticMetadata =
+			{
+			  "Version": "4.1.0",
+			  "Language": "en-US",
+			  "Entities": {
+			    "gold_correlacao_defasagem": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold_correlacao_defasagem"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "gold correlacao defasagem": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "gold_correlacao_defasagem": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "gold_correlacao_defasagem.defasagem_mese": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold_correlacao_defasagem",
+			          "ConceptualProperty": "defasagem_meses"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "defasagem mese": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "defasagem_meses": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "gold_correlacao_defasagem.indicador_juro": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold_correlacao_defasagem",
+			          "ConceptualProperty": "indicador_juros"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "indicador juro": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "indicador_juros": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "gold_correlacao_defasagem.base": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold_correlacao_defasagem",
+			          "ConceptualProperty": "base"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "base": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "headquarters": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "center": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "seat": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "station": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        }
+			      ]
+			    },
+			    "gold_correlacao_defasagem.correlacao": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold_correlacao_defasagem",
+			          "ConceptualProperty": "correlacao"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "correlacao": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "gold_correlacao_defasagem.meses_usado": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold_correlacao_defasagem",
+			          "ConceptualProperty": "meses_usados"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "meses usado": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "mese usado": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "meses_usados": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "gold_defasagem_juros_inadimplencia": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold_defasagem_juros_inadimplencia"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "gold defasagem juros inadimplencia": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "gold defasagem juro inadimplencia": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "gold_defasagem_juros_inadimplencia": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "gold_defasagem_juros_inadimplencia.data": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold_defasagem_juros_inadimplencia",
+			          "ConceptualProperty": "data"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "data": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        },
+			        {
+			          "information": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "fact": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "info": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "statistic": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "document": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "figure": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "record": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "gold_defasagem_juros_inadimplencia.selic_meta": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold_defasagem_juros_inadimplencia",
+			          "ConceptualProperty": "selic_meta"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "selic meta": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "selic_meta": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "gold_defasagem_juros_inadimplencia.selic_3m_ante": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold_defasagem_juros_inadimplencia",
+			          "ConceptualProperty": "selic_3m_antes"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "selic 3m ante": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "selic_3m_antes": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "selic 3m payment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "selic 3m bet": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "selic 3m wager": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "selic 3m stake": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "selic 3m raise": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "selic 3m chance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "selic 3m gamble": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.468
+			          }
+			        },
+			        {
+			          "selic 3m pot": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.468
+			          }
+			        },
+			        {
+			          "selic 3m flutter": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.468
+			          }
+			        }
+			      ]
+			    },
+			    "gold_defasagem_juros_inadimplencia.selic_6m_ante": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold_defasagem_juros_inadimplencia",
+			          "ConceptualProperty": "selic_6m_antes"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "selic 6m ante": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "selic_6m_antes": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "selic 6m payment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "selic 6m bet": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "selic 6m wager": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "selic 6m stake": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "selic 6m raise": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "selic 6m chance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "selic 6m gamble": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.468
+			          }
+			        },
+			        {
+			          "selic 6m pot": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.468
+			          }
+			        },
+			        {
+			          "selic 6m flutter": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.468
+			          }
+			        }
+			      ]
+			    },
+			    "gold_defasagem_juros_inadimplencia.selic_9m_ante": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold_defasagem_juros_inadimplencia",
+			          "ConceptualProperty": "selic_9m_antes"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "selic 9m ante": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "selic_9m_antes": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "selic 9m payment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "selic 9m bet": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "selic 9m wager": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "selic 9m stake": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "selic 9m raise": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "selic 9m chance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "selic 9m gamble": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.468
+			          }
+			        },
+			        {
+			          "selic 9m pot": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.468
+			          }
+			        },
+			        {
+			          "selic 9m flutter": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.468
+			          }
+			        }
+			      ]
+			    },
+			    "gold_defasagem_juros_inadimplencia.selic_1_2m_ante": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold_defasagem_juros_inadimplencia",
+			          "ConceptualProperty": "selic_12m_antes"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "selic 1 2m ante": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "selic_12m_antes": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "selic 1 2m payment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "selic 1 2m bet": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "selic 1 2m wager": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "selic 1 2m stake": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "selic 1 2m raise": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "selic 1 2m chance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "selic 1 2m gamble": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.474
+			          }
+			        },
+			        {
+			          "selic 1 2m pot": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.474
+			          }
+			        },
+			        {
+			          "selic 1 2m flutter": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.474
+			          }
+			        }
+			      ]
+			    },
+			    "gold_defasagem_juros_inadimplencia.juro_real_ex_post": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold_defasagem_juros_inadimplencia",
+			          "ConceptualProperty": "juro_real_ex_post"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "juro real ex post": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "juro_real_ex_post": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "gold_defasagem_juros_inadimplencia.juro_real_6m_ante": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold_defasagem_juros_inadimplencia",
+			          "ConceptualProperty": "juro_real_6m_antes"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "juro real 6m ante": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "juro_real_6m_antes": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "juro real 6m payment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "juro real 6m bet": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "juro real 6m wager": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "juro real 6m stake": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "juro real 6m raise": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "juro real 6m chance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "juro real 6m gamble": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.474
+			          }
+			        },
+			        {
+			          "juro real 6m pot": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.474
+			          }
+			        },
+			        {
+			          "juro real 6m flutter": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.474
+			          }
+			        }
+			      ]
+			    },
+			    "gold_defasagem_juros_inadimplencia.juro_real_1_2m_ante": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold_defasagem_juros_inadimplencia",
+			          "ConceptualProperty": "juro_real_12m_antes"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "juro real 1 2m ante": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "juro_real_12m_antes": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "juro real 1 2m payment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.52
+			          }
+			        },
+			        {
+			          "juro real 1 2m bet": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.504
+			          }
+			        },
+			        {
+			          "juro real 1 2m wager": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.504
+			          }
+			        },
+			        {
+			          "juro real 1 2m stake": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.504
+			          }
+			        },
+			        {
+			          "juro real 1 2m raise": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.504
+			          }
+			        },
+			        {
+			          "juro real 1 2m chance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.504
+			          }
+			        },
+			        {
+			          "juro real 1 2m gamble": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.479
+			          }
+			        },
+			        {
+			          "juro real 1 2m pot": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.479
+			          }
+			        },
+			        {
+			          "juro real 1 2m flutter": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.479
+			          }
+			        }
+			      ]
+			    },
+			    "gold_defasagem_juros_inadimplencia.inadimplencia_pj": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold_defasagem_juros_inadimplencia",
+			          "ConceptualProperty": "inadimplencia_pj"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "inadimplencia pj": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "inadimplencia_pj": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "gold_defasagem_juros_inadimplencia.inadimplencia_pj_var_1_2m": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold_defasagem_juros_inadimplencia",
+			          "ConceptualProperty": "inadimplencia_pj_var_12m"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "inadimplencia pj var 1 2m": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "inadimplencia_pj_var_12m": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "gold_defasagem_juros_inadimplencia.inadimplencia_pf": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold_defasagem_juros_inadimplencia",
+			          "ConceptualProperty": "inadimplencia_pf"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "inadimplencia pf": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "inadimplencia_pf": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "gold_defasagem_juros_inadimplencia.concessoes_pj": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold_defasagem_juros_inadimplencia",
+			          "ConceptualProperty": "concessoes_pj"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "concessoes pj": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "concessoe pj": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "concessoes_pj": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "gold_defasagem_juros_inadimplencia.juro_real_var_1_2m_6m_ante": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold_defasagem_juros_inadimplencia",
+			          "ConceptualProperty": "juro_real_var_12m_6m_antes"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "juro real var 1 2m 6m ante": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "juro_real_var_12m_6m_antes": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "gold_defasagem_juros_inadimplencia.na_amostra_comum": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold_defasagem_juros_inadimplencia",
+			          "ConceptualProperty": "na_amostra_comum"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "na amostra comum": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "na_amostra_comum": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "gold_pix_empresas_forma_iniciacao": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold_pix_empresas_forma_iniciacao"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "gold pix empresas forma iniciacao": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "gold pix empresa forma iniciacao": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "gold_pix_empresas_forma_iniciacao": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "gold_pix_empresas_forma_iniciacao.ano_me": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold_pix_empresas_forma_iniciacao",
+			          "ConceptualProperty": "ano_mes"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ano me": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "ano_mes": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "gold_pix_empresas_forma_iniciacao.data": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold_pix_empresas_forma_iniciacao",
+			          "ConceptualProperty": "data"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "data": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        },
+			        {
+			          "information": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "fact": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "info": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "statistic": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "document": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "figure": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "record": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "gold_pix_empresas_forma_iniciacao.mes_parcial": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold_pix_empresas_forma_iniciacao",
+			          "ConceptualProperty": "mes_parcial"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "mes parcial": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "me parcial": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "mes_parcial": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "gold_pix_empresas_forma_iniciacao.natureza": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold_pix_empresas_forma_iniciacao",
+			          "ConceptualProperty": "natureza"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "natureza": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "gold_pix_empresas_forma_iniciacao.pagador_tipo": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold_pix_empresas_forma_iniciacao",
+			          "ConceptualProperty": "pagador_tipo"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "pagador tipo": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "pagador_tipo": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "gold_pix_empresas_forma_iniciacao.recebedor_tipo": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold_pix_empresas_forma_iniciacao",
+			          "ConceptualProperty": "recebedor_tipo"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "recebedor tipo": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "recebedor_tipo": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "gold_pix_empresas_forma_iniciacao.forma_iniciacao": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold_pix_empresas_forma_iniciacao",
+			          "ConceptualProperty": "forma_iniciacao"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "forma iniciacao": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "forma_iniciacao": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "gold_pix_empresas_forma_iniciacao.forma_iniciacao_descricao": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold_pix_empresas_forma_iniciacao",
+			          "ConceptualProperty": "forma_iniciacao_descricao"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "forma iniciacao descricao": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "forma_iniciacao_descricao": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "gold_pix_empresas_forma_iniciacao.valor": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold_pix_empresas_forma_iniciacao",
+			          "ConceptualProperty": "valor"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "valor": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "courage": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "bravery": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "heroism": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "fearlessness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "boldness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "gallantry": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "lionheartedness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "pluck": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "spirit": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "nerve": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "gold_pix_empresas_forma_iniciacao.quantidade": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold_pix_empresas_forma_iniciacao",
+			          "ConceptualProperty": "quantidade"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "quantidade": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "gold_pix_empresas_forma_iniciacao.ticket_medio": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold_pix_empresas_forma_iniciacao",
+			          "ConceptualProperty": "ticket_medio"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ticket medio": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "ticket_medio": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "gold_pix_empresas_forma_iniciacao.participacao_valor_na_natureza": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold_pix_empresas_forma_iniciacao",
+			          "ConceptualProperty": "participacao_valor_na_natureza"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "participacao valor na natureza": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "participacao_valor_na_natureza": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "gold_pix_natureza_mensal": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold_pix_natureza_mensal"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "gold pix natureza mensal": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "gold_pix_natureza_mensal": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "gold_pix_natureza_mensal.ano_me": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold_pix_natureza_mensal",
+			          "ConceptualProperty": "ano_mes"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ano me": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "ano_mes": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "gold_pix_natureza_mensal.data": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold_pix_natureza_mensal",
+			          "ConceptualProperty": "data"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "data": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        },
+			        {
+			          "information": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "fact": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "info": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "statistic": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "document": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "figure": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "record": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "gold_pix_natureza_mensal.mes_parcial": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold_pix_natureza_mensal",
+			          "ConceptualProperty": "mes_parcial"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "mes parcial": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "me parcial": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "mes_parcial": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "gold_pix_natureza_mensal.natureza": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold_pix_natureza_mensal",
+			          "ConceptualProperty": "natureza"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "natureza": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "gold_pix_natureza_mensal.pagador_tipo": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold_pix_natureza_mensal",
+			          "ConceptualProperty": "pagador_tipo"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "pagador tipo": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "pagador_tipo": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "gold_pix_natureza_mensal.recebedor_tipo": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold_pix_natureza_mensal",
+			          "ConceptualProperty": "recebedor_tipo"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "recebedor tipo": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "recebedor_tipo": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "gold_pix_natureza_mensal.envolve_empresa": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold_pix_natureza_mensal",
+			          "ConceptualProperty": "envolve_empresa"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "envolve empresa": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "envolve_empresa": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "gold_pix_natureza_mensal.valor": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold_pix_natureza_mensal",
+			          "ConceptualProperty": "valor"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "valor": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "courage": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "bravery": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "heroism": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "fearlessness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "boldness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "gallantry": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "lionheartedness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "pluck": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "spirit": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "nerve": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "gold_pix_natureza_mensal.quantidade": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold_pix_natureza_mensal",
+			          "ConceptualProperty": "quantidade"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "quantidade": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "gold_pix_natureza_mensal.ticket_medio": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold_pix_natureza_mensal",
+			          "ConceptualProperty": "ticket_medio"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ticket medio": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "ticket_medio": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "gold_pix_natureza_mensal.participacao_valor": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold_pix_natureza_mensal",
+			          "ConceptualProperty": "participacao_valor"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "participacao valor": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "participacao_valor": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "participacao courage": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "participacao bravery": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "participacao heroism": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "participacao fearlessness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "participacao boldness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "participacao gallantry": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "participacao lionheartedness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "participacao pluck": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "participacao spirit": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "participacao nerve": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        }
+			      ]
+			    },
+			    "gold_pix_natureza_mensal.participacao_quantidade": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold_pix_natureza_mensal",
+			          "ConceptualProperty": "participacao_quantidade"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "participacao quantidade": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "participacao_quantidade": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "gold_pix_natureza_mensal.entity__valor_pix": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold_pix_natureza_mensal",
+			          "ConceptualProperty": "_Valor Pix"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "_valor pix": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "gold_pix_natureza_mensal.entity__quantidade_pix": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold_pix_natureza_mensal",
+			          "ConceptualProperty": "_Quantidade Pix"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "_quantidade pix": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "gold_pix_natureza_mensal.entity__ticket_médio": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold_pix_natureza_mensal",
+			          "ConceptualProperty": "_Ticket Médio"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "_ticket médio": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "gold_pix_natureza_mensal.entity__participação_no_valor": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold_pix_natureza_mensal",
+			          "ConceptualProperty": "_Participação no Valor"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "_participação no valor": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "_participação number valor": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "_participação no courage": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "_participação no bravery": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "_participação no heroism": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "_participação no fearlessness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "_participação no boldness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "_participação no gallantry": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "_participação no lionheartedness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "_participação no pluck": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "_participação no spirit": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        }
+			      ]
+			    },
+			    "gold_pix_natureza_mensal.entity__valor_pix_empresas": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold_pix_natureza_mensal",
+			          "ConceptualProperty": "_Valor Pix Empresas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "_valor pix empresas": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "gold_pix_natureza_mensal.entity__selic": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold_pix_natureza_mensal",
+			          "ConceptualProperty": "_Selic"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "_selic": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Selic": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "gold_pix_natureza_mensal.entity__inadimplência_PJ": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold_pix_natureza_mensal",
+			          "ConceptualProperty": "_Inadimplência PJ"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "_inadimplência PJ": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Inadimplência PJ": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "gold_pix_natureza_mensal.entity__inadimplência_PJ_último_mês": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold_pix_natureza_mensal",
+			          "ConceptualProperty": "_Inadimplência PJ (último mês)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "_inadimplência PJ (último mês)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "_inadimplência PJ": {
+			            "State": "Generated",
+			            "Weight": 0.75
+			          }
+			        }
+			      ]
+			    },
+			    "gold_pix_natureza_mensal.entity__selic_último_mês": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold_pix_natureza_mensal",
+			          "ConceptualProperty": "_Selic (último mês)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "_selic (último mês)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "_selic": {
+			            "State": "Generated",
+			            "Weight": 0.75
+			          }
+			        }
+			      ]
+			    },
+			    "gold_pix_natureza_mensal.entity__mês_de_referência": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold_pix_natureza_mensal",
+			          "ConceptualProperty": "_Mês de referência"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "_mês de referência": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "gold_pix_natureza_mensal.entity__participação_B2B_último_mês": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold_pix_natureza_mensal",
+			          "ConceptualProperty": "_Participação B2B (último mês)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "_participação B2B (último mês)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "_participação B2B": {
+			            "State": "Generated",
+			            "Weight": 0.75
+			          }
+			        }
+			      ]
+			    },
+			    "gold_pix_natureza_mensal.entity__participação_B2B_5_anos_antes": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold_pix_natureza_mensal",
+			          "ConceptualProperty": "_Participação B2B (5 anos antes)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "_participação B2B (5 anos antes)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "_participação B2B": {
+			            "State": "Generated",
+			            "Weight": 0.75
+			          }
+			        }
+			      ]
+			    },
+			    "gold_pix_natureza_mensal.entity__defasagem_de_pico_meses": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold_pix_natureza_mensal",
+			          "ConceptualProperty": "_Defasagem de pico (meses)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "_defasagem de pico (meses)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "_defasagem de pico": {
+			            "State": "Generated",
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "Defasagem de pico (meses)": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "gold_pix_natureza_mensal.entity__efeito_do_juro_real_p_p_": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold_pix_natureza_mensal",
+			          "ConceptualProperty": "_Efeito do juro real (p.p.)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "_efeito do juro real (p.p.)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "_efeito do juro real": {
+			            "State": "Generated",
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "Efeito de +1 p.p. de juro real (p.p.)": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "gold_pix_natureza_mensal.entity__r_da_regressão": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold_pix_natureza_mensal",
+			          "ConceptualProperty": "_R² da regressão"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "_r² da regressão": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "R² da regressão (0 a 1)": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "d_calendario": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dCalendario"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "d calendario": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "dCalendario": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "d_calendario.data": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dCalendario",
+			          "ConceptualProperty": "data"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "data": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        },
+			        {
+			          "information": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "fact": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "info": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "statistic": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "document": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "figure": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "record": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "PERÍODO": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "d_calendario.ano": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dCalendario",
+			          "ConceptualProperty": "Ano"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ano": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "d_calendario.mê": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dCalendario",
+			          "ConceptualProperty": "Mês"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "mê": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "d_calendario.mês_ano": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dCalendario",
+			          "ConceptualProperty": "Mês/Ano"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "mês/ano": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "mê/ano": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "mês": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "mê": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.7566
+			          }
+			        },
+			        {
+			          "mês ano": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "mê ano": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.7566
+			          }
+			        }
+			      ]
+			    },
+			    "d_natureza": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dNatureza"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "d natureza": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "dNatureza": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "d_natureza.natureza": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dNatureza",
+			          "ConceptualProperty": "natureza"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "natureza": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "QUEM PAGA QUEM NO PIX": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "d_natureza.pagador_tipo": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dNatureza",
+			          "ConceptualProperty": "pagador_tipo"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "pagador tipo": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "pagador_tipo": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "d_natureza.recebedor_tipo": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dNatureza",
+			          "ConceptualProperty": "recebedor_tipo"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "recebedor tipo": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "recebedor_tipo": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "d_natureza.envolve_empresa": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dNatureza",
+			          "ConceptualProperty": "envolve_empresa"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "envolve empresa": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "envolve_empresa": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "gold_pix_natureza_mensal.entity__correlação_variação_12m": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold_pix_natureza_mensal",
+			          "ConceptualProperty": "_Correlação (variação 12m)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "_correlação (variação 12m)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "_correlação": {
+			            "State": "Generated",
+			            "Weight": 0.75
+			          }
+			        }
+			      ]
+			    },
+			    "gold_pix_natureza_mensal.entity__variação_B2B_em_5_anos": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold_pix_natureza_mensal",
+			          "ConceptualProperty": "_Variação B2B em 5 anos"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "_variação B2B em 5 anos": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "gold_correlacao_defasagem.indicador": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold_correlacao_defasagem",
+			          "ConceptualProperty": "Indicador"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "indicador": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "gold_pix_natureza_mensal.kpi_inadimplência": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold_pix_natureza_mensal",
+			          "ConceptualProperty": "KPI Inadimplência"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Inadimplência das empresas": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "gold_pix_natureza_mensal.kpi_fatia_b2b": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold_pix_natureza_mensal",
+			          "ConceptualProperty": "KPI Fatia B2B"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Fatia B2B no valor do Pix": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "gold_pix_natureza_mensal.kpi_fatia_b2b_variação_5_anos": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold_pix_natureza_mensal",
+			          "ConceptualProperty": "KPI Fatia B2B variação 5 anos"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Fatia B2B: variação em 5 anos": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "gold_pix_natureza_mensal.kpi_ticket_médio": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold_pix_natureza_mensal",
+			          "ConceptualProperty": "KPI Ticket médio"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Ticket médio de um Pix (R$)": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "gold_pix_natureza_mensal.kpi_selic": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold_pix_natureza_mensal",
+			          "ConceptualProperty": "KPI Selic"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Selic meta (ao ano)": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "gold_pix_natureza_mensal.column_fatia_da_forma_de_iniciação": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "gold_pix_natureza_mensal",
+			          "ConceptualProperty": "_Fatia da forma de iniciação"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Fatia do valor": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    }
+			  },
+			  "Relationships": {
+			    "d_calendario_has_gold_defasagem_juros_inadimplencia": {
+			      "Binding": {
+			        "ConceptualEntity": "dCalendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_calendario": {
+			          "Target": {
+			            "Entity": "d_calendario"
+			          }
+			        },
+			        "gold_defasagem_juros_inadimplencia": {
+			          "Target": {
+			            "Entity": "gold_defasagem_juros_inadimplencia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_calendario"
+			            },
+			            "Object": {
+			              "Role": "gold_defasagem_juros_inadimplencia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_calendarios_have_gold_defasagem_juros_inadimplencias"
+			        }
+			      ]
+			    },
+			    "gold_pix_natureza_mensal_has_d_natureza": {
+			      "Binding": {
+			        "ConceptualEntity": "gold_pix_natureza_mensal"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_pix_natureza_mensal": {
+			          "Target": {
+			            "Entity": "gold_pix_natureza_mensal"
+			          }
+			        },
+			        "d_natureza": {
+			          "Target": {
+			            "Entity": "d_natureza"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_pix_natureza_mensal"
+			            },
+			            "Object": {
+			              "Role": "d_natureza"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_pix_natureza_mensal_have_d_naturezas"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_natureza"
+			            },
+			            "Object": {
+			              "Role": "gold_pix_natureza_mensal"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_naturezas_have_gold_pix_natureza_mensal"
+			        }
+			      ]
+			    },
+			    "gold_pix_natureza_mensal_has_d_calendario": {
+			      "Binding": {
+			        "ConceptualEntity": "gold_pix_natureza_mensal"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_pix_natureza_mensal": {
+			          "Target": {
+			            "Entity": "gold_pix_natureza_mensal"
+			          }
+			        },
+			        "d_calendario": {
+			          "Target": {
+			            "Entity": "d_calendario"
+			          },
+			          "Nouns": [
+			            {
+			              "data": {
+			                "State": "Generated"
+			              }
+			            }
+			          ]
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_pix_natureza_mensal"
+			            },
+			            "Object": {
+			              "Role": "d_calendario"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_pix_natureza_mensal_have_d_calendarios"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_calendario"
+			            },
+			            "Object": {
+			              "Role": "gold_pix_natureza_mensal"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_calendarios_have_gold_pix_natureza_mensal"
+			        }
+			      ]
+			    },
+			    "gold_pix_empresas_forma_iniciacao_has_d_natureza": {
+			      "Binding": {
+			        "ConceptualEntity": "gold_pix_empresas_forma_iniciacao"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_pix_empresas_forma_iniciacao": {
+			          "Target": {
+			            "Entity": "gold_pix_empresas_forma_iniciacao"
+			          }
+			        },
+			        "d_natureza": {
+			          "Target": {
+			            "Entity": "d_natureza"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_pix_empresas_forma_iniciacao"
+			            },
+			            "Object": {
+			              "Role": "d_natureza"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_pix_empresas_forma_iniciacaos_have_d_naturezas"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_natureza"
+			            },
+			            "Object": {
+			              "Role": "gold_pix_empresas_forma_iniciacao"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_naturezas_have_gold_pix_empresas_forma_iniciacaos"
+			        }
+			      ]
+			    },
+			    "gold_pix_empresas_forma_iniciacao_has_d_calendario": {
+			      "Binding": {
+			        "ConceptualEntity": "gold_pix_empresas_forma_iniciacao"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_pix_empresas_forma_iniciacao": {
+			          "Target": {
+			            "Entity": "gold_pix_empresas_forma_iniciacao"
+			          }
+			        },
+			        "d_calendario": {
+			          "Target": {
+			            "Entity": "d_calendario"
+			          },
+			          "Nouns": [
+			            {
+			              "data": {
+			                "State": "Generated"
+			              }
+			            }
+			          ]
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_pix_empresas_forma_iniciacao"
+			            },
+			            "Object": {
+			              "Role": "d_calendario"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_pix_empresas_forma_iniciacaos_have_d_calendarios"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_calendario"
+			            },
+			            "Object": {
+			              "Role": "gold_pix_empresas_forma_iniciacao"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_calendarios_have_gold_pix_empresas_forma_iniciacaos"
+			        }
+			      ]
+			    },
+			    "gold_defasagem_juros_inadimplencia_has_d_calendario": {
+			      "Binding": {
+			        "ConceptualEntity": "gold_defasagem_juros_inadimplencia"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_defasagem_juros_inadimplencia": {
+			          "Target": {
+			            "Entity": "gold_defasagem_juros_inadimplencia"
+			          }
+			        },
+			        "d_calendario": {
+			          "Target": {
+			            "Entity": "d_calendario"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_defasagem_juros_inadimplencia"
+			            },
+			            "Object": {
+			              "Role": "d_calendario"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_defasagem_juros_inadimplencias_have_d_calendarios"
+			        }
+			      ]
+			    },
+			    "gold_correlacao_defasagem_has_indicador": {
+			      "Binding": {
+			        "ConceptualEntity": "gold_correlacao_defasagem"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_correlacao_defasagem": {
+			          "Target": {
+			            "Entity": "gold_correlacao_defasagem"
+			          }
+			        },
+			        "gold_correlacao_defasagem.indicador": {
+			          "Target": {
+			            "Entity": "gold_correlacao_defasagem.indicador"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_correlacao_defasagem"
+			            },
+			            "Object": {
+			              "Role": "gold_correlacao_defasagem.indicador"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_correlacao_defasagems_have_indicadors"
+			        }
+			      ]
+			    },
+			    "gold_pix_natureza_mensal_has_entity__variação_B2B_em_5_anos": {
+			      "Binding": {
+			        "ConceptualEntity": "gold_pix_natureza_mensal"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_pix_natureza_mensal": {
+			          "Target": {
+			            "Entity": "gold_pix_natureza_mensal"
+			          }
+			        },
+			        "gold_pix_natureza_mensal.entity__variação_B2B_em_5_anos": {
+			          "Target": {
+			            "Entity": "gold_pix_natureza_mensal.entity__variação_B2B_em_5_anos"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_pix_natureza_mensal"
+			            },
+			            "Object": {
+			              "Role": "gold_pix_natureza_mensal.entity__variação_B2B_em_5_anos"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_pix_natureza_mensal_have__variação_B2B_em_5_anos"
+			        }
+			      ]
+			    },
+			    "gold_correlacao_defasagem_has_gold_pix_natureza_mensal_entity__correlação_variação_12m": {
+			      "Binding": {
+			        "ConceptualEntity": "gold_correlacao_defasagem"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_correlacao_defasagem": {
+			          "Target": {
+			            "Entity": "gold_correlacao_defasagem"
+			          }
+			        },
+			        "gold_pix_natureza_mensal.entity__correlação_variação_12m": {
+			          "Target": {
+			            "Entity": "gold_pix_natureza_mensal.entity__correlação_variação_12m"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_correlacao_defasagem"
+			            },
+			            "Object": {
+			              "Role": "gold_pix_natureza_mensal.entity__correlação_variação_12m"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_correlacao_defasagems_have__correlação_variação_12m"
+			        }
+			      ]
+			    },
+			    "d_natureza_has_envolve_empresa": {
+			      "Binding": {
+			        "ConceptualEntity": "dNatureza"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_natureza": {
+			          "Target": {
+			            "Entity": "d_natureza"
+			          }
+			        },
+			        "d_natureza.envolve_empresa": {
+			          "Target": {
+			            "Entity": "d_natureza.envolve_empresa"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_natureza"
+			            },
+			            "Object": {
+			              "Role": "d_natureza.envolve_empresa"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_naturezas_have_envolve_empresas"
+			        }
+			      ]
+			    },
+			    "d_natureza_has_recebedor_tipo": {
+			      "Binding": {
+			        "ConceptualEntity": "dNatureza"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_natureza": {
+			          "Target": {
+			            "Entity": "d_natureza"
+			          }
+			        },
+			        "d_natureza.recebedor_tipo": {
+			          "Target": {
+			            "Entity": "d_natureza.recebedor_tipo"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_natureza"
+			            },
+			            "Object": {
+			              "Role": "d_natureza.recebedor_tipo"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_naturezas_have_recebedor_tipos"
+			        }
+			      ]
+			    },
+			    "d_natureza_has_pagador_tipo": {
+			      "Binding": {
+			        "ConceptualEntity": "dNatureza"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_natureza": {
+			          "Target": {
+			            "Entity": "d_natureza"
+			          }
+			        },
+			        "d_natureza.pagador_tipo": {
+			          "Target": {
+			            "Entity": "d_natureza.pagador_tipo"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_natureza"
+			            },
+			            "Object": {
+			              "Role": "d_natureza.pagador_tipo"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_naturezas_have_pagador_tipos"
+			        }
+			      ]
+			    },
+			    "d_natureza_has_natureza": {
+			      "Binding": {
+			        "ConceptualEntity": "dNatureza"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_natureza": {
+			          "Target": {
+			            "Entity": "d_natureza"
+			          }
+			        },
+			        "d_natureza.natureza": {
+			          "Target": {
+			            "Entity": "d_natureza.natureza"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_natureza"
+			            },
+			            "Object": {
+			              "Role": "d_natureza.natureza"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_naturezas_have_naturezas"
+			        }
+			      ]
+			    },
+			    "d_calendario_has_mês_ano": {
+			      "Binding": {
+			        "ConceptualEntity": "dCalendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_calendario": {
+			          "Target": {
+			            "Entity": "d_calendario"
+			          }
+			        },
+			        "d_calendario.mês_ano": {
+			          "Target": {
+			            "Entity": "d_calendario.mês_ano"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_calendario"
+			            },
+			            "Object": {
+			              "Role": "d_calendario.mês_ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_calendarios_have_mês_anos"
+			        }
+			      ]
+			    },
+			    "d_calendario_has_mê": {
+			      "Binding": {
+			        "ConceptualEntity": "dCalendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_calendario": {
+			          "Target": {
+			            "Entity": "d_calendario"
+			          }
+			        },
+			        "d_calendario.mê": {
+			          "Target": {
+			            "Entity": "d_calendario.mê"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_calendario"
+			            },
+			            "Object": {
+			              "Role": "d_calendario.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_calendarios_have_mê"
+			        }
+			      ]
+			    },
+			    "d_calendario_has_ano": {
+			      "Binding": {
+			        "ConceptualEntity": "dCalendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_calendario": {
+			          "Target": {
+			            "Entity": "d_calendario"
+			          }
+			        },
+			        "d_calendario.ano": {
+			          "Target": {
+			            "Entity": "d_calendario.ano"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_calendario"
+			            },
+			            "Object": {
+			              "Role": "d_calendario.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_calendarios_have_anos"
+			        }
+			      ]
+			    },
+			    "d_calendario_has_data": {
+			      "Binding": {
+			        "ConceptualEntity": "dCalendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_calendario": {
+			          "Target": {
+			            "Entity": "d_calendario"
+			          }
+			        },
+			        "d_calendario.data": {
+			          "Target": {
+			            "Entity": "d_calendario.data"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_calendario"
+			            },
+			            "Object": {
+			              "Role": "d_calendario.data"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_calendarios_have_data"
+			        }
+			      ]
+			    },
+			    "gold_pix_natureza_mensal_has_entity__r_da_regressão": {
+			      "Binding": {
+			        "ConceptualEntity": "gold_pix_natureza_mensal"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_pix_natureza_mensal": {
+			          "Target": {
+			            "Entity": "gold_pix_natureza_mensal"
+			          }
+			        },
+			        "gold_pix_natureza_mensal.entity__r_da_regressão": {
+			          "Target": {
+			            "Entity": "gold_pix_natureza_mensal.entity__r_da_regressão"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_pix_natureza_mensal"
+			            },
+			            "Object": {
+			              "Role": "gold_pix_natureza_mensal.entity__r_da_regressão"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_pix_natureza_mensal_have__r_da_regressão"
+			        }
+			      ]
+			    },
+			    "gold_pix_natureza_mensal_has_entity__efeito_do_juro_real_p_p_": {
+			      "Binding": {
+			        "ConceptualEntity": "gold_pix_natureza_mensal"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_pix_natureza_mensal": {
+			          "Target": {
+			            "Entity": "gold_pix_natureza_mensal"
+			          }
+			        },
+			        "gold_pix_natureza_mensal.entity__efeito_do_juro_real_p_p_": {
+			          "Target": {
+			            "Entity": "gold_pix_natureza_mensal.entity__efeito_do_juro_real_p_p_"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_pix_natureza_mensal"
+			            },
+			            "Object": {
+			              "Role": "gold_pix_natureza_mensal.entity__efeito_do_juro_real_p_p_"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_pix_natureza_mensal_have__efeito_do_juro_real_p_p_"
+			        }
+			      ]
+			    },
+			    "gold_correlacao_defasagem_has_gold_pix_natureza_mensal_entity__defasagem_de_pico_meses": {
+			      "Binding": {
+			        "ConceptualEntity": "gold_correlacao_defasagem"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_correlacao_defasagem": {
+			          "Target": {
+			            "Entity": "gold_correlacao_defasagem"
+			          }
+			        },
+			        "gold_pix_natureza_mensal.entity__defasagem_de_pico_meses": {
+			          "Target": {
+			            "Entity": "gold_pix_natureza_mensal.entity__defasagem_de_pico_meses"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_correlacao_defasagem"
+			            },
+			            "Object": {
+			              "Role": "gold_pix_natureza_mensal.entity__defasagem_de_pico_meses"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_correlacao_defasagems_have__defasagem_de_pico_meses"
+			        }
+			      ]
+			    },
+			    "gold_pix_natureza_mensal_has_entity__participação_B2B_5_anos_antes": {
+			      "Binding": {
+			        "ConceptualEntity": "gold_pix_natureza_mensal"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_pix_natureza_mensal": {
+			          "Target": {
+			            "Entity": "gold_pix_natureza_mensal"
+			          }
+			        },
+			        "gold_pix_natureza_mensal.entity__participação_B2B_5_anos_antes": {
+			          "Target": {
+			            "Entity": "gold_pix_natureza_mensal.entity__participação_B2B_5_anos_antes"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_pix_natureza_mensal"
+			            },
+			            "Object": {
+			              "Role": "gold_pix_natureza_mensal.entity__participação_B2B_5_anos_antes"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_pix_natureza_mensal_have__participação_B2B_5_anos_antes"
+			        }
+			      ]
+			    },
+			    "gold_pix_natureza_mensal_has_entity__participação_B2B_último_mês": {
+			      "Binding": {
+			        "ConceptualEntity": "gold_pix_natureza_mensal"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_pix_natureza_mensal": {
+			          "Target": {
+			            "Entity": "gold_pix_natureza_mensal"
+			          }
+			        },
+			        "gold_pix_natureza_mensal.entity__participação_B2B_último_mês": {
+			          "Target": {
+			            "Entity": "gold_pix_natureza_mensal.entity__participação_B2B_último_mês"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_pix_natureza_mensal"
+			            },
+			            "Object": {
+			              "Role": "gold_pix_natureza_mensal.entity__participação_B2B_último_mês"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_pix_natureza_mensal_have__participação_B2B_último_mês"
+			        }
+			      ]
+			    },
+			    "gold_defasagem_juros_inadimplencia_has_gold_pix_natureza_mensal_entity__mês_de_referência": {
+			      "Binding": {
+			        "ConceptualEntity": "gold_defasagem_juros_inadimplencia"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_defasagem_juros_inadimplencia": {
+			          "Target": {
+			            "Entity": "gold_defasagem_juros_inadimplencia"
+			          }
+			        },
+			        "gold_pix_natureza_mensal.entity__mês_de_referência": {
+			          "Target": {
+			            "Entity": "gold_pix_natureza_mensal.entity__mês_de_referência"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_defasagem_juros_inadimplencia"
+			            },
+			            "Object": {
+			              "Role": "gold_pix_natureza_mensal.entity__mês_de_referência"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_defasagem_juros_inadimplencias_have__mês_de_referência"
+			        }
+			      ]
+			    },
+			    "gold_defasagem_juros_inadimplencia_has_gold_pix_natureza_mensal_entity__selic_último_mês": {
+			      "Binding": {
+			        "ConceptualEntity": "gold_defasagem_juros_inadimplencia"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_defasagem_juros_inadimplencia": {
+			          "Target": {
+			            "Entity": "gold_defasagem_juros_inadimplencia"
+			          }
+			        },
+			        "gold_pix_natureza_mensal.entity__selic_último_mês": {
+			          "Target": {
+			            "Entity": "gold_pix_natureza_mensal.entity__selic_último_mês"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_defasagem_juros_inadimplencia"
+			            },
+			            "Object": {
+			              "Role": "gold_pix_natureza_mensal.entity__selic_último_mês"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_defasagem_juros_inadimplencias_have__selic_último_mês"
+			        }
+			      ]
+			    },
+			    "gold_defasagem_juros_inadimplencia_has_gold_pix_natureza_mensal_entity__inadimplência_PJ_último_mês": {
+			      "Binding": {
+			        "ConceptualEntity": "gold_defasagem_juros_inadimplencia"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_defasagem_juros_inadimplencia": {
+			          "Target": {
+			            "Entity": "gold_defasagem_juros_inadimplencia"
+			          }
+			        },
+			        "gold_pix_natureza_mensal.entity__inadimplência_PJ_último_mês": {
+			          "Target": {
+			            "Entity": "gold_pix_natureza_mensal.entity__inadimplência_PJ_último_mês"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_defasagem_juros_inadimplencia"
+			            },
+			            "Object": {
+			              "Role": "gold_pix_natureza_mensal.entity__inadimplência_PJ_último_mês"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_defasagem_juros_inadimplencias_have__inadimplência_PJ_último_mês"
+			        }
+			      ]
+			    },
+			    "gold_defasagem_juros_inadimplencia_has_gold_pix_natureza_mensal_entity__inadimplência_PJ": {
+			      "Binding": {
+			        "ConceptualEntity": "gold_defasagem_juros_inadimplencia"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_defasagem_juros_inadimplencia": {
+			          "Target": {
+			            "Entity": "gold_defasagem_juros_inadimplencia"
+			          }
+			        },
+			        "gold_pix_natureza_mensal.entity__inadimplência_PJ": {
+			          "Target": {
+			            "Entity": "gold_pix_natureza_mensal.entity__inadimplência_PJ"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_defasagem_juros_inadimplencia"
+			            },
+			            "Object": {
+			              "Role": "gold_pix_natureza_mensal.entity__inadimplência_PJ"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_defasagem_juros_inadimplencias_have__inadimplência_PJ"
+			        }
+			      ]
+			    },
+			    "gold_defasagem_juros_inadimplencia_has_gold_pix_natureza_mensal_entity__selic": {
+			      "Binding": {
+			        "ConceptualEntity": "gold_defasagem_juros_inadimplencia"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_defasagem_juros_inadimplencia": {
+			          "Target": {
+			            "Entity": "gold_defasagem_juros_inadimplencia"
+			          }
+			        },
+			        "gold_pix_natureza_mensal.entity__selic": {
+			          "Target": {
+			            "Entity": "gold_pix_natureza_mensal.entity__selic"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_defasagem_juros_inadimplencia"
+			            },
+			            "Object": {
+			              "Role": "gold_pix_natureza_mensal.entity__selic"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_defasagem_juros_inadimplencias_have__selic"
+			        }
+			      ]
+			    },
+			    "gold_pix_empresas_forma_iniciacao_has_gold_pix_natureza_mensal_entity__valor_pix_empresas": {
+			      "Binding": {
+			        "ConceptualEntity": "gold_pix_empresas_forma_iniciacao"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_pix_empresas_forma_iniciacao": {
+			          "Target": {
+			            "Entity": "gold_pix_empresas_forma_iniciacao"
+			          }
+			        },
+			        "gold_pix_natureza_mensal.entity__valor_pix_empresas": {
+			          "Target": {
+			            "Entity": "gold_pix_natureza_mensal.entity__valor_pix_empresas"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_pix_empresas_forma_iniciacao"
+			            },
+			            "Object": {
+			              "Role": "gold_pix_natureza_mensal.entity__valor_pix_empresas"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_pix_empresas_forma_iniciacaos_have__valor_pix_empresas"
+			        }
+			      ]
+			    },
+			    "gold_pix_natureza_mensal_has_entity__participação_no_valor": {
+			      "Binding": {
+			        "ConceptualEntity": "gold_pix_natureza_mensal"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_pix_natureza_mensal": {
+			          "Target": {
+			            "Entity": "gold_pix_natureza_mensal"
+			          }
+			        },
+			        "gold_pix_natureza_mensal.entity__participação_no_valor": {
+			          "Target": {
+			            "Entity": "gold_pix_natureza_mensal.entity__participação_no_valor"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_pix_natureza_mensal"
+			            },
+			            "Object": {
+			              "Role": "gold_pix_natureza_mensal.entity__participação_no_valor"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_pix_natureza_mensal_have__participação_no_valor"
+			        }
+			      ]
+			    },
+			    "gold_pix_natureza_mensal_has_entity__ticket_médio": {
+			      "Binding": {
+			        "ConceptualEntity": "gold_pix_natureza_mensal"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_pix_natureza_mensal": {
+			          "Target": {
+			            "Entity": "gold_pix_natureza_mensal"
+			          }
+			        },
+			        "gold_pix_natureza_mensal.entity__ticket_médio": {
+			          "Target": {
+			            "Entity": "gold_pix_natureza_mensal.entity__ticket_médio"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_pix_natureza_mensal"
+			            },
+			            "Object": {
+			              "Role": "gold_pix_natureza_mensal.entity__ticket_médio"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_pix_natureza_mensal_have__ticket_médio"
+			        }
+			      ]
+			    },
+			    "gold_pix_natureza_mensal_has_entity__quantidade_pix": {
+			      "Binding": {
+			        "ConceptualEntity": "gold_pix_natureza_mensal"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_pix_natureza_mensal": {
+			          "Target": {
+			            "Entity": "gold_pix_natureza_mensal"
+			          }
+			        },
+			        "gold_pix_natureza_mensal.entity__quantidade_pix": {
+			          "Target": {
+			            "Entity": "gold_pix_natureza_mensal.entity__quantidade_pix"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_pix_natureza_mensal"
+			            },
+			            "Object": {
+			              "Role": "gold_pix_natureza_mensal.entity__quantidade_pix"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_pix_natureza_mensal_have__quantidade_pix"
+			        }
+			      ]
+			    },
+			    "gold_pix_natureza_mensal_has_entity__valor_pix": {
+			      "Binding": {
+			        "ConceptualEntity": "gold_pix_natureza_mensal"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_pix_natureza_mensal": {
+			          "Target": {
+			            "Entity": "gold_pix_natureza_mensal"
+			          }
+			        },
+			        "gold_pix_natureza_mensal.entity__valor_pix": {
+			          "Target": {
+			            "Entity": "gold_pix_natureza_mensal.entity__valor_pix"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_pix_natureza_mensal"
+			            },
+			            "Object": {
+			              "Role": "gold_pix_natureza_mensal.entity__valor_pix"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_pix_natureza_mensal_have__valor_pix"
+			        }
+			      ]
+			    },
+			    "gold_pix_natureza_mensal_has_participacao_quantidade": {
+			      "Binding": {
+			        "ConceptualEntity": "gold_pix_natureza_mensal"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_pix_natureza_mensal": {
+			          "Target": {
+			            "Entity": "gold_pix_natureza_mensal"
+			          }
+			        },
+			        "gold_pix_natureza_mensal.participacao_quantidade": {
+			          "Target": {
+			            "Entity": "gold_pix_natureza_mensal.participacao_quantidade"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_pix_natureza_mensal"
+			            },
+			            "Object": {
+			              "Role": "gold_pix_natureza_mensal.participacao_quantidade"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_pix_natureza_mensal_have_participacao_quantidades"
+			        }
+			      ]
+			    },
+			    "gold_pix_natureza_mensal_has_participacao_valor": {
+			      "Binding": {
+			        "ConceptualEntity": "gold_pix_natureza_mensal"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_pix_natureza_mensal": {
+			          "Target": {
+			            "Entity": "gold_pix_natureza_mensal"
+			          }
+			        },
+			        "gold_pix_natureza_mensal.participacao_valor": {
+			          "Target": {
+			            "Entity": "gold_pix_natureza_mensal.participacao_valor"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_pix_natureza_mensal"
+			            },
+			            "Object": {
+			              "Role": "gold_pix_natureza_mensal.participacao_valor"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_pix_natureza_mensal_have_participacao_valor"
+			        }
+			      ]
+			    },
+			    "gold_pix_natureza_mensal_has_ticket_medio": {
+			      "Binding": {
+			        "ConceptualEntity": "gold_pix_natureza_mensal"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_pix_natureza_mensal": {
+			          "Target": {
+			            "Entity": "gold_pix_natureza_mensal"
+			          }
+			        },
+			        "gold_pix_natureza_mensal.ticket_medio": {
+			          "Target": {
+			            "Entity": "gold_pix_natureza_mensal.ticket_medio"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_pix_natureza_mensal"
+			            },
+			            "Object": {
+			              "Role": "gold_pix_natureza_mensal.ticket_medio"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_pix_natureza_mensal_have_ticket_medios"
+			        }
+			      ]
+			    },
+			    "gold_pix_natureza_mensal_has_quantidade": {
+			      "Binding": {
+			        "ConceptualEntity": "gold_pix_natureza_mensal"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_pix_natureza_mensal": {
+			          "Target": {
+			            "Entity": "gold_pix_natureza_mensal"
+			          }
+			        },
+			        "gold_pix_natureza_mensal.quantidade": {
+			          "Target": {
+			            "Entity": "gold_pix_natureza_mensal.quantidade"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_pix_natureza_mensal"
+			            },
+			            "Object": {
+			              "Role": "gold_pix_natureza_mensal.quantidade"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_pix_natureza_mensal_have_quantidades"
+			        }
+			      ]
+			    },
+			    "gold_pix_natureza_mensal_has_valor": {
+			      "Binding": {
+			        "ConceptualEntity": "gold_pix_natureza_mensal"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_pix_natureza_mensal": {
+			          "Target": {
+			            "Entity": "gold_pix_natureza_mensal"
+			          }
+			        },
+			        "gold_pix_natureza_mensal.valor": {
+			          "Target": {
+			            "Entity": "gold_pix_natureza_mensal.valor"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_pix_natureza_mensal"
+			            },
+			            "Object": {
+			              "Role": "gold_pix_natureza_mensal.valor"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_pix_natureza_mensal_have_valor"
+			        }
+			      ]
+			    },
+			    "gold_pix_natureza_mensal_has_envolve_empresa": {
+			      "Binding": {
+			        "ConceptualEntity": "gold_pix_natureza_mensal"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_pix_natureza_mensal": {
+			          "Target": {
+			            "Entity": "gold_pix_natureza_mensal"
+			          }
+			        },
+			        "gold_pix_natureza_mensal.envolve_empresa": {
+			          "Target": {
+			            "Entity": "gold_pix_natureza_mensal.envolve_empresa"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_pix_natureza_mensal"
+			            },
+			            "Object": {
+			              "Role": "gold_pix_natureza_mensal.envolve_empresa"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_pix_natureza_mensal_have_envolve_empresas"
+			        }
+			      ]
+			    },
+			    "gold_pix_natureza_mensal_has_recebedor_tipo": {
+			      "Binding": {
+			        "ConceptualEntity": "gold_pix_natureza_mensal"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_pix_natureza_mensal": {
+			          "Target": {
+			            "Entity": "gold_pix_natureza_mensal"
+			          }
+			        },
+			        "gold_pix_natureza_mensal.recebedor_tipo": {
+			          "Target": {
+			            "Entity": "gold_pix_natureza_mensal.recebedor_tipo"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_pix_natureza_mensal"
+			            },
+			            "Object": {
+			              "Role": "gold_pix_natureza_mensal.recebedor_tipo"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_pix_natureza_mensal_have_recebedor_tipos"
+			        }
+			      ]
+			    },
+			    "gold_pix_natureza_mensal_has_pagador_tipo": {
+			      "Binding": {
+			        "ConceptualEntity": "gold_pix_natureza_mensal"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_pix_natureza_mensal": {
+			          "Target": {
+			            "Entity": "gold_pix_natureza_mensal"
+			          }
+			        },
+			        "gold_pix_natureza_mensal.pagador_tipo": {
+			          "Target": {
+			            "Entity": "gold_pix_natureza_mensal.pagador_tipo"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_pix_natureza_mensal"
+			            },
+			            "Object": {
+			              "Role": "gold_pix_natureza_mensal.pagador_tipo"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_pix_natureza_mensal_have_pagador_tipos"
+			        }
+			      ]
+			    },
+			    "gold_pix_natureza_mensal_has_mes_parcial": {
+			      "Binding": {
+			        "ConceptualEntity": "gold_pix_natureza_mensal"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_pix_natureza_mensal": {
+			          "Target": {
+			            "Entity": "gold_pix_natureza_mensal"
+			          }
+			        },
+			        "gold_pix_natureza_mensal.mes_parcial": {
+			          "Target": {
+			            "Entity": "gold_pix_natureza_mensal.mes_parcial"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_pix_natureza_mensal"
+			            },
+			            "Object": {
+			              "Role": "gold_pix_natureza_mensal.mes_parcial"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_pix_natureza_mensal_have_mes_parcials"
+			        }
+			      ]
+			    },
+			    "gold_pix_natureza_mensal_has_data": {
+			      "Binding": {
+			        "ConceptualEntity": "gold_pix_natureza_mensal"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_pix_natureza_mensal": {
+			          "Target": {
+			            "Entity": "gold_pix_natureza_mensal"
+			          }
+			        },
+			        "gold_pix_natureza_mensal.data": {
+			          "Target": {
+			            "Entity": "gold_pix_natureza_mensal.data"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_pix_natureza_mensal"
+			            },
+			            "Object": {
+			              "Role": "gold_pix_natureza_mensal.data"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_pix_natureza_mensal_have_data"
+			        }
+			      ]
+			    },
+			    "gold_pix_natureza_mensal_has_ano_me": {
+			      "Binding": {
+			        "ConceptualEntity": "gold_pix_natureza_mensal"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_pix_natureza_mensal": {
+			          "Target": {
+			            "Entity": "gold_pix_natureza_mensal"
+			          }
+			        },
+			        "gold_pix_natureza_mensal.ano_me": {
+			          "Target": {
+			            "Entity": "gold_pix_natureza_mensal.ano_me"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_pix_natureza_mensal"
+			            },
+			            "Object": {
+			              "Role": "gold_pix_natureza_mensal.ano_me"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_pix_natureza_mensal_have_ano_me"
+			        }
+			      ]
+			    },
+			    "gold_pix_empresas_forma_iniciacao_has_participacao_valor_na_natureza": {
+			      "Binding": {
+			        "ConceptualEntity": "gold_pix_empresas_forma_iniciacao"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_pix_empresas_forma_iniciacao": {
+			          "Target": {
+			            "Entity": "gold_pix_empresas_forma_iniciacao"
+			          }
+			        },
+			        "gold_pix_empresas_forma_iniciacao.participacao_valor_na_natureza": {
+			          "Target": {
+			            "Entity": "gold_pix_empresas_forma_iniciacao.participacao_valor_na_natureza"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_pix_empresas_forma_iniciacao"
+			            },
+			            "Object": {
+			              "Role": "gold_pix_empresas_forma_iniciacao.participacao_valor_na_natureza"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_pix_empresas_forma_iniciacaos_have_participacao_valor_na_naturezas"
+			        }
+			      ]
+			    },
+			    "gold_pix_empresas_forma_iniciacao_has_ticket_medio": {
+			      "Binding": {
+			        "ConceptualEntity": "gold_pix_empresas_forma_iniciacao"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_pix_empresas_forma_iniciacao": {
+			          "Target": {
+			            "Entity": "gold_pix_empresas_forma_iniciacao"
+			          }
+			        },
+			        "gold_pix_empresas_forma_iniciacao.ticket_medio": {
+			          "Target": {
+			            "Entity": "gold_pix_empresas_forma_iniciacao.ticket_medio"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_pix_empresas_forma_iniciacao"
+			            },
+			            "Object": {
+			              "Role": "gold_pix_empresas_forma_iniciacao.ticket_medio"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_pix_empresas_forma_iniciacaos_have_ticket_medios"
+			        }
+			      ]
+			    },
+			    "gold_pix_empresas_forma_iniciacao_has_quantidade": {
+			      "Binding": {
+			        "ConceptualEntity": "gold_pix_empresas_forma_iniciacao"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_pix_empresas_forma_iniciacao": {
+			          "Target": {
+			            "Entity": "gold_pix_empresas_forma_iniciacao"
+			          }
+			        },
+			        "gold_pix_empresas_forma_iniciacao.quantidade": {
+			          "Target": {
+			            "Entity": "gold_pix_empresas_forma_iniciacao.quantidade"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_pix_empresas_forma_iniciacao"
+			            },
+			            "Object": {
+			              "Role": "gold_pix_empresas_forma_iniciacao.quantidade"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_pix_empresas_forma_iniciacaos_have_quantidades"
+			        }
+			      ]
+			    },
+			    "gold_pix_empresas_forma_iniciacao_has_valor": {
+			      "Binding": {
+			        "ConceptualEntity": "gold_pix_empresas_forma_iniciacao"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_pix_empresas_forma_iniciacao": {
+			          "Target": {
+			            "Entity": "gold_pix_empresas_forma_iniciacao"
+			          }
+			        },
+			        "gold_pix_empresas_forma_iniciacao.valor": {
+			          "Target": {
+			            "Entity": "gold_pix_empresas_forma_iniciacao.valor"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_pix_empresas_forma_iniciacao"
+			            },
+			            "Object": {
+			              "Role": "gold_pix_empresas_forma_iniciacao.valor"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_pix_empresas_forma_iniciacaos_have_valor"
+			        }
+			      ]
+			    },
+			    "gold_pix_empresas_forma_iniciacao_has_forma_iniciacao_descricao": {
+			      "Binding": {
+			        "ConceptualEntity": "gold_pix_empresas_forma_iniciacao"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_pix_empresas_forma_iniciacao": {
+			          "Target": {
+			            "Entity": "gold_pix_empresas_forma_iniciacao"
+			          }
+			        },
+			        "gold_pix_empresas_forma_iniciacao.forma_iniciacao_descricao": {
+			          "Target": {
+			            "Entity": "gold_pix_empresas_forma_iniciacao.forma_iniciacao_descricao"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_pix_empresas_forma_iniciacao"
+			            },
+			            "Object": {
+			              "Role": "gold_pix_empresas_forma_iniciacao.forma_iniciacao_descricao"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_pix_empresas_forma_iniciacaos_have_forma_iniciacao_descricaos"
+			        }
+			      ]
+			    },
+			    "gold_pix_empresas_forma_iniciacao_has_forma_iniciacao": {
+			      "Binding": {
+			        "ConceptualEntity": "gold_pix_empresas_forma_iniciacao"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_pix_empresas_forma_iniciacao": {
+			          "Target": {
+			            "Entity": "gold_pix_empresas_forma_iniciacao"
+			          }
+			        },
+			        "gold_pix_empresas_forma_iniciacao.forma_iniciacao": {
+			          "Target": {
+			            "Entity": "gold_pix_empresas_forma_iniciacao.forma_iniciacao"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_pix_empresas_forma_iniciacao"
+			            },
+			            "Object": {
+			              "Role": "gold_pix_empresas_forma_iniciacao.forma_iniciacao"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_pix_empresas_forma_iniciacaos_have_forma_iniciacaos"
+			        }
+			      ]
+			    },
+			    "gold_pix_empresas_forma_iniciacao_has_recebedor_tipo": {
+			      "Binding": {
+			        "ConceptualEntity": "gold_pix_empresas_forma_iniciacao"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_pix_empresas_forma_iniciacao": {
+			          "Target": {
+			            "Entity": "gold_pix_empresas_forma_iniciacao"
+			          }
+			        },
+			        "gold_pix_empresas_forma_iniciacao.recebedor_tipo": {
+			          "Target": {
+			            "Entity": "gold_pix_empresas_forma_iniciacao.recebedor_tipo"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_pix_empresas_forma_iniciacao"
+			            },
+			            "Object": {
+			              "Role": "gold_pix_empresas_forma_iniciacao.recebedor_tipo"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_pix_empresas_forma_iniciacaos_have_recebedor_tipos"
+			        }
+			      ]
+			    },
+			    "gold_pix_empresas_forma_iniciacao_has_pagador_tipo": {
+			      "Binding": {
+			        "ConceptualEntity": "gold_pix_empresas_forma_iniciacao"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_pix_empresas_forma_iniciacao": {
+			          "Target": {
+			            "Entity": "gold_pix_empresas_forma_iniciacao"
+			          }
+			        },
+			        "gold_pix_empresas_forma_iniciacao.pagador_tipo": {
+			          "Target": {
+			            "Entity": "gold_pix_empresas_forma_iniciacao.pagador_tipo"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_pix_empresas_forma_iniciacao"
+			            },
+			            "Object": {
+			              "Role": "gold_pix_empresas_forma_iniciacao.pagador_tipo"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_pix_empresas_forma_iniciacaos_have_pagador_tipos"
+			        }
+			      ]
+			    },
+			    "gold_pix_empresas_forma_iniciacao_has_mes_parcial": {
+			      "Binding": {
+			        "ConceptualEntity": "gold_pix_empresas_forma_iniciacao"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_pix_empresas_forma_iniciacao": {
+			          "Target": {
+			            "Entity": "gold_pix_empresas_forma_iniciacao"
+			          }
+			        },
+			        "gold_pix_empresas_forma_iniciacao.mes_parcial": {
+			          "Target": {
+			            "Entity": "gold_pix_empresas_forma_iniciacao.mes_parcial"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_pix_empresas_forma_iniciacao"
+			            },
+			            "Object": {
+			              "Role": "gold_pix_empresas_forma_iniciacao.mes_parcial"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_pix_empresas_forma_iniciacaos_have_mes_parcials"
+			        }
+			      ]
+			    },
+			    "gold_pix_empresas_forma_iniciacao_has_data": {
+			      "Binding": {
+			        "ConceptualEntity": "gold_pix_empresas_forma_iniciacao"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_pix_empresas_forma_iniciacao": {
+			          "Target": {
+			            "Entity": "gold_pix_empresas_forma_iniciacao"
+			          }
+			        },
+			        "gold_pix_empresas_forma_iniciacao.data": {
+			          "Target": {
+			            "Entity": "gold_pix_empresas_forma_iniciacao.data"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_pix_empresas_forma_iniciacao"
+			            },
+			            "Object": {
+			              "Role": "gold_pix_empresas_forma_iniciacao.data"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_pix_empresas_forma_iniciacaos_have_data"
+			        }
+			      ]
+			    },
+			    "gold_pix_empresas_forma_iniciacao_has_ano_me": {
+			      "Binding": {
+			        "ConceptualEntity": "gold_pix_empresas_forma_iniciacao"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_pix_empresas_forma_iniciacao": {
+			          "Target": {
+			            "Entity": "gold_pix_empresas_forma_iniciacao"
+			          }
+			        },
+			        "gold_pix_empresas_forma_iniciacao.ano_me": {
+			          "Target": {
+			            "Entity": "gold_pix_empresas_forma_iniciacao.ano_me"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_pix_empresas_forma_iniciacao"
+			            },
+			            "Object": {
+			              "Role": "gold_pix_empresas_forma_iniciacao.ano_me"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_pix_empresas_forma_iniciacaos_have_ano_me"
+			        }
+			      ]
+			    },
+			    "gold_defasagem_juros_inadimplencia_has_na_amostra_comum": {
+			      "Binding": {
+			        "ConceptualEntity": "gold_defasagem_juros_inadimplencia"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_defasagem_juros_inadimplencia": {
+			          "Target": {
+			            "Entity": "gold_defasagem_juros_inadimplencia"
+			          }
+			        },
+			        "gold_defasagem_juros_inadimplencia.na_amostra_comum": {
+			          "Target": {
+			            "Entity": "gold_defasagem_juros_inadimplencia.na_amostra_comum"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_defasagem_juros_inadimplencia"
+			            },
+			            "Object": {
+			              "Role": "gold_defasagem_juros_inadimplencia.na_amostra_comum"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_defasagem_juros_inadimplencias_have_na_amostra_comums"
+			        }
+			      ]
+			    },
+			    "gold_defasagem_juros_inadimplencia_has_juro_real_var_1_2m_6m_ante": {
+			      "Binding": {
+			        "ConceptualEntity": "gold_defasagem_juros_inadimplencia"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_defasagem_juros_inadimplencia": {
+			          "Target": {
+			            "Entity": "gold_defasagem_juros_inadimplencia"
+			          }
+			        },
+			        "gold_defasagem_juros_inadimplencia.juro_real_var_1_2m_6m_ante": {
+			          "Target": {
+			            "Entity": "gold_defasagem_juros_inadimplencia.juro_real_var_1_2m_6m_ante"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_defasagem_juros_inadimplencia"
+			            },
+			            "Object": {
+			              "Role": "gold_defasagem_juros_inadimplencia.juro_real_var_1_2m_6m_ante"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_defasagem_juros_inadimplencias_have_juro_real_var_1_2m_6m_antes"
+			        }
+			      ]
+			    },
+			    "gold_defasagem_juros_inadimplencia_has_concessoes_pj": {
+			      "Binding": {
+			        "ConceptualEntity": "gold_defasagem_juros_inadimplencia"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_defasagem_juros_inadimplencia": {
+			          "Target": {
+			            "Entity": "gold_defasagem_juros_inadimplencia"
+			          }
+			        },
+			        "gold_defasagem_juros_inadimplencia.concessoes_pj": {
+			          "Target": {
+			            "Entity": "gold_defasagem_juros_inadimplencia.concessoes_pj"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_defasagem_juros_inadimplencia"
+			            },
+			            "Object": {
+			              "Role": "gold_defasagem_juros_inadimplencia.concessoes_pj"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_defasagem_juros_inadimplencias_have_concessoes_pjs"
+			        }
+			      ]
+			    },
+			    "gold_defasagem_juros_inadimplencia_has_inadimplencia_pf": {
+			      "Binding": {
+			        "ConceptualEntity": "gold_defasagem_juros_inadimplencia"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_defasagem_juros_inadimplencia": {
+			          "Target": {
+			            "Entity": "gold_defasagem_juros_inadimplencia"
+			          }
+			        },
+			        "gold_defasagem_juros_inadimplencia.inadimplencia_pf": {
+			          "Target": {
+			            "Entity": "gold_defasagem_juros_inadimplencia.inadimplencia_pf"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_defasagem_juros_inadimplencia"
+			            },
+			            "Object": {
+			              "Role": "gold_defasagem_juros_inadimplencia.inadimplencia_pf"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_defasagem_juros_inadimplencias_have_inadimplencia_pf"
+			        }
+			      ]
+			    },
+			    "gold_defasagem_juros_inadimplencia_has_inadimplencia_pj_var_1_2m": {
+			      "Binding": {
+			        "ConceptualEntity": "gold_defasagem_juros_inadimplencia"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_defasagem_juros_inadimplencia": {
+			          "Target": {
+			            "Entity": "gold_defasagem_juros_inadimplencia"
+			          }
+			        },
+			        "gold_defasagem_juros_inadimplencia.inadimplencia_pj_var_1_2m": {
+			          "Target": {
+			            "Entity": "gold_defasagem_juros_inadimplencia.inadimplencia_pj_var_1_2m"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_defasagem_juros_inadimplencia"
+			            },
+			            "Object": {
+			              "Role": "gold_defasagem_juros_inadimplencia.inadimplencia_pj_var_1_2m"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_defasagem_juros_inadimplencias_have_inadimplencia_pj_var_1_2ms"
+			        }
+			      ]
+			    },
+			    "gold_defasagem_juros_inadimplencia_has_inadimplencia_pj": {
+			      "Binding": {
+			        "ConceptualEntity": "gold_defasagem_juros_inadimplencia"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_defasagem_juros_inadimplencia": {
+			          "Target": {
+			            "Entity": "gold_defasagem_juros_inadimplencia"
+			          }
+			        },
+			        "gold_defasagem_juros_inadimplencia.inadimplencia_pj": {
+			          "Target": {
+			            "Entity": "gold_defasagem_juros_inadimplencia.inadimplencia_pj"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_defasagem_juros_inadimplencia"
+			            },
+			            "Object": {
+			              "Role": "gold_defasagem_juros_inadimplencia.inadimplencia_pj"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_defasagem_juros_inadimplencias_have_inadimplencia_pjs"
+			        }
+			      ]
+			    },
+			    "gold_defasagem_juros_inadimplencia_has_juro_real_1_2m_ante": {
+			      "Binding": {
+			        "ConceptualEntity": "gold_defasagem_juros_inadimplencia"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_defasagem_juros_inadimplencia": {
+			          "Target": {
+			            "Entity": "gold_defasagem_juros_inadimplencia"
+			          }
+			        },
+			        "gold_defasagem_juros_inadimplencia.juro_real_1_2m_ante": {
+			          "Target": {
+			            "Entity": "gold_defasagem_juros_inadimplencia.juro_real_1_2m_ante"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_defasagem_juros_inadimplencia"
+			            },
+			            "Object": {
+			              "Role": "gold_defasagem_juros_inadimplencia.juro_real_1_2m_ante"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_defasagem_juros_inadimplencias_have_juro_real_1_2m_antes"
+			        }
+			      ]
+			    },
+			    "gold_defasagem_juros_inadimplencia_has_juro_real_6m_ante": {
+			      "Binding": {
+			        "ConceptualEntity": "gold_defasagem_juros_inadimplencia"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_defasagem_juros_inadimplencia": {
+			          "Target": {
+			            "Entity": "gold_defasagem_juros_inadimplencia"
+			          }
+			        },
+			        "gold_defasagem_juros_inadimplencia.juro_real_6m_ante": {
+			          "Target": {
+			            "Entity": "gold_defasagem_juros_inadimplencia.juro_real_6m_ante"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_defasagem_juros_inadimplencia"
+			            },
+			            "Object": {
+			              "Role": "gold_defasagem_juros_inadimplencia.juro_real_6m_ante"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_defasagem_juros_inadimplencias_have_juro_real_6m_antes"
+			        }
+			      ]
+			    },
+			    "gold_defasagem_juros_inadimplencia_has_juro_real_ex_post": {
+			      "Binding": {
+			        "ConceptualEntity": "gold_defasagem_juros_inadimplencia"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_defasagem_juros_inadimplencia": {
+			          "Target": {
+			            "Entity": "gold_defasagem_juros_inadimplencia"
+			          }
+			        },
+			        "gold_defasagem_juros_inadimplencia.juro_real_ex_post": {
+			          "Target": {
+			            "Entity": "gold_defasagem_juros_inadimplencia.juro_real_ex_post"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_defasagem_juros_inadimplencia"
+			            },
+			            "Object": {
+			              "Role": "gold_defasagem_juros_inadimplencia.juro_real_ex_post"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_defasagem_juros_inadimplencias_have_juro_real_ex_post"
+			        }
+			      ]
+			    },
+			    "gold_defasagem_juros_inadimplencia_has_selic_1_2m_ante": {
+			      "Binding": {
+			        "ConceptualEntity": "gold_defasagem_juros_inadimplencia"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_defasagem_juros_inadimplencia": {
+			          "Target": {
+			            "Entity": "gold_defasagem_juros_inadimplencia"
+			          }
+			        },
+			        "gold_defasagem_juros_inadimplencia.selic_1_2m_ante": {
+			          "Target": {
+			            "Entity": "gold_defasagem_juros_inadimplencia.selic_1_2m_ante"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_defasagem_juros_inadimplencia"
+			            },
+			            "Object": {
+			              "Role": "gold_defasagem_juros_inadimplencia.selic_1_2m_ante"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_defasagem_juros_inadimplencias_have_selic_1_2m_antes"
+			        }
+			      ]
+			    },
+			    "gold_defasagem_juros_inadimplencia_has_selic_9m_ante": {
+			      "Binding": {
+			        "ConceptualEntity": "gold_defasagem_juros_inadimplencia"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_defasagem_juros_inadimplencia": {
+			          "Target": {
+			            "Entity": "gold_defasagem_juros_inadimplencia"
+			          }
+			        },
+			        "gold_defasagem_juros_inadimplencia.selic_9m_ante": {
+			          "Target": {
+			            "Entity": "gold_defasagem_juros_inadimplencia.selic_9m_ante"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_defasagem_juros_inadimplencia"
+			            },
+			            "Object": {
+			              "Role": "gold_defasagem_juros_inadimplencia.selic_9m_ante"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_defasagem_juros_inadimplencias_have_selic_9m_antes"
+			        }
+			      ]
+			    },
+			    "gold_defasagem_juros_inadimplencia_has_selic_6m_ante": {
+			      "Binding": {
+			        "ConceptualEntity": "gold_defasagem_juros_inadimplencia"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_defasagem_juros_inadimplencia": {
+			          "Target": {
+			            "Entity": "gold_defasagem_juros_inadimplencia"
+			          }
+			        },
+			        "gold_defasagem_juros_inadimplencia.selic_6m_ante": {
+			          "Target": {
+			            "Entity": "gold_defasagem_juros_inadimplencia.selic_6m_ante"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_defasagem_juros_inadimplencia"
+			            },
+			            "Object": {
+			              "Role": "gold_defasagem_juros_inadimplencia.selic_6m_ante"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_defasagem_juros_inadimplencias_have_selic_6m_antes"
+			        }
+			      ]
+			    },
+			    "gold_defasagem_juros_inadimplencia_has_selic_3m_ante": {
+			      "Binding": {
+			        "ConceptualEntity": "gold_defasagem_juros_inadimplencia"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_defasagem_juros_inadimplencia": {
+			          "Target": {
+			            "Entity": "gold_defasagem_juros_inadimplencia"
+			          }
+			        },
+			        "gold_defasagem_juros_inadimplencia.selic_3m_ante": {
+			          "Target": {
+			            "Entity": "gold_defasagem_juros_inadimplencia.selic_3m_ante"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_defasagem_juros_inadimplencia"
+			            },
+			            "Object": {
+			              "Role": "gold_defasagem_juros_inadimplencia.selic_3m_ante"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_defasagem_juros_inadimplencias_have_selic_3m_antes"
+			        }
+			      ]
+			    },
+			    "gold_defasagem_juros_inadimplencia_has_selic_meta": {
+			      "Binding": {
+			        "ConceptualEntity": "gold_defasagem_juros_inadimplencia"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_defasagem_juros_inadimplencia": {
+			          "Target": {
+			            "Entity": "gold_defasagem_juros_inadimplencia"
+			          }
+			        },
+			        "gold_defasagem_juros_inadimplencia.selic_meta": {
+			          "Target": {
+			            "Entity": "gold_defasagem_juros_inadimplencia.selic_meta"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_defasagem_juros_inadimplencia"
+			            },
+			            "Object": {
+			              "Role": "gold_defasagem_juros_inadimplencia.selic_meta"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_defasagem_juros_inadimplencias_have_selic_meta"
+			        }
+			      ]
+			    },
+			    "gold_defasagem_juros_inadimplencia_has_data": {
+			      "Binding": {
+			        "ConceptualEntity": "gold_defasagem_juros_inadimplencia"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_defasagem_juros_inadimplencia": {
+			          "Target": {
+			            "Entity": "gold_defasagem_juros_inadimplencia"
+			          }
+			        },
+			        "gold_defasagem_juros_inadimplencia.data": {
+			          "Target": {
+			            "Entity": "gold_defasagem_juros_inadimplencia.data"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_defasagem_juros_inadimplencia"
+			            },
+			            "Object": {
+			              "Role": "gold_defasagem_juros_inadimplencia.data"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_defasagem_juros_inadimplencias_have_data"
+			        }
+			      ]
+			    },
+			    "gold_correlacao_defasagem_has_meses_usado": {
+			      "Binding": {
+			        "ConceptualEntity": "gold_correlacao_defasagem"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_correlacao_defasagem": {
+			          "Target": {
+			            "Entity": "gold_correlacao_defasagem"
+			          }
+			        },
+			        "gold_correlacao_defasagem.meses_usado": {
+			          "Target": {
+			            "Entity": "gold_correlacao_defasagem.meses_usado"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_correlacao_defasagem"
+			            },
+			            "Object": {
+			              "Role": "gold_correlacao_defasagem.meses_usado"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_correlacao_defasagems_have_meses_usados"
+			        }
+			      ]
+			    },
+			    "gold_correlacao_defasagem_has_correlacao": {
+			      "Binding": {
+			        "ConceptualEntity": "gold_correlacao_defasagem"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_correlacao_defasagem": {
+			          "Target": {
+			            "Entity": "gold_correlacao_defasagem"
+			          }
+			        },
+			        "gold_correlacao_defasagem.correlacao": {
+			          "Target": {
+			            "Entity": "gold_correlacao_defasagem.correlacao"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_correlacao_defasagem"
+			            },
+			            "Object": {
+			              "Role": "gold_correlacao_defasagem.correlacao"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_correlacao_defasagems_have_correlacaos"
+			        }
+			      ]
+			    },
+			    "gold_correlacao_defasagem_has_base": {
+			      "Binding": {
+			        "ConceptualEntity": "gold_correlacao_defasagem"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_correlacao_defasagem": {
+			          "Target": {
+			            "Entity": "gold_correlacao_defasagem"
+			          }
+			        },
+			        "gold_correlacao_defasagem.base": {
+			          "Target": {
+			            "Entity": "gold_correlacao_defasagem.base"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_correlacao_defasagem"
+			            },
+			            "Object": {
+			              "Role": "gold_correlacao_defasagem.base"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_correlacao_defasagems_have_bases"
+			        }
+			      ]
+			    },
+			    "gold_correlacao_defasagem_has_indicador_juro": {
+			      "Binding": {
+			        "ConceptualEntity": "gold_correlacao_defasagem"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_correlacao_defasagem": {
+			          "Target": {
+			            "Entity": "gold_correlacao_defasagem"
+			          }
+			        },
+			        "gold_correlacao_defasagem.indicador_juro": {
+			          "Target": {
+			            "Entity": "gold_correlacao_defasagem.indicador_juro"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_correlacao_defasagem"
+			            },
+			            "Object": {
+			              "Role": "gold_correlacao_defasagem.indicador_juro"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_correlacao_defasagems_have_indicador_juros"
+			        }
+			      ]
+			    },
+			    "gold_correlacao_defasagem_has_defasagem_mese": {
+			      "Binding": {
+			        "ConceptualEntity": "gold_correlacao_defasagem"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "gold_correlacao_defasagem": {
+			          "Target": {
+			            "Entity": "gold_correlacao_defasagem"
+			          }
+			        },
+			        "gold_correlacao_defasagem.defasagem_mese": {
+			          "Target": {
+			            "Entity": "gold_correlacao_defasagem.defasagem_mese"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "gold_correlacao_defasagem"
+			            },
+			            "Object": {
+			              "Role": "gold_correlacao_defasagem.defasagem_mese"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gold_correlacao_defasagems_have_defasagem_meses"
+			        }
+			      ]
+			    }
+			  },
+			  "Agents": {
+			    "Internal": {
+			      "Version": "1.1.0"
+			    }
+			  }
+			}
+		contentType: json
+

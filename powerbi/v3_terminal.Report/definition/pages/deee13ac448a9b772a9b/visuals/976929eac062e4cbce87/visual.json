@@ -1,0 +1,93 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
+  "name": "976929eac062e4cbce87",
+  "position": {
+    "x": 372,
+    "y": 126,
+    "z": 0,
+    "height": 455,
+    "width": 750,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "lineChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dCalendario"
+                    }
+                  },
+                  "Property": "data"
+                }
+              },
+              "queryRef": "dCalendario.data",
+              "nativeQueryRef": "data",
+              "active": true
+            }
+          ]
+        },
+        "Series": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dNatureza"
+                    }
+                  },
+                  "Property": "natureza"
+                }
+              },
+              "queryRef": "dNatureza.natureza",
+              "nativeQueryRef": "natureza"
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "gold_pix_natureza_mensal"
+                    }
+                  },
+                  "Property": "_Participação no Valor"
+                }
+              },
+              "queryRef": "gold_pix_natureza_mensal._Participação no Valor",
+              "nativeQueryRef": "_Participação no Valor"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "dCalendario"
+                  }
+                },
+                "Property": "data"
+              }
+            },
+            "direction": "Ascending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

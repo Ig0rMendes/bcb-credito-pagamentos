@@ -1,0 +1,209 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
+  "name": "08eb80729124bb29b15c",
+  "position": {
+    "x": 372,
+    "y": 294,
+    "z": 0,
+    "height": 520,
+    "width": 750,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "lineChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "gold_correlacao_defasagem"
+                    }
+                  },
+                  "Property": "defasagem_meses"
+                }
+              },
+              "queryRef": "gold_correlacao_defasagem.defasagem_meses",
+              "nativeQueryRef": "Sum of defasagem_meses",
+              "active": true
+            }
+          ]
+        },
+        "Series": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "gold_correlacao_defasagem"
+                    }
+                  },
+                  "Property": "Indicador"
+                }
+              },
+              "queryRef": "gold_correlacao_defasagem.Indicador",
+              "nativeQueryRef": "Indicador"
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "gold_pix_natureza_mensal"
+                    }
+                  },
+                  "Property": "_Correlação (variação 12m)"
+                }
+              },
+              "queryRef": "gold_pix_natureza_mensal._Correlação (variação 12m)",
+              "nativeQueryRef": "_Correlação (variação 12m)"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "gold_pix_natureza_mensal"
+                  }
+                },
+                "Property": "_Correlação (variação 12m)"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "objects": {
+      "categoryAxis": [
+        {
+          "properties": {
+            "showAxisTitle": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "titleText": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Meses de defasagem (juros de k meses atrás)'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "valueAxis": [
+        {
+          "properties": {
+            "showAxisTitle": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "titleText": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Correlação com a inadimplência'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Correlação por defasagem (variação em 12 meses): o pico do juro real é em 6 meses, mas a curva é plana entre 4 e 8'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "subTitle": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "d4c3eee6a840b3e53d36",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "gold_correlacao_defasagem"
+              }
+            },
+            "Property": "defasagem_meses"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "c8dae5793d38d947d920",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "gold_pix_natureza_mensal"
+              }
+            },
+            "Property": "_Correlação (variação 12m)"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "89f33326dbaa444c2387",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "gold_correlacao_defasagem"
+              }
+            },
+            "Property": "Indicador"
+          }
+        },
+        "type": "Categorical"
+      }
+    ]
+  }
+}

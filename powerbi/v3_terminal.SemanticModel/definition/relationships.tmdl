@@ -1,0 +1,22 @@
+relationship 12ee421d-20ee-999e-75a5-4422bdf53437
+	fromColumn: gold_pix_natureza_mensal.data
+	toColumn: dCalendario.data
+
+relationship b9c6352c-380d-acde-8d0e-6f8add9b919b
+	fromColumn: gold_pix_empresas_forma_iniciacao.data
+	toColumn: dCalendario.data
+
+relationship 2b695d96-a0db-5636-16c5-7005edef3697
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: gold_defasagem_juros_inadimplencia.data
+	toColumn: dCalendario.data
+
+relationship e0a82fb7-540d-1a82-5f2d-7ec3fd88dc43
+	fromColumn: gold_pix_natureza_mensal.natureza
+	toColumn: dNatureza.natureza
+
+relationship 209dc0a7-0fc4-a223-34a2-cf4bf81b9d2a
+	fromColumn: gold_pix_empresas_forma_iniciacao.natureza
+	toColumn: dNatureza.natureza
+
