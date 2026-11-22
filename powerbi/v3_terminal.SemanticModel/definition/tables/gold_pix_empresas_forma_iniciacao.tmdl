@@ -1,0 +1,140 @@
+table gold_pix_empresas_forma_iniciacao
+	lineageTag: 1b25feac-16fe-4da0-895a-54c30c08c79e
+
+	column ano_mes
+		dataType: string
+		lineageTag: 7e4cb4d8-58be-4cca-88a1-fb53eb001c3a
+		summarizeBy: none
+		sourceColumn: ano_mes
+
+		annotation SummarizationSetBy = Automatic
+
+	column data
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 2fd5d698-349b-4bba-97b2-ce24936e6ad9
+		summarizeBy: none
+		sourceColumn: data
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column mes_parcial
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: bbd83777-5e7d-4590-97c2-23c7f9f5a57e
+		summarizeBy: none
+		sourceColumn: mes_parcial
+
+		annotation SummarizationSetBy = Automatic
+
+	column natureza
+		dataType: string
+		lineageTag: ad30839c-f406-420b-8927-ad452f94f0a1
+		summarizeBy: none
+		sourceColumn: natureza
+
+		annotation SummarizationSetBy = Automatic
+
+	column pagador_tipo
+		dataType: string
+		lineageTag: 3f81234b-109f-40f7-8dda-2b12836232b6
+		summarizeBy: none
+		sourceColumn: pagador_tipo
+
+		annotation SummarizationSetBy = Automatic
+
+	column recebedor_tipo
+		dataType: string
+		lineageTag: 14d31523-72f3-4d88-8292-59e5c573e775
+		summarizeBy: none
+		sourceColumn: recebedor_tipo
+
+		annotation SummarizationSetBy = Automatic
+
+	column forma_iniciacao
+		dataType: string
+		lineageTag: 3bc1e54e-6ad7-47d0-80be-10fc01a166eb
+		summarizeBy: none
+		sourceColumn: forma_iniciacao
+
+		annotation SummarizationSetBy = Automatic
+
+	column forma_iniciacao_descricao
+		dataType: string
+		lineageTag: 80366e2e-5b52-4c5a-b075-a3a5c697fba1
+		summarizeBy: none
+		sourceColumn: forma_iniciacao_descricao
+
+		annotation SummarizationSetBy = Automatic
+
+	column valor
+		dataType: double
+		lineageTag: 68825ff0-f462-4b7d-9278-2c276ceb26d5
+		summarizeBy: sum
+		sourceColumn: valor
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column quantidade
+		dataType: int64
+		formatString: 0
+		lineageTag: 753a2f83-6a3f-4108-846c-627dc1d30f7b
+		summarizeBy: sum
+		sourceColumn: quantidade
+
+		annotation SummarizationSetBy = Automatic
+
+	column ticket_medio
+		dataType: double
+		lineageTag: 87af4773-aeea-4f3a-8465-1a08e9a88dcc
+		summarizeBy: sum
+		sourceColumn: ticket_medio
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column participacao_valor_na_natureza
+		dataType: double
+		lineageTag: a5e8f805-60a8-470b-aa11-f0bdff98662d
+		summarizeBy: sum
+		sourceColumn: participacao_valor_na_natureza
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column forma_grupo =
+			SWITCH (
+			    gold_pix_empresas_forma_iniciacao[forma_iniciacao],
+			    "DICT", "Chave Pix",
+			    "MANU", "Agência e conta (sem chave)",
+			    "QRES", "QR Code",
+			    "QRDN", "QR Code",
+			    "Nao disponivel", "Não disponível",
+			    "Nao informado", "Não disponível",
+			    "Outras formas"
+			)
+		dataType: string
+		lineageTag: 98b727d6-c390-5349-8ce1-02e2b6768bd2
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	partition gold_pix_empresas_forma_iniciacao = m
+		mode: import
+		source =
+				let
+				    Source = Databricks.Catalogs("dbc-c0147f19-09c3.cloud.databricks.com", "/sql/1.0/warehouses/808364e3c36c24d7", null),
+				    workspace_Database = Source{[Name="workspace",Kind="Database"]}[Data],
+				    bcb_Schema = workspace_Database{[Name="bcb",Kind="Schema"]}[Data],
+				    gold_pix_empresas_forma_iniciacao_Table = bcb_Schema{[Name="gold_pix_empresas_forma_iniciacao",Kind="Table"]}[Data]
+				in
+				    gold_pix_empresas_forma_iniciacao_Table
+
+	annotation PBI_ResultType = Table
+

@@ -1,0 +1,166 @@
+table gold_defasagem_juros_inadimplencia
+	lineageTag: 17c79452-913c-413f-9387-60385cf8287f
+
+	column data
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: b1de3b62-4059-43b7-82ff-485c5794418d
+		summarizeBy: none
+		sourceColumn: data
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column selic_meta
+		dataType: double
+		lineageTag: 6f83d32c-b75e-4982-aed8-e47838b8bb08
+		summarizeBy: sum
+		sourceColumn: selic_meta
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column selic_3m_antes
+		dataType: double
+		lineageTag: e5bf7081-966f-47ea-b787-8a6a1b178bd5
+		summarizeBy: sum
+		sourceColumn: selic_3m_antes
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column selic_6m_antes
+		dataType: double
+		lineageTag: fbc513c6-778b-48b3-a556-80eb799b5754
+		summarizeBy: sum
+		sourceColumn: selic_6m_antes
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column selic_9m_antes
+		dataType: double
+		lineageTag: e4cd8fb2-f0bd-4b5d-976e-a638311710b0
+		summarizeBy: sum
+		sourceColumn: selic_9m_antes
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column selic_12m_antes
+		dataType: double
+		lineageTag: 350513e8-f4fe-4ce3-9ab0-44ace24bb5a5
+		summarizeBy: sum
+		sourceColumn: selic_12m_antes
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column juro_real_ex_post
+		dataType: double
+		lineageTag: 192ed569-f5e7-428a-b856-2693c5ca4d77
+		summarizeBy: sum
+		sourceColumn: juro_real_ex_post
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column juro_real_6m_antes
+		dataType: double
+		lineageTag: 57b7adb3-5b35-4e80-b0da-af37dd5c3b0a
+		summarizeBy: sum
+		sourceColumn: juro_real_6m_antes
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column juro_real_12m_antes
+		dataType: double
+		lineageTag: f6d12c79-b4db-4d15-8d0f-19e21f33d32e
+		summarizeBy: sum
+		sourceColumn: juro_real_12m_antes
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column inadimplencia_pj
+		dataType: double
+		lineageTag: 6794f558-842a-4ea0-8eec-28e5cbbc271f
+		summarizeBy: sum
+		sourceColumn: inadimplencia_pj
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column inadimplencia_pj_var_12m
+		dataType: double
+		lineageTag: 50e66679-b7f0-49ae-8a4a-90439a97ec4e
+		summarizeBy: sum
+		sourceColumn: inadimplencia_pj_var_12m
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column inadimplencia_pf
+		dataType: double
+		lineageTag: c52e893a-94f3-40ac-8725-d7cbed280b51
+		summarizeBy: sum
+		sourceColumn: inadimplencia_pf
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column concessoes_pj
+		dataType: double
+		lineageTag: 31caeea4-8dcf-4b60-bd48-805b5c841363
+		summarizeBy: sum
+		sourceColumn: concessoes_pj
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column juro_real_var_12m_6m_antes
+		dataType: double
+		lineageTag: 8019b83b-b0a0-4e6b-9545-f06659804d6c
+		summarizeBy: sum
+		sourceColumn: juro_real_var_12m_6m_antes
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column na_amostra_comum
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 28980359-0164-42ca-8b22-59355ff210a1
+		summarizeBy: none
+		sourceColumn: na_amostra_comum
+
+		annotation SummarizationSetBy = Automatic
+
+	partition gold_defasagem_juros_inadimplencia = m
+		mode: import
+		source =
+				let
+				    Source = Databricks.Catalogs("dbc-c0147f19-09c3.cloud.databricks.com", "/sql/1.0/warehouses/808364e3c36c24d7", null),
+				    workspace_Database = Source{[Name="workspace",Kind="Database"]}[Data],
+				    bcb_Schema = workspace_Database{[Name="bcb",Kind="Schema"]}[Data],
+				    gold_defasagem_juros_inadimplencia_Table = bcb_Schema{[Name="gold_defasagem_juros_inadimplencia",Kind="Table"]}[Data]
+				in
+				    gold_defasagem_juros_inadimplencia_Table
+
+	annotation PBI_ResultType = Table
+

@@ -1,0 +1,49 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
+  "name": "b9364ae34ec478a0c37b",
+  "position": {
+    "x": 384,
+    "y": 18,
+    "z": 4006,
+    "height": 96,
+    "width": 1500,
+    "tabOrder": 4005
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "Teste de performance",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "fontSize": "24pt",
+                      "color": "#FFFFFF"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Página usada nas medições do Performance Analyzer (v1 ingênua × v2 otimizada). Resultados em docs/performance.md.",
+                    "textStyle": {
+                      "fontSize": "12pt",
+                      "color": "#B6C2D6"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

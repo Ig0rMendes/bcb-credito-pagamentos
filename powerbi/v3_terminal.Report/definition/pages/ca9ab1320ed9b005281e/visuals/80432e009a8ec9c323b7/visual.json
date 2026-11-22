@@ -1,0 +1,532 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
+  "name": "80432e009a8ec9c323b7",
+  "position": {
+    "x": 372,
+    "y": 126,
+    "z": 0,
+    "height": 150,
+    "width": 1524,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "cardVisual",
+    "query": {
+      "queryState": {
+        "Data": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "gold_pix_natureza_mensal"
+                    }
+                  },
+                  "Property": "KPI Inadimplência"
+                }
+              },
+              "queryRef": "gold_pix_natureza_mensal.KPI Inadimplência",
+              "nativeQueryRef": "Inadimplência PJ (atraso > 90 dias)",
+              "displayName": "Inadimplência PJ (atraso > 90 dias)"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "gold_pix_natureza_mensal"
+                    }
+                  },
+                  "Property": "KPI Fatia B2B"
+                }
+              },
+              "queryRef": "gold_pix_natureza_mensal.KPI Fatia B2B",
+              "nativeQueryRef": "Fatia B2B no valor do Pix",
+              "displayName": "Fatia B2B no valor do Pix"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "gold_pix_natureza_mensal"
+                    }
+                  },
+                  "Property": "KPI Fatia B2B variação 5 anos"
+                }
+              },
+              "queryRef": "gold_pix_natureza_mensal.KPI Fatia B2B variação 5 anos",
+              "nativeQueryRef": "Fatia B2B: variação em 5 anos",
+              "displayName": "Fatia B2B: variação em 5 anos"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "gold_pix_natureza_mensal"
+                    }
+                  },
+                  "Property": "KPI Ticket médio"
+                }
+              },
+              "queryRef": "gold_pix_natureza_mensal.KPI Ticket médio",
+              "nativeQueryRef": "Ticket médio do mês (R$ nominais)",
+              "displayName": "Ticket médio do mês (R$ nominais)"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "gold_pix_natureza_mensal"
+                    }
+                  },
+                  "Property": "KPI Selic"
+                }
+              },
+              "queryRef": "gold_pix_natureza_mensal.KPI Selic",
+              "nativeQueryRef": "Selic meta (ao ano)",
+              "displayName": "Selic meta (ao ano)"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "gold_pix_natureza_mensal"
+                  }
+                },
+                "Property": "KPI Inadimplência"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "objects": {
+      "referenceLabel": [
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "gold_pix_natureza_mensal"
+                    }
+                  },
+                  "Property": "KPI Inadimplência Δ texto"
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "dataViewWildcard": {
+                  "matchingOption": 0
+                }
+              }
+            ],
+            "metadata": "gold_pix_natureza_mensal.KPI Inadimplência",
+            "id": "field-7e57fef5-f58f-4b9c-8565-924b70727bc8",
+            "order": 0
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "gold_pix_natureza_mensal"
+                    }
+                  },
+                  "Property": "KPI Fatia B2B Δ texto"
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "dataViewWildcard": {
+                  "matchingOption": 0
+                }
+              }
+            ],
+            "metadata": "gold_pix_natureza_mensal.KPI Fatia B2B",
+            "id": "field-b3e9e2ac-5137-4afd-8baa-23e758140be4",
+            "order": 0
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "gold_pix_natureza_mensal"
+                    }
+                  },
+                  "Property": "KPI Fatia B2B 5 anos texto"
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "dataViewWildcard": {
+                  "matchingOption": 0
+                }
+              }
+            ],
+            "metadata": "gold_pix_natureza_mensal.KPI Fatia B2B variação 5 anos",
+            "id": "field-cc0cdb1d-4850-4c59-8867-8e38d3a2452f",
+            "order": 0
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "gold_pix_natureza_mensal"
+                    }
+                  },
+                  "Property": "KPI Ticket Δ texto"
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "dataViewWildcard": {
+                  "matchingOption": 0
+                }
+              }
+            ],
+            "metadata": "gold_pix_natureza_mensal.KPI Ticket médio",
+            "id": "field-391543bf-3c36-4c50-bd84-61e0170fd5e3",
+            "order": 0
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "gold_pix_natureza_mensal"
+                    }
+                  },
+                  "Property": "KPI Selic Δ texto"
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "dataViewWildcard": {
+                  "matchingOption": 0
+                }
+              }
+            ],
+            "metadata": "gold_pix_natureza_mensal.KPI Selic",
+            "id": "field-41ea2571-8de0-42e0-8790-1dde978ee241",
+            "order": 0
+          }
+        }
+      ],
+      "referenceLabelTitle": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "gold_pix_natureza_mensal.KPI Inadimplência"
+          }
+        },
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "gold_pix_natureza_mensal.KPI Fatia B2B"
+          }
+        },
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "gold_pix_natureza_mensal.KPI Fatia B2B variação 5 anos"
+          }
+        },
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "gold_pix_natureza_mensal.KPI Ticket médio"
+          }
+        },
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "gold_pix_natureza_mensal.KPI Selic"
+          }
+        }
+      ],
+      "referenceLabelValue": [
+        {
+          "properties": {
+            "valueFontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "gold_pix_natureza_mensal"
+                        }
+                      },
+                      "Property": "KPI Inadimplência Δ cor"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "dataViewWildcard": {
+                  "matchingOption": 0
+                }
+              }
+            ],
+            "metadata": "gold_pix_natureza_mensal.KPI Inadimplência"
+          }
+        },
+        {
+          "properties": {
+            "valueFontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "gold_pix_natureza_mensal"
+                        }
+                      },
+                      "Property": "KPI Fatia B2B Δ cor"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "dataViewWildcard": {
+                  "matchingOption": 0
+                }
+              }
+            ],
+            "metadata": "gold_pix_natureza_mensal.KPI Fatia B2B"
+          }
+        },
+        {
+          "properties": {
+            "valueFontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "gold_pix_natureza_mensal"
+                        }
+                      },
+                      "Property": "KPI Fatia B2B 5 anos cor"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "dataViewWildcard": {
+                  "matchingOption": 0
+                }
+              }
+            ],
+            "metadata": "gold_pix_natureza_mensal.KPI Fatia B2B variação 5 anos"
+          }
+        },
+        {
+          "properties": {
+            "valueFontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "gold_pix_natureza_mensal"
+                        }
+                      },
+                      "Property": "KPI Ticket Δ cor"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "dataViewWildcard": {
+                  "matchingOption": 0
+                }
+              }
+            ],
+            "metadata": "gold_pix_natureza_mensal.KPI Ticket médio"
+          }
+        },
+        {
+          "properties": {
+            "valueFontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "gold_pix_natureza_mensal"
+                        }
+                      },
+                      "Property": "KPI Selic Δ cor"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "dataViewWildcard": {
+                  "matchingOption": 0
+                }
+              }
+            ],
+            "metadata": "gold_pix_natureza_mensal.KPI Selic"
+          }
+        }
+      ],
+      "label": [
+        {
+          "properties": {
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "11D"
+                }
+              }
+            },
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#B6C2D6'"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "id": "default"
+          }
+        }
+      ],
+      "value": [
+        {
+          "properties": {
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#FFFFFF'"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "id": "default"
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

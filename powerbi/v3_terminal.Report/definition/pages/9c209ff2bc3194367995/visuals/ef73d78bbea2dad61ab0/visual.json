@@ -1,0 +1,49 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
+  "name": "ef73d78bbea2dad61ab0",
+  "position": {
+    "x": 384,
+    "y": 18,
+    "z": 2008,
+    "height": 96,
+    "width": 1500,
+    "tabOrder": 5001
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "Juros → inadimplência das empresas",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "fontSize": "24pt",
+                      "color": "#FFFFFF"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Quantos meses o juro leva para pesar na inadimplência, e qual o tamanho do efeito. Estimativas na amostra fixa de 94 meses (12/2018 a 09/2026): não mudam com o filtro de período.",
+                    "textStyle": {
+                      "fontSize": "12pt",
+                      "color": "#B6C2D6"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

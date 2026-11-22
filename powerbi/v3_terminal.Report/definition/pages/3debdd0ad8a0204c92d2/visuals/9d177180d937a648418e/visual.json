@@ -1,0 +1,52 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
+  "name": "9d177180d937a648418e",
+  "position": {
+    "x": 1146,
+    "y": 784,
+    "z": 3,
+    "height": 272,
+    "width": 750,
+    "tabOrder": 3
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "Como ler: o B2B (empresa paga empresa) é a maior fatia do valor do Pix: 44,88% no acumulado desde nov/2020 e 51,82% em out/26. Cada Pix entre empresas é grande: ticket médio de R$ 5.306 no B2B nos 12 meses até out/26, contra R$ 268 no P2P (valores nominais). No gráfico acima, só o Pix que envolve empresas, de set/21 a out/26: agência e conta digitadas (sem chave) seguem perto da metade do valor (47,0%), a chave Pix caiu de 54,8% para 38,9% e o QR Code subiu de 2,6% para 13,8%. Escopo: isto é a composição interna do Pix; a troca de TED e boleto por Pix não é medida aqui.",
+                    "textStyle": {
+                      "fontSize": "14pt",
+                      "color": "#B6C2D6"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

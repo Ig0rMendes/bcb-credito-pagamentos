@@ -11,3 +11,7 @@ data/processed/pix_detalhado.parquet
 
 # Power BI: a versão 1 (ingênua) guarda 768 mil linhas; só serve para a medição de performance
 powerbi/v1_*.pbix
+
+# Power BI Project (.pbip): configurações locais e cache do modelo, que o Desktop recria ao abrir
+powerbi/**/.pbi/localSettings.json
+powerbi/**/.pbi/cache.abf

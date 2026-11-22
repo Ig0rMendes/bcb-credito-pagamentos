@@ -1,0 +1,52 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
+  "name": "0aeab0a4ad0144d600b3",
+  "position": {
+    "x": 372,
+    "y": 834,
+    "z": 2001,
+    "height": 222,
+    "width": 1524,
+    "tabOrder": 2001
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "Como ler: quando o juro real sobe, a inadimplência das empresas (% da carteira PJ com atraso acima de 90 dias) tende a subir meses depois. O pico da correlação é em 6 meses para o juro real, mas de 4 a 8 meses o resultado é quase igual (Selic: pico em 10 meses, faixa de 8 a 13). Efeito: +1 p.p. na variação em 12 meses do juro real acompanha +0,11 p.p. na variação em 12 meses da inadimplência (IC 95% Newey-West: 0,083 a 0,143). Cuidado: as variações de 12 meses se sobrepõem, então os 94 meses valem cerca de 9 observações independentes, e sem 2020–2021 o efeito fica perto de zero. Uso recomendado: alerta de direção, não previsão de tamanho. Detalhes e validação fora da amostra em docs/analise_estatistica.md. Os números desta página usam uma amostra fixa e não mudam com o filtro de período.",
+                    "textStyle": {
+                      "fontSize": "14pt",
+                      "color": "#B6C2D6"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
+  "name": "5c0cc95a6c00bad4b07d",
+  "position": {
+    "x": 1146,
+    "y": 126,
+    "z": 3000,
+    "height": 455,
+    "width": 750,
+    "tabOrder": 3000
+  },
+  "visual": {
+    "visualType": "pivotTable",
+    "query": {
+      "queryState": {
+        "Columns": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "gold_pix_empresas_forma_iniciacao"
+                    }
+                  },
+                  "Property": "forma_iniciacao_descricao"
+                }
+              },
+              "queryRef": "gold_pix_empresas_forma_iniciacao.forma_iniciacao_descricao",
+              "nativeQueryRef": "forma_iniciacao_descricao",
+              "active": true
+            }
+          ]
+        },
+        "Rows": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dNatureza"
+                    }
+                  },
+                  "Property": "natureza"
+                }
+              },
+              "queryRef": "dNatureza.natureza",
+              "nativeQueryRef": "natureza",
+              "active": true
+            }
+          ]
+        },
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "gold_pix_natureza_mensal"
+                    }
+                  },
+                  "Property": "_Valor Pix Empresas"
+                }
+              },
+              "queryRef": "gold_pix_natureza_mensal._Valor Pix Empresas",
+              "nativeQueryRef": "_Valor Pix Empresas"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}
